@@ -2,7 +2,7 @@
 name: "my-website"
 output_dir: "."
 navbar:
-  title: "STT 3530 - Data Science 1"
+  title: "Data Science 1"
   left:
     - text: "Resources"
       href: https://alanarnholt.github.io/resources.html
