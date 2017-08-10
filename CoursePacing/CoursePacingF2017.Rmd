@@ -138,7 +138,7 @@ Test yourself:
 
 ## Week 13: (Nov 14, Nov 16) {-}
 
-* Complete _Cleaning Data in R (Part 2)_ (datacamp)
+* Complete _Cleaning Data in R_ (datacamp)
 
 ## Week 14: (Nov 21; 22-24 Thanksgiving Break) {-}
 
@@ -147,6 +147,8 @@ Test yourself:
 ## Week 15: (Nov 28, Nov 30) {-}
 
 * Work on project
+
+* Complete _Importing & Cleaning Data in R: Case Studies_ (datacamp)
 
 ## Week 16: (Dec 5; Dec 7 is Reading Day) {-}
 
