@@ -1,5 +1,5 @@
 ---
-title: "Data Science 1 (STT 3530) Course Schedule"
+title: "STT 3530 (Data Science I) Course Schedule"
 author: "Alan T. Arnholt"
 date: 'Last compiled: `r format(Sys.time(), "%A, %B %d, %Y - %X.")`'
 output: 
@@ -18,20 +18,10 @@ MathJax.Hub.Config({
 ### General Notes: {-}
 
 ```{block, note-text, type='rmdnote'}
-1.  
-2.
-3.
+1.  Please bring a notebook and pencil to every class.  
+2.  You do not need to purchase a text for this course.
+3.  Access the [DataCamp](https://datacamp.com) assignments via [AsULearn](https://asulearn.appstate.edu)
 ```
-
-#### Grading Rubric for Homework Assignments {-}
-
-Field | Excellent (3) | Competent (2)  | Needs Work (1)
-------|---------------|----------------|---------------
-Reproducible | All graphs, code, and answers are created from text files.  Answers are never hardcoded but instead are inserted using inline R code.  An automatically generated references section with properly formatted citations when appropriate and `sessionInfo()` are provided at the end of the document. | All graphs, code, and answers are created from text files.  Answers are  hardcoded. No `sessionInfo()` is provided at the end of the document. References are present but not cited properly or not automatically generated. | Document uses copy and paste with graphs or code.  Answers are hardcoded; and references, when appropriate are hardcoded.
-Statistical Understanding | Answers to questions demonstrate clear statistical understanding by comparing theoretical answers to simulated answers.  When hypotheses are tested, classical methods are compared and contrasted to randomization methods.  When confidence intervals are constructed, classical approaches are compared and contrasted with bootstrap procedures.  The scope of inferential conclusions made is appropriate for the sampling method. | Theoretical and simulated answers are computed but no discussion is present comparing and contrasting the results.  When hypotheses are tested, results for classical and randomization methods are presented but are not compared and contrasted.  When confidence intervals are constructed, classical and bootstrap approaches are computed but the results are not compared and contrasted.  The scope of inferential conclusions made is appropriate for the sampling method. | Theoretical and simulated answers are not computed correctly.  No comparison between classical and randomization approaches is present when testing hypotheses.  When confidence intervals are constructed, there is no comparison between classical and bootstrap confidence intervals .
-Graphics | Graphs for categorical data (barplot, mosaic plot, etc.) have appropriately labeled axes and titles.  Graphs for quantitative data (histograms, density plots, violin plots, etc.) have appropriately labeled axes and titles.  Multivariate graphs use appropriate legends and labels.  Computer variable names are replaced with descriptive variable names. | Appropriate graphs for the type of data are used.  Not all axes have appropriate labels or computer variable names are used in the graphs. | Inappropriate graphs are used for the type of data.  Axes are not labeled and computer variable names appear in the graphs.
-Coding  | Code (primarily R) produces correct answers.  Non-standard or complex functions are commented.  Code is formatted using a consistent standard. | Code produces correct answers.  Commenting is not used with non-standard and complex functions.  No consistent code formatting is used. | Code does not produce correct answers.  Code has no comments and is not formatted.
-Clarity  | Few errors of grammar and usage; any minor errors do not interfere with meaning.  Language style and word choice are highly effective and enhance meaning.  Style and word choice are appropriate for the assignment. | Some errors of grammar and usage; errors do not interfere with meaning.  Language style and word choice are, for the most part, effective and appropriate for the assignment. | Major errors of grammar and usage make meaning unclear.  Language style and word choice are ineffective and/or inappropriate.
 
 
 ## Week 1: (Aug 22, Aug 24) {-}
@@ -41,7 +31,7 @@ Clarity  | Few errors of grammar and usage; any minor errors do not interfere wi
 
 * When you register for a free individual GitHub account, request a [student discount](https://education.github.com) to obtain a few private repositories as well as unlimited public repositories.  Please use something similar to **FirstNameLastName** as your username when you register with GitHub.  For example, my username on GitHub is *alanarnholt*. If you have a popular name such as John Smith, you may need to provide some other distinquishing characteristic in your username.   
 
-* _Complete Introduction to R_ (datacamp)
+* _Complete Introduction to R_ [(DataCamp)](https://datacamp.com)
 
   
  
@@ -63,14 +53,14 @@ Clarity  | Few errors of grammar and usage; any minor errors do not interfere wi
 
 * Become familiar with the Appstate [RStudio server](https://mathr.math.appstate.edu/). You will use your Appstate user name and password to log in to the server.  You must be registered in the class to access the server.
 
-* Complete _Intermediate R_ (datacamp)
+* Complete _Intermediate R_ [(DataCamp)](https://datacamp.com)
 
 
 ## Week 3 (Sep 5, Sep 7) {-}
 
-* Complete _Reporting with R Markdown_ (datacamp)
+* Complete _Reporting with R Markdown_ [(DataCamp)](https://datacamp.com)
 
-* Complete _Working with the Rstudio IDE (Part I)_ (datacamp)
+* Complete _Working with the Rstudio IDE (Part I)_ [(DataCamp)](https://datacamp.com)
 
 * Test drive RStudio by following the directions from [Jenny Bryan's STAT 545 course](https://stat545-ubc.github.io/git07_git-github-rstudio.html).  Additional material can be found in the detailed `Bookdown` document [Happy Git and GitHub for the useR](http://happygitwithr.com/).  Chapters 8, 10-13 of [Happy Git and GitHub for the useR](http://happygitwithr.com/) will be helpful if you need more directions for test driving RStudio. Note: Git, R, and the RStudio IDE have already been installed for you on the RStudio server.    
 * Read the [Git and GitHub](http://r-pkgs.had.co.nz/git.html) chapter from Hadley Wickham's book [R Packages](http://r-pkgs.had.co.nz/)
@@ -93,7 +83,7 @@ Test yourself:
 
 ## Week 4: (Sep 12, Sep 14) {-}
 
-* Complete _Working with the Rstudio IDE (Part II)_ (datacamp)
+* Complete _Working with the Rstudio IDE (Part II)_ [(DataCamp)](https://datacamp.com)
 
 * Create a personal web page using [R Markdown](http://rmarkdown.rstudio.com/rmarkdown_websites.html)
 
@@ -101,15 +91,15 @@ Test yourself:
 
 ## Week 5: (Sep 19, Sep 21) {-}
 
-* Complete _Data Visualization in R_ (datacamp)
+* Complete _Data Visualization in R_ [(DataCamp)](https://datacamp.com)
 
 ## Week 6: (Sep 26, Sep 28) {-}
 
-* Complete _Data Visualization with `ggplot2`_ (Part 1) (datacamp)
+* Complete _Data Visualization with `ggplot2`_ (Part 1) [(DataCamp)](https://datacamp.com)
 
 ## Week 7: (Oct 3, Oct 5) {-}
 
-* Complete _Data Visualization with `ggplot2`_ (Part 2) (datacamp)
+* Complete _Data Visualization with `ggplot2`_ (Part 2) [(DataCamp)](https://datacamp.com)
 
 
 ## Week 8: (Oct 10; Oct 12 - 13 Fall Break) {-}
@@ -122,33 +112,33 @@ Test yourself:
 
 ## Week 9: (Oct 17, Oct 19) {-}
 
-* Complete _Data Manipulation in R with `dplyr`_ (datacamp)
+* Complete _Data Manipulation in R with `dplyr`_ [(DataCamp)](https://datacamp.com)
 
 ## Week 10: (Oct 24, Oct 26) {-}
 
-* Complete _Joining Data in R with `dplyr`_ (datacamp)
+* Complete _Joining Data in R with `dplyr`_ [(DataCamp)](https://datacamp.com)
 
 ## Week 11: (Oct 31,  Nov 2) {-}
 
-* Complete _Importing Data in R (Part 1)_ (datacamp)
+* Complete _Importing Data in R (Part 1)_ [(DataCamp)](https://datacamp.com)
 
 ## Week 12: (Nov 7, Nov 9) {-}
 
-* Complete _Importing Data in R (Part 2)_ (datacamp)
+* Complete _Importing Data in R (Part 2)_ [(DataCamp)](https://datacamp.com)
 
 ## Week 13: (Nov 14, Nov 16) {-}
 
-* Complete _Cleaning Data in R_ (datacamp)
+* Complete _Cleaning Data in R_ [(DataCamp)](https://datacamp.com)
 
 ## Week 14: (Nov 21; 22-24 Thanksgiving Break) {-}
 
-* Start _Importing & Cleaning Data in R: Case Studies_ (datacamp)
+* Start _Importing & Cleaning Data in R: Case Studies_ [(DataCamp)](https://datacamp.com)
 
 ## Week 15: (Nov 28, Nov 30) {-}
 
 * Work on project
 
-* Complete _Importing & Cleaning Data in R: Case Studies_ (datacamp)
+* Complete _Importing & Cleaning Data in R: Case Studies_ [(DataCamp)](https://datacamp.com)
 
 ## Week 16: (Dec 5; Dec 7 is Reading Day) {-}
 
