@@ -33,7 +33,7 @@ MathJax.Hub.Config({
 
 * _Complete Introduction to R_ [(DataCamp)](https://datacamp.com)
 
-  
+* _Introduction to R_ [slides](https://alanarnholt.github.io/GeneralStatistics/rmarkdown/IntroToR.html)  
  
 ```{block, week1optional, type='rmdoptional'}
 #### Optional {-}
