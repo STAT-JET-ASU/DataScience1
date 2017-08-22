@@ -44,7 +44,7 @@ The only way to learn statistics is to **DO** statistics, which includes statist
 
 You should read assigned textbook content and read/watch supplemental materials prior to coming to class.  It will be easier to participate if you acquire some familiarity with the vocabulary and methods before we start to discuss and use them. You must "speak the language" (both statistics and R) to effectively demonstrate your knowledge. 
 
-Appalachian students are expected to make intensive engagement with courses their first priority. Practically speaking, students should spend about 1-3 hours on coursework outside of class for every hour they spend in class. For this four-hour course, you you should anticipate 2-6 hours per meeting period of outside work. 
+Appalachian students are expected to make intensive engagement with courses their first priority. Practically speaking, students should spend about 1-3 hours on coursework outside of class for every hour they spend in class. 
 
 * 60% of the course grade will come from the thirteen DataCamp assignments
 
