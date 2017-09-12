@@ -83,7 +83,7 @@ Test yourself:
 
 ## Week 4: (Sep 12, Sep 14) {-}
 
-* Complete _Working with the Rstudio IDE (Part II)_ [(DataCamp)](https://datacamp.com)
+* Optional _Working with the Rstudio IDE (Part II)_ [(DataCamp)](https://datacamp.com)
 
 * Create a personal web page using [R Markdown](http://rmarkdown.rstudio.com/rmarkdown_websites.html)
 
