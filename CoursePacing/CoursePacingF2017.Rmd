@@ -107,7 +107,7 @@ Test yourself:
 * Start Project
 
 ```{block, Project, type='rmdnote'}
-* Project: [Duplicate Amber Thomas's work on bicycle sharing](https://proquestionasker.github.io/projects/Bicycle_Sharing_2/) - Use your own formatting and publish your analysis on your personal GitHub webpage.
+* Project: [Duplicate Amber Thomas's work on bicycle sharing](https://proquestionasker.github.io/projects/2016/11/10/bicyclesseattle/ - Use your own formatting and publish your analysis on your personal GitHub webpage.
 * For additional ideas see: 
   1. Summer Sun's blog [post](http://blog.nycdatascience.com/featured/nyc-citi-bike-migration-visulization/)
   2. Todd Schneider's blog [post](http://toddwschneider.com/posts/taxi-vs-citi-bike-nyc/)
