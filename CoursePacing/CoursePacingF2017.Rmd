@@ -111,6 +111,7 @@ Test yourself:
 * For additional ideas see: 
   1. Summer Sun's blog [post](http://blog.nycdatascience.com/featured/nyc-citi-bike-migration-visulization/)
   2. Todd Schneider's blog [post](http://toddwschneider.com/posts/taxi-vs-citi-bike-nyc/)
+  3. [bikedata](https://ropensci.org/blog/blog/2017/10/17/bikedata)
 ```
 
 ## Week 9: (Oct 17, Oct 19) {-}
