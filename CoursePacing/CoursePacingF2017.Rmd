@@ -125,25 +125,29 @@ Test yourself:
 
 ## Week 11: (Oct 31,  Nov 2) {-}
 
-* Complete _Importing Data in R (Part 1)_ [(DataCamp)](https://datacamp.com)
+* ~~Complete _Importing Data in R (Part 1)_ [(DataCamp)](https://datacamp.com)~~
 
 ## Week 12: (Nov 7, Nov 9) {-}
 
-* Complete _Importing Data in R (Part 2)_ [(DataCamp)](https://datacamp.com)
+* ~~Complete _Importing Data in R (Part 2)_ [(DataCamp)](https://datacamp.com)~~
+
+* Comment on student's [web pages](http://alanarnholt.github.io/fall17DS1)
 
 ## Week 13: (Nov 14, Nov 16) {-}
 
-* Complete _Cleaning Data in R_ [(DataCamp)](https://datacamp.com)
+* ~~Complete _Cleaning Data in R_ [(DataCamp)](https://datacamp.com)~~
+
+* Publish project up to _Trip Routes_
 
 ## Week 14: (Nov 21; 22-24 Thanksgiving Break) {-}
 
-* Start _Importing & Cleaning Data in R: Case Studies_ [(DataCamp)](https://datacamp.com)
+* ~~Start _Importing & Cleaning Data in R: Case Studies_ [(DataCamp)](https://datacamp.com)~~
 
 ## Week 15: (Nov 28, Nov 30) {-}
 
 * Work on project
 
-* Complete _Importing & Cleaning Data in R: Case Studies_ [(DataCamp)](https://datacamp.com)
+* ~~Complete _Importing & Cleaning Data in R: Case Studies_ [(DataCamp)](https://datacamp.com)~~
 
 ## Week 16: (Dec 5; Dec 7 is Reading Day) {-}
 
