@@ -139,9 +139,16 @@ Test yourself:
 
 * Publish project up to _Trip Routes_
 
+    + Include a link to your GitHub repo on your landing page (possibly using the octocat icon)
+    + Use `bookdown::html_document2` for your project
+    + Label all Figures and Tables
+    + Organize files
+
 ## Week 14: (Nov 21; 22-24 Thanksgiving Break) {-}
 
 * ~~Start _Importing & Cleaning Data in R: Case Studies_ [(DataCamp)](https://datacamp.com)~~
+
+* Last day to improve/change grade on DataCamp (Nov 21)
 
 ## Week 15: (Nov 28, Nov 30) {-}
 
