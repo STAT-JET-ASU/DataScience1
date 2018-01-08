@@ -5,7 +5,7 @@ title: "Welcome"
 
 * The course syllabus is stored in the [`Syllabus`](./Syllabus/STT3530F2017.html) directory of the STT 3530 repository.
 
-* Course pacing and assignments are stored in the [`CoursePacing`](./CoursePacing/CoursePacingF2017.html) directory of the STT 3530 repository.
+* Course pacing and assignments are stored in the [`CoursePacing`](./CoursePacing/CoursePacingS2018.html) directory of the STT 3530 repository.
 
 * [Class RStudio Server](https://mathr.math.appstate.edu) (you must be registered in the course to access the server)
 
