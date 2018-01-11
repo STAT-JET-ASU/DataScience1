@@ -1,5 +1,5 @@
 ---
-title: "STT 3530 (Data Science I) Course Schedule"
+title: "STT 3530---Data Science I---Course Schedule"
 author: "Instructor: Jill E. Thomley (thomleyje@appstate.edu)"
 date: 'Updated: `r format(Sys.time(), "%A, %B %d, %Y @ %X")`'
 output: 
@@ -18,13 +18,10 @@ MathJax.Hub.Config({
 <hr>
 
 ```{block, note-text, type='rmdnote'}
-1.  You do not need to purchase a text for this course.
-
-2.  Please bring a notebook and pencil to every class. 
-
-3.  Be prepared to actively participate and collaborate.
-
-4.  Access the [DataCamp](https://datacamp.com) assignments via [AsULearn](https://asulearn.appstate.edu).
+* You do not need to purchase a text for this course.
+* Please bring a notebook and pencil to every class. 
+* Be prepared to actively participate and collaborate.
+* Access the [DataCamp](https://datacamp.com) assignments via [AsULearn](https://asulearn.appstate.edu).
 ```
 
 
@@ -32,15 +29,21 @@ MathJax.Hub.Config({
 
 * Sign up for a free account on [GitHub](https://github.com).
 
-* When you register for a free individual GitHub account, request a [student discount](https://education.github.com) to obtain a few private repositories as well as unlimited public repositories.  Please use something similar to **FirstNameLastName** as your username when you register with GitHub.  For example, my username on GitHub is *jillthomley*. If you have a popular name such as John Smith, you may need to provide some other distinquishing character in your username.   
+* When you register for a free individual GitHub account, request a [student discount](https://education.github.com) to obtain a few private repositories as well as unlimited public repositories.  Please use something similar to **FirstnameLastname** as your username when you register with GitHub.  For example, my username on GitHub is *jillthomley*. If you have a popular name such as John Smith, you may need to add some other distinquishing character to your username.   
+
+* Watch short video [The History of S and R](https://youtu.be/jk9S3RTAl38) (~10 minutes).
 
 * Complete _Introduction to R_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
-
-* _Introduction to R_ [slides](https://alanarnholt.github.io/GeneralStatistics/rmarkdown/IntroToR.html)  
+ 
+```{block, week1note, type='rmdnote'}
+* Take notes as you work though the DataCamp modules. The goal is to learn, not just finish!
+* RStudio has helpful [Cheet Sheets](https://www.rstudio.com/resources/cheatsheets/)! You may want to start with _Base R_ and _R Markdown Reference Guide_.
+```
  
 ```{block, week1optional, type='rmdoptional'}
 #### Optional {-}
-You may want to install [Git](http://git-scm.com/downloads), [R](http://cran.r-project.org), [RStudio](http://www.rstudio.com/products/rstudio/download/), [zotero](https://www.zotero.org), and optionally [$LaTeX$](http://www.ctan.org/starter) on your personal computer. If you do, you will want to follow Jenny Bryan's excellent advice for [installing R and RStudio](http://stat545-ubc.github.io/block000_r-rstudio-install.html) and [installing Git](http://stat545-ubc.github.io/git01_git-install.html).  Jenny's advice is also in chapters 6 and 7 of [Happy Git and GitHub for the useR](http://happygitwithr.com/).  Note that [Git](http://git-scm.com/downloads), [R](http://cran.r-project.org), [RStudio](http://www.rstudio.com/products/rstudio/download/), and [$LaTeX$](http://www.ctan.org/starter) are all installed on the [Appstate RStudio](https://mathr.math.appstate.edu/) server.
+
+You may want to install [Git](http://git-scm.com/downloads), [R](http://cran.r-project.org), [RStudio](http://www.rstudio.com/products/rstudio/download/), [zotero](https://www.zotero.org), and optionally [$LaTeX$](http://www.ctan.org/starter) on your personal computer. If you do, you will want to follow Jenny Bryan's excellent advice for [installing R and RStudio](http://stat545-ubc.github.io/block000_r-rstudio-install.html) and [installing Git](http://stat545-ubc.github.io/git01_git-install.html).  Jenny's advice is also in chapters 6 and 7 of _[Happy Git and GitHub for the useR]_(http://happygitwithr.com/).  Note that [Git](http://git-scm.com/downloads), [R](http://cran.r-project.org), [RStudio](http://www.rstudio.com/products/rstudio/download/), and [$LaTeX$](http://www.ctan.org/starter) are all installed on the [Appstate RStudio](https://mathr.math.appstate.edu/) server.
 
 Watch the following videos as appropriate:
 
@@ -49,7 +52,6 @@ Watch the following videos as appropriate:
 * [Install R for Windows (3 min)](https://www.youtube.com/watch?v=LII6of-5Odw)    
 
 * [Install R and RStudio on Windows (5 min)](https://www.youtube.com/watch?v=eD07NznguA4)    
-
 ```
 
 
@@ -58,6 +60,18 @@ Watch the following videos as appropriate:
 * Become familiar with the ASU [RStudio server](https://mathr.math.appstate.edu/). Use your Appstate user name and password to log in.  You must be registered in the class to access the server.
 
 * Complete _Intermediate R_ at [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
+
+```{block, week2note, type='rmdnote'}
+* A great way to get familiar with RStudio server is to use it to take notes and create your own examples.
+```
+
+```{block, test2, type='rmdexercise'}
+Test yourself:
+
+* Can you create and manipulate different kinds of vectors in R?
+* Can you write a simple loop or function to perform a repeated task in R?
+* Can you reproduce exercises in _Introduction to R_ and _Intermediate R_ for your own notes? 
+```
 
 
 ## Week 03 (Jan 30, Feb 01) {-}
@@ -69,16 +83,18 @@ Watch the following videos as appropriate:
 * Optionally complete _Working with the Rstudio IDE (Part II)_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).   
 
 ```{block, week3note, type='rmdnote'}
-1.  Additional information on R Markdown can be found at [`R Markdown` from ![](https://www.rstudio.com/wp-content/uploads/2016/09/RStudio-Logo-Blue-Gray-125.png)](http://rmarkdown.rstudio.com)
-2.  You should practice creating different kinds of documents!
+* Additional information on R Markdown can be found at [`R Markdown` from ![](https://www.rstudio.com/wp-content/uploads/2016/09/RStudio-Logo-Blue-Gray-125.png)](http://rmarkdown.rstudio.com)
 ```
-
 
 ```{block, test3, type='rmdexercise'}
 Test yourself:
 
-1.
-2.
+* Can you create headers, bold text, and italicized text in your documents? 
+* Can you create links, lists, tables, or other special formats in your documents?
+* Can you use inline code to make your documents dynamic for reproducible results?
+* Can you configure code chunks to show only the results of code and not the code itself?
+* Can you modify the document header to use different themes or create a table of contents?
+* Think ahead: what else would would be useful to know how to do inside a Markdown document?
 ```
 
 
@@ -86,71 +102,98 @@ Test yourself:
 
 * Complete _Introduction to Git for Data Science_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
 
-* Read the [Git and GitHub](http://r-pkgs.had.co.nz/git.html) chapter from Hadley Wickham's book [R Packages](http://r-pkgs.had.co.nz/)
+* Read Chapters 1, 8, and 10-13 of Jenny Bryan's _[Happy Git and GitHub for the useR](http://happygitwithr.com/)_.
 
-* Test drive RStudio by following the directions from [Jenny Bryan's STAT 545 course](https://stat545-ubc.github.io/git07_git-github-rstudio.html).  Additional material can be found in the detailed `Bookdown` document [Happy Git and GitHub for the useR](http://happygitwithr.com/).  Chapters 8, 10-13 of [Happy Git and GitHub for the useR](http://happygitwithr.com/) will be helpful if you need more directions for test driving RStudio.
+* Read the "[Git and GitHub](http://r-pkgs.had.co.nz/git.html)" chapter from Hadley Wickham's book _[R Packages](http://r-pkgs.had.co.nz/)_.
+
+```{block, week4note, type='rmdnote'}
+* Git and GitHub can be frustrating at first. _Push_ yourself to _commit_ to learning and using version control.
+* You may want to create a folder in your account (e.g., git_repositories) in which to organize any projects.
+```
+
+```{block, test4, type='rmdexercise'}
+Test yourself:
+
+* Can you create a version-controlled project using Git and GitHub to develop your class notes and examples?
+```
 
 
 ## Week 05 (Feb 13, Feb 15) {-}
 
 * Complete _Data Visualization in R_ [(DataCamp)](https://datacamp.com)
 
-* Create a personal [web page using R Markdown](http://rmarkdown.rstudio.com/rmarkdown_websites.html) and [GitHub Pages](https://pages.github.com/).
+* Create and publish a basic personal [web page using R Markdown](http://rmarkdown.rstudio.com/rmarkdown_websites.html) and [GitHub Pages](https://pages.github.com/).
+
+```{block, week5note, type='rmdnote'}
+* You can easily get additional skills practice by spending a few minutes a day doing Daily Practice modules on [DataCamp](https://datacamp.com), which you can access from your dashboard. Try starting with the _Introduction to R_ practice.
+```
+
 
 ## Week 06 (Feb 20, Feb 22) {-}
 
-* Complete _Data Visualization with `ggplot2`_ (Part 1) [(DataCamp)](https://datacamp.com)
+* Complete _Data Visualization with `ggplot2`_ (Part 1) on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
+
+```{block, week6note, type='rmdnote'}
+* The [`ggplot2`](http://ggplot2.tidyverse.org/) package is one component of the [`tidyverse`](https://www.tidyverse.org/)--- "an opinionated collection of R packages designed for data science" that share a common philosophy for data manipulation, exploration and visualization. It forms the kernel of our course textbook _[R for Data Science](http://r4ds.had.co.nz/)_.
+* Remember the RStudio [Cheet Sheets](https://www.rstudio.com/resources/cheatsheets/)! You may want to check out the _Data Visualization with `ggplot2`_ sheet.
+```
 
 
 ## Week 07 (Feb 27, Mar 01) {-}
 
-* Complete _Data Visualization with `ggplot2`_ (Part 2) [(DataCamp)](https://datacamp.com)
+* Complete _Data Visualization with `ggplot2`_ (Part 2) on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
+
+```{block, week7note, type='rmdnote'}
+* Winston Chang's _[R Graphics Cookbook](http://proquest.safaribooksonline.com.proxy006.nclive.org/9781449363086?uicode=appstate)_ contains instructions and examples for many types of visualizations using ggplot2. (You will need to log in via ASU to access the digital copy of the book.)
+```
 
 
 ## Spring Break (Mar 05 to Mar 09) {-}
 
-* There are no assignments this week.
+* There are no assignments this week. 
+
+```{block, springbreakoptional, type='rmdoptional'}
+#### Optional {-}
+
+If you're not already caught up on your work in this course, try to be on schedule by the time you get back!
+```
 
 
 ## Week 08 (Mar 13, Mar 15) {-}
 
-* Start Project
+* Complete _Data Manipulation in R with `dplyr`_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
 
-```{block, Project, type='rmdnote'}
-* Project: [Duplicate Amber Thomas's work on bicycle sharing](https://proquestionasker.github.io/projects/2016/11/10/bicyclesseattle/) - Use your own formatting and publish your analysis on your personal GitHub webpage.
-* For additional ideas see: 
-  1. Summer Sun's blog [post](http://blog.nycdatascience.com/featured/nyc-citi-bike-migration-visulization/)
-  2. Todd Schneider's blog [post](http://toddwschneider.com/posts/taxi-vs-citi-bike-nyc/)
-  3. [bikedata](https://ropensci.org/blog/blog/2017/10/17/bikedata) package
-  4. [Citibike Business Opportunity: Advertising](https://blog.nycdatascience.com/student-works/citibike-business-opportunity-advertising/)
+```{block, week8note, type='rmdnote'}
+* The [`dplyr`](http://dplyr.tidyverse.org/) package is another component of the [`tidyverse`](https://www.tidyverse.org/).
+* Remember the RStudio [Cheet Sheets](https://www.rstudio.com/resources/cheatsheets/)! You may want to check out the _Data Transformation with `dplyr`_ sheet.
 ```
 
 
 ## Week 09 (Mar 20, Mar 22) {-}
 
-* Complete _Data Manipulation in R with `dplyr`_ [(DataCamp)](https://datacamp.com)
+* Complete _Joining Data in R with `dplyr`_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
 
 
 ## Week 10 (Mar 27, Mar 29) {-}
 
-* Complete _Joining Data in R with `dplyr`_ [(DataCamp)](https://datacamp.com)
+* Complete _Importing Data in R (Part 1)_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
 
 
 ## Week 11 (April 5; April 3 is a State Holiday) {-}
 
-* ~~Complete _Importing Data in R (Part 1)_ [(DataCamp)](https://datacamp.com)~~
+* Complete _Importing Data in R (Part 2)_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
 
 
 ## Week 12 (Apr 10, Apr 12) {-}
 
-* ~~Complete _Importing Data in R (Part 2)_ [(DataCamp)](https://datacamp.com)~~
+* Complete _Cleaning Data in R_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
 
 * Comment on student's [web pages](http://alanarnholt.github.io/fall17DS1)
 
 
 ## Week 13 (Apr 17, Apr 19) {-}
 
-* ~~Complete _Cleaning Data in R_ [(DataCamp)](https://datacamp.com)~~
+* Start _Importing & Cleaning Data in R: Case Studies_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
 
 * Publish project up to _Trip Routes_
 
@@ -162,16 +205,12 @@ Test yourself:
 
 ## Week 14 (Apr 24, Apr 26) {-}
 
-* ~~Start _Importing & Cleaning Data in R: Case Studies_ [(DataCamp)](https://datacamp.com)~~
-
-* Last day to improve/change grade on DataCamp (Nov 21)
+* Work on projects
 
 
 ## Week 15 (May 01; May 03 is Reading Day) {-}
 
-* Work on project
-
-* ~~Complete _Importing & Cleaning Data in R: Case Studies_ [(DataCamp)](https://datacamp.com)~~
+* Work on projects
 
 
 ### Final Exam {-}
