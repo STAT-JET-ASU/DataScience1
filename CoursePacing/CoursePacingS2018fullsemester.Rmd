@@ -114,7 +114,7 @@ Test yourself:
 ```{block, test4, type='rmdexercise'}
 Test yourself:
 
-* Can you create a version-controlled project using Git and GitHub to develop a portfolio of class notes and examples?
+* Can you create a version-controlled project using Git and GitHub to develop your class notes and examples?
 ```
 
 
@@ -128,12 +128,6 @@ Test yourself:
 * You can easily get additional skills practice by spending a few minutes a day doing Daily Practice modules on [DataCamp](https://datacamp.com), which you can access from your dashboard. Try starting with the _Introduction to R_ practice.
 ```
 
-```{block, test5, type='rmdexercise'}
-Test yourself:
-
-* How often are you referring back to your own notes versus googling information or relying on outside resources?
-```
-
 
 ## Week 06 (Feb 20, Feb 22) {-}
 
@@ -144,27 +138,13 @@ Test yourself:
 * Remember the RStudio [Cheet Sheets](https://www.rstudio.com/resources/cheatsheets/)! You may want to check out the _Data Visualization with `ggplot2`_ sheet.
 ```
 
-```{block, test6, type='rmdexercise'}
-Test yourself:
-
-* How often are you referring back to your own notes versus googling information or relying on outside resources?
-* Are you taking advantage of working with your classmates to build your own knowledge and explanatory skills?
-```
-
 
 ## Week 07 (Feb 27, Mar 01) {-}
 
 * Complete _Data Visualization with `ggplot2`_ (Part 2) on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
 
 ```{block, week7note, type='rmdnote'}
-* Winston Chang's _[R Graphics Cookbook](http://proquest.safaribooksonline.com.proxy006.nclive.org/9781449363086?uicode=appstate)_ contains instructions for many types of data visualizations using ggplot2.
-```
-
-```{block, test7, type='rmdexercise'}
-Test yourself:
-
-* Can you load a dataset in which you are interested and create interesting, useful, professional-quality visualizations?
-* Can you update your web page with an interesting example of data visualization using your new data science skills?
+* Winston Chang's _[R Graphics Cookbook](http://proquest.safaribooksonline.com.proxy006.nclive.org/9781449363086?uicode=appstate)_ contains instructions and examples for many types of visualizations using ggplot2. (You will need to log in via ASU to access the digital copy of the book.)
 ```
 
 
@@ -178,12 +158,63 @@ Test yourself:
 If you're not already caught up on your work in this course, try to be on schedule by the time you get back!
 ```
 
-```{block, updatedsoonnote, type='rmdnote'}
-The schedule will be updated soon for the weeks following Spring Break. Stay tuned!
+
+## Week 08 (Mar 13, Mar 15) {-}
+
+* Complete _Data Manipulation in R with `dplyr`_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
+
+```{block, week8note, type='rmdnote'}
+* The [`dplyr`](http://dplyr.tidyverse.org/) package is another component of the [`tidyverse`](https://www.tidyverse.org/).
+* Remember the RStudio [Cheet Sheets](https://www.rstudio.com/resources/cheatsheets/)! You may want to check out the _Data Transformation with `dplyr`_ sheet.
 ```
+
+
+## Week 09 (Mar 20, Mar 22) {-}
+
+* Complete _Joining Data in R with `dplyr`_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
+
+
+## Week 10 (Mar 27, Mar 29) {-}
+
+* Complete _Importing Data in R (Part 1)_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
+
+
+## Week 11 (April 05; April 03 is a State Holiday) {-}
+
+* Complete _Importing Data in R (Part 2)_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
+
+
+## Week 12 (Apr 10, Apr 12) {-}
+
+* Complete _Cleaning Data in R_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
+
+* Comment on student's [web pages](http://alanarnholt.github.io/fall17DS1)
+
+
+## Week 13 (Apr 17, Apr 19) {-}
+
+* Start _Importing & Cleaning Data in R: Case Studies_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
+
+* Publish project up to _Trip Routes_
+
+    + Include a link to your GitHub repo on your landing page (possibly using the octocat icon)
+    + Use `bookdown::html_document2` for your project
+    + Label all Figures and Tables
+    + Organize files
+
+
+## Week 14 (Apr 24, Apr 26) {-}
+
+* Work on projects
+
+
+## Week 15 (May 01; May 03 is Reading Day) {-}
+
+* Work on projects
+
 
 ### Final Exam {-}
 
 ```{block, FINAL, type='rmdnote'}
-*  Our [final exam time](https://registrar.appstate.edu/sites/registrar.appstate.edu/files/asu_spring_2018_exam_schedule.pdf) is Thursday, May 10 @ 2pm. You will present your projects to your peers at that time.
+*  Follow the TR meeting pattern on the [University Exam Schedule](https://registrar.appstate.edu/sites/registrar.appstate.edu/files/asu_fall_2017_exam_schedule_final_3.pdf) to determine when you will present your Project.
 ```
