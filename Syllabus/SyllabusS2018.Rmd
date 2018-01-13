@@ -53,6 +53,7 @@ Grades will be kept on AsULearn. You should monitor your grades throughout the t
 
 The [Course Schedule](../CoursePacing/CoursePacingS2018.html) has all course assignments and due dates.
 
+
 **Computers and Software**
 
 This course will use the RStudio server  (https://mathr.math.appstate.edu/) that has the programs listed below (and more) installed. Note that all technology used in the class is either open source (free) or will be accessible to students enrolled in the course for no cost.
