@@ -5,18 +5,18 @@ navbar:
   title: "Data Science 1"
   left:
     - text: "Resources"
-      href: https://alanarnholt.github.io/resources.html
-    - text: "For Students"
-      href: https://alanarnholt.github.io/for-students.html
+      href: https://jillthomley.github.io/resources.html
+    - text: "My Schedule"
+      href: https://jillthomley.github.io/schedule.html
     
   right:
-    - text: "Alan T. Arnholt"
-      href: https://alanarnholt.github.io   
+    - text: "Jill E. Thomley"
+      href: https://jillthomley.github.io   
     - icon: fa-github fa-lg
-      href: https://github.com/STAT-ATA-ASU/DataScience_1/         
+      href: https://github.com/STAT-JET-ASU/DataScience1/         
 output:
   html_document:
-    theme: yeti
+    theme: cosmo
     highlight: textmate
     include:
       after_body: footer.html
