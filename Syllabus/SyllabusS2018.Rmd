@@ -51,7 +51,7 @@ The only way to learn statistics is to **DO** statistics, which includes statist
 
 Grades will be kept on AsULearn. You should monitor your grades throughout the term to make sure they appear to be correct and complete. Feel free to inquire about your grades at any time.       
 
-The [CoursePacing guide](../CoursePacing/CoursePacingF2017.html) has all course assignments and due dates.
+The [CoursePacing guide](../CoursePacing/CoursePacingS2018.html) has all course assignments and due dates.
 
 **Computers and Software**
 
