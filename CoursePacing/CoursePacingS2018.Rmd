@@ -37,7 +37,7 @@ MathJax.Hub.Config({
  
 ```{block, week1note, type='rmdnote'}
 * Take notes as you work though the DataCamp modules. The goal is to learn, not just finish!
-* RStudio has helpful [Cheet Sheets](https://www.rstudio.com/resources/cheatsheets/)! You may want to start with _Base R_ and _R Markdown Reference Guide_.
+* RStudio has helpful [Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)! You may want to start with _Base R_ and _R Markdown Reference Guide_.
 ```
  
 ```{block, week1optional, type='rmdoptional'}
@@ -62,7 +62,7 @@ Watch the following videos as appropriate:
 * Complete _Intermediate R_ at [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
 
 ```{block, week2note, type='rmdnote'}
-* A great way to get familiar with RStudio server is to use it to take notes and create your own examples.
+* A great way to get familiar with the RStudio server is to use it to take notes and create your own examples.
 ```
 
 ```{block, test2, type='rmdexercise'}
@@ -141,7 +141,7 @@ Test yourself:
 
 ```{block, week6note, type='rmdnote'}
 * The [`ggplot2`](http://ggplot2.tidyverse.org/) package is one component of the [`tidyverse`](https://www.tidyverse.org/)--- "an opinionated collection of R packages designed for data science" that share a common philosophy for data manipulation, exploration and visualization. It forms the kernel of our course textbook _[R for Data Science](http://r4ds.had.co.nz/)_.
-* Remember the RStudio [Cheet Sheets](https://www.rstudio.com/resources/cheatsheets/)! You may want to check out the _Data Visualization with `ggplot2`_ sheet.
+* Remember the RStudio [Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)! You may want to check out the _Data Visualization with `ggplot2`_ sheet.
 ```
 
 ```{block, test6, type='rmdexercise'}
