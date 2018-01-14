@@ -31,7 +31,9 @@ MathJax.Hub.Config({
 
 * When you register for a free individual GitHub account, request a [student discount](https://education.github.com) to obtain a few private repositories as well as unlimited public repositories.  Please use something similar to **FirstnameLastname** as your username when you register with GitHub.  For example, my username on GitHub is *jillthomley*. If you have a popular name such as John Smith, you may need to add some other distinquishing character to your username.   
 
-* Watch short video [The History of S and R](https://youtu.be/jk9S3RTAl38) (~10 minutes).
+* Watch the video [The History of S and R](https://youtu.be/jk9S3RTAl38) (~10 minutes)
+
+* Watch the video [Introduction to the R Language](https://youtu.be/APm4SxJx0eg) (~30 minutes)
 
 * Complete _Introduction to R_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
  
