@@ -20,7 +20,15 @@ title: "Welcome!"
 
 <figure><img src="./images/DataCamp125px.png" alt="DataCamp" align="left"></figure><br>
 
+<<<<<<< HEAD
 _This class is supported by DataCamp, an intuitive learning platform for data science. Learn R, Python, and SQL the way many people learn best, through a combination of short expert videos and hands-on-the-keyboard exercises. Take over 100+ courses by expert instructors on topics such as importing data, data visualization, or machine learning and learn faster through immediate and personalised feedback on every exercise._
+=======
+<<<<<<< HEAD
+_This class is supported by DataCamp, an intuitive learning platform for data science. Learn R, Python, and SQL the way many people learn best, through a combination of short expert videos and hands-on-the-keyboard exercises. Take over 100+ courses by expert instructors on topics such as importing data, data visualization, or machine learning and learn faster through immediate and personalised feedback on every exercise._
+=======
+_This class is supported by DataCamp, and intuitive learning platform for data science. Learn R, Python, and SQL the way many people learn best, through a combination of short expert videos and hands-on-the-keyboard exercises. Take over 100+ courses by expert instructors on topics such as importing data, data visualization, or machine learning and learn faster through immediate and personalised feedback on every exercise._
+>>>>>>> b0ec1efff11ce2c310c327a087eaf33baae88e4f
+>>>>>>> 6b85922e9f3cf123b1a6023efc7cbc0d9bff0371
 
 
 * * *
