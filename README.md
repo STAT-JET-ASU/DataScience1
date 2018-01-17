@@ -1,4 +1,4 @@
-# DataScience1
+# Data Science 1
 
 STT3530 Data Science 1 course repository
 
