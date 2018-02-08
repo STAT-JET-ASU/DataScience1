@@ -4,6 +4,7 @@ author: Jill E. Thomley (thomleyje@appstate.edu)
 date: `r format(Sys.time(), "%A, %B %d, %Y @ %X")`
 autosize: true
 
+
 Multidisciplinary Data Science!
 ========================================================
 
