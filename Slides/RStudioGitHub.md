@@ -1,7 +1,7 @@
 R Studio and GitHub
 ========================================================
 author: Jill E. Thomley (thomleyje@appstate.edu)
-date: Wednesday, February 07, 2018 @ 11:40:18 PM
+date: Sunday, February 11, 2018 @ 06:29:27 PM
 autosize: true
 
 
@@ -60,24 +60,42 @@ Choose your subdirectory, if you choose to use one
 
 Create Project!
 
-Now we'll create a file, make some changes, and perform our first commit and push, but first...
+Soon we will create a file, make some changes, and perform our first commit and push, but first we need to configure git commit information and set the system to store our login and password so we do not have to enter it for every commit.
+
+
+
+Commit Name and Email
+========================================================
+
+Okay, this part we need to do in the terminal. You may also refer to Chapter 11 of **[Happy Git and GitHub for the useR](http://happygitwithr.com/)** or **[GitHub](https://help.github.com/) Help**. Do you have a "Terminal" tab with "Console"? If not... 
+
+Tools > Terminal > New Terminal
+
+In the terminal, type the following:
+
+`git config --global user.email "who@where"`
+
+`git config --global user.name "Commit Name"`
+
+This sets an **[email address](https://help.github.com/articles/setting-your-commit-email-address-in-git/)** and **[ID](https://help.github.com/articles/setting-your-username-in-git/)** to be associated with commits. They can be different from your primary username and email.
 
 
 
 Cache Those Credentials
 ========================================================
 
-Okay, this part we need to do in the terminal. You may also refer to Chapter 11 of **[Happy Git and GitHub for the useR](http://happygitwithr.com/)**.
-
-Do you have a "Terminal" tab with your "Console"? If not... 
-
-Tools > Terminal > New Terminal
+Don't want to type in your username and password for each commit? Neither do I.
 
 In the terminal, type the following:
 
 `git config --global credential.helper 'cache --timeout=10000000'`
 
+Note: Should be a a single line with no space between `--` and `timeout`! 
+
 This will store your password for ten million seconds, which is about 16 weeks, enough for a semester.
+
+
+
 
 
 
@@ -106,11 +124,19 @@ More TBA!
 References
 ========================================================
 
+https://help.github.com/
+
+* https://help.github.com/articles/setting-your-username-in-git/
+* https://help.github.com/articles/setting-your-commit-email-address-in-git/
+* https://help.github.com/articles/caching-your-github-password-in-git/
+
 https://pages.github.com/
 
 http://happygitwithr.com/
 
 https://help.github.com/articles/which-remote-url-should-i-use/
+
+
 
 https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects
 

@@ -784,7 +784,7 @@ hljs.initHighlightingOnLoad();
   <div class="slides">
 
 <section data-state="section" data-transition="linear" data-transition-speed="default">
-<h1>R Studio and GitHub</h1><p>Jill E. Thomley (thomleyje@appstate.edu)<br/>Wednesday, February 07, 2018 @ 11:40:18 PM</p>
+<h1>R Studio and GitHub</h1><p>Jill E. Thomley (thomleyje@appstate.edu)<br/>Sunday, February 11, 2018 @ 06:28:35 PM</p>
 
 <div class="slideContent" >
 
@@ -853,7 +853,25 @@ hljs.initHighlightingOnLoad();
 
 <p>Create Project!</p>
 
-<p>Now we&#39;ll create a file, make some changes, and perform our first commit and push, but first&hellip;</p>
+<p>Soon we will create a file, make some changes, and perform our first commit and push, but first we need to configure git commit information and set the system to store our login and password so we do not have to enter it for every commit.</p>
+
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>User Name and Email</h3>
+<div class="slideContent" >
+<p>Okay, this part we need to do in the terminal. You may also refer to Chapter 11 of <strong><a href="http://happygitwithr.com/">Happy Git and GitHub for the useR</a></strong> or <strong><a href="https://help.github.com/">GitHub</a> Help</strong>. Do you have a &ldquo;Terminal&rdquo; tab with &ldquo;Console&rdquo;? If not&hellip; </p>
+
+<p>Tools &gt; Terminal &gt; New Terminal</p>
+
+<p>In the terminal, type the following:</p>
+
+<p><code>git config --global user.email &quot;who@where&quot;</code></p>
+
+<p><code>git config --global user.name &quot;Commit Name&quot;</code></p>
+
+<p>This sets an <strong><a href="https://help.github.com/articles/setting-your-commit-email-address-in-git/">email address</a></strong> and <strong><a href="https://help.github.com/articles/setting-your-username-in-git/">ID</a></strong> to be associated with commits. They can be different from your primary username and email.</p>
 
 </div>
 
@@ -861,15 +879,13 @@ hljs.initHighlightingOnLoad();
 <section data-transition="linear" data-transition-speed="default">
 <h3>Cache Those Credentials</h3>
 <div class="slideContent" >
-<p>Okay, this part we need to do in the terminal. You may also refer to Chapter 11 of <strong><a href="http://happygitwithr.com/">Happy Git and GitHub for the useR</a></strong>.</p>
-
-<p>Do you have a &ldquo;Terminal&rdquo; tab with your &ldquo;Console&rdquo;? If not&hellip; </p>
-
-<p>Tools &gt; Terminal &gt; New Terminal</p>
+<p>Don&#39;t want to type in your username and password for each commit? Neither do I.</p>
 
 <p>In the terminal, type the following:</p>
 
 <p><code>git config --global credential.helper &#39;cache --timeout=10000000&#39;</code></p>
+
+<p>Note: Should be a a single line with no space between <code>--</code> and <code>timeout</code>! </p>
 
 <p>This will store your password for ten million seconds, which is about 16 weeks, enough for a semester.</p>
 
@@ -904,6 +920,14 @@ hljs.initHighlightingOnLoad();
 <section data-transition="linear" data-transition-speed="default">
 <h3>References</h3>
 <div class="slideContent" >
+<p><a href="https://help.github.com/">https://help.github.com/</a></p>
+
+<ul>
+<li><a href="https://help.github.com/articles/setting-your-username-in-git/">https://help.github.com/articles/setting-your-username-in-git/</a></li>
+<li><a href="https://help.github.com/articles/setting-your-commit-email-address-in-git/">https://help.github.com/articles/setting-your-commit-email-address-in-git/</a></li>
+<li><a href="https://help.github.com/articles/caching-your-github-password-in-git/">https://help.github.com/articles/caching-your-github-password-in-git/</a></li>
+</ul>
+
 <p><a href="https://pages.github.com/">https://pages.github.com/</a></p>
 
 <p><a href="http://happygitwithr.com/">http://happygitwithr.com/</a></p>
