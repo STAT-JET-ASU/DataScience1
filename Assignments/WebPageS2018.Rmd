@@ -1,0 +1,13 @@
+---
+title: "STT 3530 Data Science I --- Web Page Assignment"
+author: ''
+date: "Spring 2018"
+output: 
+  html_document: 
+    theme: cosmo
+    highlight: textmate
+    css: "../css/style.css"
+---
+
+
+

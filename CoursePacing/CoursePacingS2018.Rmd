@@ -1,5 +1,5 @@
 ---
-title: "STT 3530---Data Science I---Course Schedule"
+title: "STT 3530 Data Science I --- Course Schedule"
 author: "Instructor: Jill E. Thomley (thomleyje@appstate.edu)"
 date: 'Updated: `r format(Sys.time(), "%A, %B %d, %Y @ %X")`'
 output: 
