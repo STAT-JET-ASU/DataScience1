@@ -133,7 +133,7 @@ Test yourself!
 
 * Complete _Data Visualization in R_ [(DataCamp)](https://datacamp.com)
 
-* Create and publish a basic personal [web page using R Markdown](http://rmarkdown.rstudio.com/rmarkdown_websites.html) and [GitHub Pages](https://pages.github.com/).
+* Create and publish a basic personal [web page using R Markdown](http://rmarkdown.rstudio.com/rmarkdown_websites.html), [HTML Documents](https://rmarkdown.rstudio.com/html_document_format.html), and [GitHub Pages](https://pages.github.com/). 
 
 ```{block, week5note, type='rmdnote'}
 * You can easily get additional skills practice by spending a few minutes a day doing Daily Practice modules on [DataCamp](https://datacamp.com), which you can access from your dashboard. Try starting with the _Introduction to R_ practice.
