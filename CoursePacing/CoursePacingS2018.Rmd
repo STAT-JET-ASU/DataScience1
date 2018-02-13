@@ -50,11 +50,10 @@ You may want to install [Git](http://git-scm.com/downloads), [R](http://cran.r-p
 Watch the following videos as appropriate:
 
 * [Install R on Mac (2 min)](https://www.youtube.com/watch?v=lJxVRgiX-ik)    
-
 * [Install R for Windows (3 min)](https://www.youtube.com/watch?v=LII6of-5Odw)    
-
 * [Install R and RStudio on Windows (5 min)](https://www.youtube.com/watch?v=eD07NznguA4)    
 ```
+
 
 
 ## Week 02 (Jan 23, Jan 25) {-}
@@ -80,6 +79,7 @@ Optional
 
 * Complete _Intermediate R Practice_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).    
 ```
+
 
 
 ## Week 03 (Jan 30, Feb 01) {-}
@@ -109,6 +109,8 @@ Optional
 * Complete _Working with the Rstudio IDE (Part II)_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).    
 ```
 
+
+
 ## Week 04 (Feb 06, Feb 08) {-}
 
 * Complete _Introduction to Git for Data Science_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
@@ -129,11 +131,18 @@ Test yourself!
 ```
 
 
+
 ## Week 05 (Feb 13, Feb 15) {-}
 
 * Complete _Data Visualization in R_ [(DataCamp)](https://datacamp.com)
 
-* Create and publish a basic personal [web page using R Markdown](http://rmarkdown.rstudio.com/rmarkdown_websites.html), [HTML Documents](https://rmarkdown.rstudio.com/html_document_format.html), and [GitHub Pages](https://pages.github.com/). 
+* Create and publish a basic personal [web page using R Markdown](http://rmarkdown.rstudio.com/rmarkdown_websites.html) and [GitHub Pages](https://pages.github.com/).
+
+     + Site YAML---controls the site structure
+     + INDEX page---the main page for your site  
+     + ABOUT page---a brief blurb about you or your site
+     + One other content page---for example, a list of links
+     + Use one `theme` and one `highlight` style discussed [HERE](https://rmarkdown.rstudio.com/html_document_format.html)
 
 ```{block, week5note, type='rmdnote'}
 * You can easily get additional skills practice by spending a few minutes a day doing Daily Practice modules on [DataCamp](https://datacamp.com), which you can access from your dashboard. Try starting with the _Introduction to R_ practice.
@@ -144,6 +153,7 @@ Test yourself!
 
 * How often are you referring back to your own notes versus googling information or relying on outside resources?
 ```
+
 
 
 ## Week 06 (Feb 20, Feb 22) {-}
@@ -158,14 +168,17 @@ Test yourself!
 ```{block, test6, type='rmdexercise'}
 Test yourself!
 
-* How often are you referring back to your own notes versus googling information or relying on outside resources?
 * Are you taking advantage of working with your classmates to build your own knowledge and explanatory skills?
+* How could you build on your web site to showcase your knowledge and skills as a data scientist?
 ```
+
 
 
 ## Week 07 (Feb 27, Mar 01) {-}
 
 * Complete _Data Visualization with `ggplot2`_ (Part 2) on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
+
+* Peer review your classmates' personal web pages. More on this TBA!
 
 ```{block, week7note, type='rmdnote'}
 * Winston Chang's _[R Graphics Cookbook](http://proquest.safaribooksonline.com.proxy006.nclive.org/9781449363086?uicode=appstate)_ contains instructions for many types of data visualizations using ggplot2.
@@ -177,6 +190,7 @@ Test yourself!
 * Can you load a dataset in which you are interested and create interesting, useful, professional-quality visualizations?
 * Can you update your web page with an interesting example of data visualization using your new data science skills?
 ```
+
 
 
 ## Spring Break (Mar 05 to Mar 09) {-}
@@ -192,6 +206,7 @@ Optional
 
 * If you're not already caught up on your work in this course, try to be on schedule by the time you get back!
 ```
+
 
 
 ### Final Exam {-}
