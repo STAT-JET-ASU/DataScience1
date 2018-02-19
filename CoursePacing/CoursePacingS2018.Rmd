@@ -27,13 +27,21 @@ MathJax.Hub.Config({
 
 ## Week 01 (Jan 16, Jan 18) {-}
 
+* Watch the video ["The History of S and R"](https://youtu.be/jk9S3RTAl38) (~10 minutes)
+
+* Watch the video ["Introduction to the R Language"](https://youtu.be/APm4SxJx0eg) (~30 minutes)
+
+* Read textbook [Section 1. Introduction](http://r4ds.had.co.nz/introduction.html).
+
+* Read textbook [Section 4. Workflow: Basics](http://r4ds.had.co.nz/workflow-basics.html).
+
+* Read textbook [Section 20. Vectors](http://r4ds.had.co.nz/vectors.html).
+
+* Read Stat545 ["The many flavors of R objects"](http://stat545.com/block004_basic-r-objects.html).
+
 * Sign up for a free account on [GitHub](https://github.com).
 
-* When you register for a free individual GitHub account, request a [student discount](https://education.github.com) to obtain a few private repositories as well as unlimited public repositories.  Please use something similar to **FirstnameLastname** as your username when you register with GitHub.  For example, my username on GitHub is *jillthomley*. If you have a popular name such as John Smith, you may need to add some other distinquishing character to your username.   
-
-* Watch the video [The History of S and R](https://youtu.be/jk9S3RTAl38) (~10 minutes)
-
-* Watch the video [Introduction to the R Language](https://youtu.be/APm4SxJx0eg) (~30 minutes)
+* When you register for a free individual GitHub account, request a [student discount](https://education.github.com) to obtain a few private repositories as well as unlimited public repositories.  Please use something similar to **FirstnameLastname** as your username when you register with GitHub.  For example, my username on GitHub is *jillthomley*. If you have a popular name such as John Smith, you may need to add some other distinguishing character to your username.   
 
 * Complete _Introduction to R_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
  
@@ -55,15 +63,23 @@ Watch the following videos as appropriate:
 ```
 
 
-
 ## Week 02 (Jan 23, Jan 25) {-}
 
-* Become familiar with the ASU [RStudio server](https://mathr.math.appstate.edu/). Use your Appstate user name and password to log in.  You must be registered in the class to access the server.
+* Read textbook [Section 6. Workflow: Scripts](http://r4ds.had.co.nz/workflow-scripts.html).
+
+* Read textbook [Section 18. Pipes](http://r4ds.had.co.nz/pipes.html).
+
+* Read textbook [Section 19. Functions](http://r4ds.had.co.nz/functions.html).
+
+* Read textbook [Section 21. Iteration](http://r4ds.had.co.nz/iteration.html).
+
+* Become familiar with using the ASU [RStudio server](https://mathr.math.appstate.edu/). Use your Appstate user name and password to log in.  You must be registered in the class to access the server.
 
 * Complete _Intermediate R_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
 
 ```{block, week2note, type='rmdnote'}
 * A great way to get familiar with the RStudio server is to use it to take notes and create your own examples.
+* R scripts can contain only code and comments. R Markdown files can contain customizable text and code.
 ```
 
 ```{block, test2, type='rmdexercise'}
@@ -77,12 +93,15 @@ Test yourself!
 ```{block, week2optional, type='rmdoptional'}
 Optional
 
-* Complete _Intermediate R Practice_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).    
+* Explore _Intermediate R Practice_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).    
 ```
 
 
-
 ## Week 03 (Jan 30, Feb 01) {-}
+
+* Read textbook [Section 27. R Markdown](http://r4ds.had.co.nz/r-markdown.html).
+
+* Read textbook [Section 29. R Markdown Formats](http://r4ds.had.co.nz/r-markdown-formats.html).
 
 * Complete _Reporting with R Markdown_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
 
@@ -106,12 +125,13 @@ Test yourself!
 ```{block, week3optional, type='rmdoptional'}
 Optional
 
-* Complete _Working with the Rstudio IDE (Part II)_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).    
+* Explore _Working with the Rstudio IDE (Part II)_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).    
 ```
 
 
-
 ## Week 04 (Feb 06, Feb 08) {-}
+
+* Read textbook [Section 8. Workflow: Projects](http://r4ds.had.co.nz/workflow-projects.html).
 
 * Complete _Introduction to Git for Data Science_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
 
@@ -131,18 +151,21 @@ Test yourself!
 ```
 
 
-
 ## Week 05 (Feb 13, Feb 15) {-}
 
-* Complete _Data Visualization in R_ [(DataCamp)](https://datacamp.com)
+* Read textbook [Section 5. Data Transformation](http://r4ds.had.co.nz/transform.html).
+
+* Read textbook [Section 7. Exploratory Data Analysis](http://r4ds.had.co.nz/exploratory-data-analysis.html).
+
+* Complete _Data Visualization in R_ on [(DataCamp)](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
 
 * Create and publish a basic personal [web page using R Markdown](http://rmarkdown.rstudio.com/rmarkdown_websites.html) and [GitHub Pages](https://pages.github.com/).
 
-     + Site YAML---controls the site structure
-     + INDEX page---the main page for your site  
-     + ABOUT page---a brief blurb about you or your site
-     + One other content page---for example, a list of links
-     + Use one `theme` and one `highlight` style discussed [HERE](https://rmarkdown.rstudio.com/html_document_format.html)
+     + Site YAML---controls the web site structure
+     + INDEX page---the main page for your web site  
+     + ABOUT page---a brief blurb about yourself or your web site
+     + One OTHER page---for example, showcase your own research or a list of links
+     + Use one `theme` and one `highlight` style discussed [HERE](https://rmarkdown.rstudio.com/html_document_format.html) to customize the look of your page
 
 ```{block, week5note, type='rmdnote'}
 * You can easily get additional skills practice by spending a few minutes a day doing Daily Practice modules on [DataCamp](https://datacamp.com), which you can access from your dashboard. Try starting with the _Introduction to R_ practice.
@@ -155,13 +178,14 @@ Test yourself!
 ```
 
 
-
 ## Week 06 (Feb 20, Feb 22) {-}
 
-* Complete _Data Visualization with `ggplot2`_ (Part 1) on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
+* Read textbook [Section 3. Data Visualization](http://r4ds.had.co.nz/data-visualisation.html).
+
+* Complete _Data Visualization with `ggplot2` (Part 1)_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
 
 ```{block, week6note, type='rmdnote'}
-* The [`ggplot2`](http://ggplot2.tidyverse.org/) package is one component of the [`tidyverse`](https://www.tidyverse.org/)--- "an opinionated collection of R packages designed for data science" that share a common philosophy for data manipulation, exploration and visualization. It forms the kernel of our course textbook _[R for Data Science](http://r4ds.had.co.nz/)_.
+* The [`ggplot2`](http://ggplot2.tidyverse.org/) package is one component of the [`tidyverse`](https://www.tidyverse.org/)--- "an opinionated collection of R packages designed for data science" that share a common philosophy for data manipulation, exploration and visualization. It is the kernel of our course textbook _[R for Data Science](http://r4ds.had.co.nz/)_.
 * Remember the RStudio [Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)! You may want to check out the _Data Visualization with `ggplot2`_ sheet.
 ```
 
@@ -173,15 +197,16 @@ Test yourself!
 ```
 
 
-
 ## Week 07 (Feb 27, Mar 01) {-}
 
-* Complete _Data Visualization with `ggplot2`_ (Part 2) on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
+* Read textbook [Section 28. Graphics for Communication](http://r4ds.had.co.nz/graphics-for-communication.html).
+
+* Complete _Data Visualization with `ggplot2` (Part 2)_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
 
 * Peer review your classmates' personal web pages. More on this TBA!
 
 ```{block, week7note, type='rmdnote'}
-* Winston Chang's _[R Graphics Cookbook](http://proquest.safaribooksonline.com.proxy006.nclive.org/9781449363086?uicode=appstate)_ contains instructions for many types of data visualizations using ggplot2.
+* Winston Chang's _[R Graphics Cookbook](http://proquest.safaribooksonline.com.proxy006.nclive.org/9781449363086?uicode=appstate)_ contains instructions for many types of data visualizations using `ggplot2`.
 ```
 
 ```{block, test7, type='rmdexercise'}
@@ -191,6 +216,12 @@ Test yourself!
 * Can you update your web page with an interesting example of data visualization using your new data science skills?
 ```
 
+```{block, week7optional, type='rmdoptional'}
+Optional
+
+* Explore _Data Visualization with `ggplot2` (Part 3)_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
+* In particular, you may be interested in trying ternary plots and the `maps` package.
+```
 
 
 ## Spring Break (Mar 05 to Mar 09) {-}
@@ -198,7 +229,7 @@ Test yourself!
 * There are no assignments this week. 
 
 ```{block, updatedsoonnote, type='rmdnote'}
-* The schedule will be updated soon for the weeks following Spring Break. Stay tuned!
+* The schedule will be updated more  for the weeks following Spring Break. Stay tuned!
 ```
 
 ```{block, springbreakoptional, type='rmdoptional'}
@@ -207,6 +238,71 @@ Optional
 * If you're not already caught up on your work in this course, try to be on schedule by the time you get back!
 ```
 
+
+## Week 09 (Mar 20, Mar 22) {-}
+
+* Read textbook [Section 10. Tibbles](http://r4ds.had.co.nz/tibbles.html).
+
+* Read textbook [Section 13. Relational Data](http://r4ds.had.co.nz/relational-data.html).
+
+* Read Stat545 [Introduction to `dplyr`](http://stat545.com/block009_dplyr-intro.html).
+
+* Read Stat545 ["`dplyr` functions for a single dataset"](http://stat545.com/block010_dplyr-end-single-table.html).
+
+* Read Stat545 ["When one tibble is not enough"](http://stat545.com/block033_working-with-two-tables.html).
+
+* Read Stat545 ["Cheatsheet for `dplyr` join functions"](http://stat545.com/bit001_dplyr-cheatsheet.html).
+
+* Complete _Joining Data in R with `dplyr`_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
+
+```{block, week9optional, type='rmdoptional'}
+Optional
+
+* Explore _Introduction to the Tidyverse_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
+* In particular, you may be interested in "Data Wrangling" and "Grouping and Summarizing."
+```
+
+
+## Week 10 (Mar 27, Mar 29) {-}
+
+* Read textbook [Section 11. Data Import](http://r4ds.had.co.nz/data-import.html).
+
+* Read textbook [Section 14. Strings](http://r4ds.had.co.nz/strings.html).
+
+* Complete _Importing Data in R (Part 1)_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
+
+
+## Week 11 (April 05; April 03 is a State Holiday) {-}
+
+* Read textbook [Section 15. Factors](http://r4ds.had.co.nz/factors.html).
+
+* Read textbook [Section 16. Dates and Times](http://r4ds.had.co.nz/dates-and-times.html).
+
+* Complete _Importing Data in R (Part 2)_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
+
+
+## Week 12 (Apr 10, Apr 12) {-}
+
+* Read textbook [Section 12. Tidy Data](http://r4ds.had.co.nz/tidy-data.html).
+
+* Complete _Cleaning Data in R_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
+
+
+## Week 13 (Apr 17, Apr 19) {-}
+
+* Complete _Importing & Cleaning Data in R: Case Studies_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
+
+* Work on projects
+
+
+## Week 14 (Apr 24, Apr 26) {-}
+
+* Work on projects
+
+
+## Week 15 (May 01; May 03 is Reading Day) {-}
+
+* Work on projects
 
 
 ### Final Exam {-}

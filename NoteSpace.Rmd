@@ -1,0 +1,13 @@
+---
+title: "Note Space"
+author: "Jill Thomley"
+date: "2/19/2018"
+output: html_document
+---
+
+* Publish project up to _Trip Routes_
+
+    + Include a link to your GitHub repo on your landing page (possibly using the octocat icon)
+    + Use `bookdown::html_document2` for your project
+    + Label all Figures and Tables
+    + Organize files
