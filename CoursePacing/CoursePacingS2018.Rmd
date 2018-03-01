@@ -133,11 +133,11 @@ Optional
 
 * Read textbook [Section 8. Workflow: Projects](http://r4ds.had.co.nz/workflow-projects.html).
 
-* Complete _Introduction to Git for Data Science_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
-
 * Read Chapters 1, 8, and 10-13 of Jenny Bryan's _[Happy Git and GitHub for the useR](http://happygitwithr.com/)_.
 
 * Read the "[Git and GitHub](http://r-pkgs.had.co.nz/git.html)" chapter from Hadley Wickham's book _[R Packages](http://r-pkgs.had.co.nz/)_.
+
+* Complete _Introduction to Git for Data Science_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
 
 ```{block, week4note, type='rmdnote'}
 * Git and GitHub can be frustrating at first. _Push_ yourself to _commit_ to learning and using version control.

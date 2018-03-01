@@ -4,9 +4,26 @@ title: "Fall 2018 Student Web Pages"
 
 * * *
 
-* https://alesiaandringa.github.io
-* https://mitchelleb.github.io
-* https://yasminayalajohnson.github.io/
+* [Alesia](https://alesiaandringa.github.io)
+* [Ansen](https://gunawanjc.github.io)
+* [Austin](https://austindeans.github.io/)
+* [Claire](https://claireerdman.github.io/)
+* [Connor](https:///ConnorTreyball.github.io)
+* [David](https://sawyerda.github.io/)
+* [Dominic](https://ysidrondw.github.io)
+* [Emily](https://mitchelleb.github.io)
+* [Graham](https://grahamtobin5.github.io/)
+* [Hamilton](https://smithjh2.github.io)
+* [Isabel](https://SullivanIsabel.github.io)
+* [Joseph](https://seversjr.github.io)
+* [Kristen](https://lisenbeeka.github.io)
+* [Maya](https://mayavick.github.io)
+* [Nathan](https://nathanhaferman.github.io/)
+* [Nile](https://latowskyna.github.io)
+* [Payton](https://turunenpm.github.io/datascience1repo/index.html)
+* [Sydney](https://sydneysingleton.github.io)
+* [Taylor](https://TaylorLedford.github.io)
+* [Yasmin](https://yasminayalajohnson.github.io/)
 
 
 * * *
