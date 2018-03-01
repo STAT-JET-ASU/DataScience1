@@ -5,8 +5,10 @@ title: "Fall 2018 Student Web Pages"
 * * *
 
 * [Alesia](https://alesiaandringa.github.io)
+* Andrew
 * [Ansen](https://gunawanjc.github.io)
-* [Austin](https://austindeans.github.io/)
+* [Austin D.](https://austindeans.github.io/)
+* Austen H.
 * [Claire](https://claireerdman.github.io/)
 * [Connor](https:///ConnorTreyball.github.io)
 * [David](https://sawyerda.github.io/)
@@ -19,6 +21,7 @@ title: "Fall 2018 Student Web Pages"
 * [Kristen](https://lisenbeeka.github.io)
 * [Maya](https://mayavick.github.io)
 * [Nathan](https://nathanhaferman.github.io/)
+* Nicole
 * [Nile](https://latowskyna.github.io)
 * [Payton](https://turunenpm.github.io/datascience1repo/index.html)
 * [Sydney](https://sydneysingleton.github.io)
