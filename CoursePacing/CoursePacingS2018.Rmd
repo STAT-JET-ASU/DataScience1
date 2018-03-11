@@ -249,13 +249,15 @@ Optional
 
 * Read Stat545 ["Cheatsheet for `dplyr` join functions"](http://stat545.com/bit001_dplyr-cheatsheet.html).
 
+* Complete _Introduction to the Tidyverse_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
+
 * Complete _Joining Data in R with `dplyr`_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
 
 ```{block, week9optional, type='rmdoptional'}
 Optional
 
-* Explore _Introduction to the Tidyverse_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
-* In particular, you may be interested in "Data Wrangling" and "Grouping and Summarizing."
+* <strike>Explore _Introduction to the Tidyverse_ on [DataCamp](https://datacamp.com), via [AsULearn](https://asulearn.appstate.edu).
+* In particular, you may be interested in "Data Wrangling" and "Grouping and Summarizing."</strike>
 ```
 
 
