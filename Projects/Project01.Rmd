@@ -28,7 +28,7 @@ output: html_document
 
 ```
 
-#### PRODUCTS
+#### DATA VISUALIZATIONS
 
 Use only the three datasets provided. In some cases, you will have to create new variables or perform your own calculations / transformations. When replicating graphs, you do not have to include the round NOAA and Scripps badges or the March 2018 date stamps.
 
