@@ -51,10 +51,19 @@ Use only the three datasets provided. In some cases, you will have to create new
 
 ```
 
-#### QUESTION
+#### QUESTIONS
 
-In what way could these analyses be used to support the theory of anthropogenic (man-made) climate change? Why are data and graphs such as these *evidence* rather than *proof*?
+1) Discuss briefly how these data were collected.
 
+ANSWER: 
+
+2) What trend(s) or patterns over time do you observe in the CO<sub>2</sub> graphs?
+
+ANSWER: 
+
+3) In what way could these analyses be used to support the theory of anthropogenic (man-made) climate change? Why are data and graphs such as these *evidence* rather than *proof*?
+
+ANSWER: 
 
 <hr>
 
