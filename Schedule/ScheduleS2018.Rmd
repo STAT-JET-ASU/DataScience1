@@ -263,7 +263,7 @@ Optional
 
 ## Week 09 (Mar 20, Mar 22) {-}
 
-* Work on project
+* Work on project; see AsULearn for assignment.
 
 
 ## Week 10 (Mar 27, Mar 29) {-}
