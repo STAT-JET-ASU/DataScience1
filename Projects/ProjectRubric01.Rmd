@@ -1,5 +1,5 @@
 ---
-title: 'Data Science Project Rubric'
+title: 'Data Science Project 01 Rubric'
 date: 'Updated: `r format(Sys.time(), "%A, %B %d, %Y @ %X")`'
 output: html_document
 ---
