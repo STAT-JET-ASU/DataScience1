@@ -120,7 +120,7 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">Data Science Project 1</h1>
 <h4 class="author"><em>YOUR NAMES HERE</em></h4>
-<h4 class="date"><em>Updated: Monday, March 19, 2018 @ 07:48:16 PM</em></h4>
+<h4 class="date"><em>Updated: Thursday, March 22, 2018 @ 06:27:01 PM</em></h4>
 
 </div>
 
@@ -135,6 +135,8 @@ $(document).ready(function () {
 <li><p><a href="https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/MLCO2monthly.csv">MLCO2monthly dataset</a> (comma delimited text file)</p></li>
 <li><p><a href="ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_weekly_mlo.txt">Source and description of MLCO2weekly dataset</a></p></li>
 <li><p><a href="https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/MLCO2weekly.csv">MLCO2weekly dataset</a> (comma delimited text file)</p></li>
+<li><p><a href="https://www.esrl.noaa.gov/gmd/ccgg/trends/gr.html">Source and description of MLCO2growth dataset</a></p></li>
+<li><p><a href="https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/MLCO2growth.csv">MLCO2growth dataset</a> (comma delimited text file)</p></li>
 </ul>
 <pre class="r"><code># Read in the datasets and load any necessary packages here
 # Suppress the code and any messages / warnings it produces</code></pre>
@@ -147,11 +149,12 @@ $(document).ready(function () {
 <li><p>Replicate the content of the graph shown on <a href="https://www.esrl.noaa.gov/gmd/ccgg/trends/full.html">this page</a>.</p></li>
 <li><p>Replicate the content of the graph shown on <a href="https://www.esrl.noaa.gov/gmd/ccgg/trends/gr.html">this page</a>.</p></li>
 <li><p>Using the monthly data, create side-by-side boxplots of CO2 by decade. Exclude the 1950s (1959 and before) and 2010s (2010 and after) because the data for those decades is incomplete.</p></li>
-<li>Using the weekly data, use the <a href="http://www.cookbook-r.com/Graphs/Multiple_graphs_on_one_page_(ggplot2)/"><code>multiplot</code></a> function from the <code>Rmisc</code> package to create a display for the 21st century that includes three stacked plots. Exclude the incomplete 2018 data.
+<li>Use the <a href="http://www.cookbook-r.com/Graphs/Multiple_graphs_on_one_page_(ggplot2)/"><code>multiplot</code></a> function from the <code>Rmisc</code> package to create a display for the 21st century that includes four stacked plots. Exclude the incomplete 2018 data.
 <ul>
-<li>side-by-side boxplots of CO2 by year</li>
-<li>side-by-side boxplots of adjusted CO2 by year</li>
-<li>a time series plot showing the change in CO2 for one year, 10 years, and since 1800</li>
+<li>barplot of mean CO2 for each year with error bars showing uncertainty (using annual data)</li>
+<li>side-by-side boxplots of CO2 by year (using weekly data)</li>
+<li>side-by-side boxplots of adjusted CO2 by year (using monthly data)</li>
+<li>a time series plot showing the change in CO2 for one year, 10 years, and since 1800 (using weekly data)</li>
 </ul></li>
 </ul>
 <pre class="r"><code># Put the code for each bullet in a separate code chunk
