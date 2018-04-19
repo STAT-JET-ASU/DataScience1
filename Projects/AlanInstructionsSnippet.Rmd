@@ -11,3 +11,5 @@ output: html_document
     + Use `bookdown::html_document2` for your project
     + Label all Figures and Tables
     + Organize files
+    
+NOTE TO SELF: see Bookdown
