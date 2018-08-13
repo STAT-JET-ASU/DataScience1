@@ -1,0 +1,294 @@
+---
+title: 'Data Science Project 1'
+author: 'SOLUTIONS'
+date: 'Updated: `r format(Sys.time(), "%A, %B %d, %Y @ %X")`'
+output: html_document
+---
+
+<hr> 
+
+#### DATA FILES
+
+* [Source and description of MLCO2annual dataset](ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_annmean_mlo.txt)
+
+* [MLC02annual dataset](https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/MLCO2annual.csv) (comma delimited text file)
+
+* [Source and description of MLCO2monthly dataset](ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_mm_mlo.txt)
+
+* [MLCO2monthly dataset](https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/MLCO2monthly.csv) (comma delimited text file)
+
+* [Source and description of MLCO2weekly dataset](ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_weekly_mlo.txt)
+
+* [MLCO2weekly dataset](https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/MLCO2weekly.csv) (comma delimited text file)
+
+* [Source and description of MLCO2growth dataset](https://www.esrl.noaa.gov/gmd/ccgg/trends/gr.html)
+
+* [MLCO2growth dataset](https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/MLCO2growth.csv) (comma delimited text file)
+
+
+```{r, message=FALSE}
+# Read in the datasets and load any necessary packages here
+# Suppress the code and any messages / warnings it produces
+
+library(Rmisc)    # needed for multiplot(), load first to avoid dplyr masking
+library(dplyr)    # needed for cool data manipulation, like filter and mutate
+library(ggplot2)  # needed for cool data visualization
+library(ggthemes) # needed for theme_base()
+library(reshape)  # needed for melt()
+library(car)      # needed for recode()
+
+ANNUAL  <- read.csv("https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/MLCO2annual.csv")
+MONTHLY <- read.csv("https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/MLCO2monthly.csv")
+WEEKLY  <- read.csv("https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/MLCO2weekly.csv")
+GROWTH  <- read.csv("https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/MLCO2growth.csv")
+```
+
+
+#### DATA VISUALIZATIONS
+
+Use only the four datasets provided. In some cases, you will have to create new variables or perform your own calculations / transformations. When replicating graphs, you do not have to include the round NOAA and Scripps badges or the March 2018 date stamps.
+
+```{r}
+NOAATHEME <- theme_base(base_size = 15) +
+             theme(axis.ticks.length = unit(-0.15, "cm"),
+                   axis.text.x = element_text(margin = unit(c(0.4, 0.4, 0.4, 0.4), "cm")), 
+                   axis.text.y = element_text(margin = unit(c(0.4, 0.4, 0.4, 0.4), "cm")),
+                   plot.title = element_text(hjust = 0.5, margin = unit(c(0, 0, -0.4, 0), "cm")),
+                   plot.background=element_blank())
+```
+
+
+* Replicate the content of the graph shown on [this page](https://www.esrl.noaa.gov/gmd/ccgg/trends/index.html).
+
+```{r}
+MONTHLY2014 <- MONTHLY %>% filter(year >= 2014)
+
+ggplot(MONTHLY2014) +
+  geom_line(aes(x= date, y = interpolated), col = "red", linetype = 5) +
+  geom_point(aes(x= date, y = interpolated), col = "red", shape=18) +
+  geom_line(aes(x= date, y = trend), col="black") +
+  geom_point(aes(x= date, y = trend), col = "black", shape=15) +
+  scale_x_continuous(breaks = seq(2014, 2019, .25), 
+                     labels = c("2014", rep("", 3), 
+                                "2015", rep("", 3), 
+                                "2016", rep("", 3),
+                                "2017", rep("", 3),
+                                "2018", rep("", 3),
+                                "2019"),
+                     limits = c(2014, 2019),
+                     sec.axis = dup_axis(labels = NULL, name ="")) +
+  scale_y_continuous(breaks = 395:410, 
+                     labels = c("395", rep("", 4),
+                                "400", rep("", 4),
+                                "405", rep("", 4),
+                                "410"),
+                     limits = c(395, 410),
+                     sec.axis = dup_axis(labels = NULL, name ="")) +
+  ggtitle(expression("RECENT MONTHLY MEAN CO"[2]*" AT MAUNA LOA")) +
+  ylab("PARTS PER MILLION") +
+  xlab("YEAR") +
+  NOAATHEME
+
+# Note: expand = c(0, 0) will get rid of the exta padding at the ends
+# of the x-axis, but the tick marks and axis lines will overlap oddly 
+```
+
+
+* Replicate the content of the graph shown on [this page](https://www.esrl.noaa.gov/gmd/ccgg/trends/full.html).
+
+```{r}
+ggplot(MONTHLY) +
+  geom_line(aes(x= date, y = interpolated), col = "red") +
+  geom_line(aes(x= date, y = trend), col="black") +
+  ggtitle(expression("Atmospheric CO"[2]*" at Mauna Loa Observatory")) +
+  scale_x_continuous(breaks = seq(1960, 2020, 5), 
+                     labels = c("1960", "", 
+                                "1970", "", 
+                                "1980", "", 
+                                "1990", "", 
+                                "2000", "",
+                                "2010", "", 
+                                "2020"),
+                     limits = c(min(MONTHLY$year), 2020),
+                     sec.axis = dup_axis(labels = NULL, name ="")) +  
+  scale_y_continuous(breaks = seq(320, 410, 10), 
+                     labels = c("320", "",
+                                "340", "",
+                                "360", "",
+                                "380", "",
+                                "400", ""),
+                     sec.axis = dup_axis(labels = NULL, name ="")) +
+  ylab("PARTS PER MILLION") +
+  xlab("YEAR") +
+  NOAATHEME
+```
+
+
+* Replicate the content of the graph shown on [this page](https://www.esrl.noaa.gov/gmd/ccgg/trends/gr.html).
+
+```{r}
+# One way to create a decade variable from the years variable
+# This method uses the fact that years is a numerical vector
+# The floor function rounds down to the nearest whole number
+# Means computed by decade to create the black line segments
+
+DECM <- GROWTH %>% 
+          mutate(decade1 = floor(year/10)*10) %>%
+          filter(decade1 >= 1960 & decade1 <= 2000) %>%
+          group_by(decade1) %>%
+          summarize(mean = mean(ppm.per.year)) %>%
+          mutate(decade2 = decade1 + 10)
+
+# A method to create the decade variable using nested ifelse
+
+DECMALT1 <- GROWTH %>%
+              filter(year >= 1960 & year <= 2009) %>%
+              mutate(decade1.1 = ifelse(year >= 1960 & year <= 1969, 1960,
+                                 ifelse(year >= 1970 & year <= 1979, 1970, 
+                                 ifelse(year >= 1980 & year <= 1989, 1980,
+                                 ifelse(year >= 1990 & year <= 1999, 1990, 2000))))) %>%
+              group_by(decade1.1) %>%
+              summarize(mean = mean(ppm.per.year)) %>%
+              mutate(decade1.2 = decade1.1 + 10)
+
+# A method to create the decade variable using recode from car package
+
+GROWTH$decade2.1 <- recode(GROWTH$year,"1950:1959 = 1950; 
+                                        1960:1969 = 1960;
+                                        1970:1979 = 1970;
+                                        1980:1989 = 1980;
+                                        1990:1999 = 1990;
+                                        2000:2009 = 2000;
+                                        2010:2017 = 2010")
+
+DECMALT2 <- GROWTH %>%
+              filter(year >= 1960 & year <= 2009) %>%
+              group_by(decade2.1) %>%
+              summarize(mean = mean(ppm.per.year)) %>%
+              mutate(decade2.2 = decade2.1 + 10)
+
+# Plot uses the DECM dataset for the segments, but alts could be used
+
+ggplot(GROWTH, aes(x = year, y = ppm.per.year)) +
+  geom_bar(stat = "identity", col = "cyan", fill = "cyan", width = .5) +
+  geom_segment(DECM, mapping = aes(x = decade1, y = mean, xend = decade2, yend = mean), size = 1) +
+  ggtitle(expression("annual mean growth rate of CO"[2]*" at Mauna Loa")) +
+  scale_y_continuous(breaks = seq(0, 3.5, .1), 
+                     labels = c("0.0", rep("", 4), 
+                                "0.5", rep("", 4),
+                                "1.0", rep("", 4),
+                                "1.5", rep("", 4),
+                                "2.0", rep("", 4), 
+                                "2.5", rep("", 4),
+                                "3.0", rep("", 5)),
+                     limits = c(0, 3.5),
+                     expand = c(0, 0),
+                     sec.axis = dup_axis(labels = NULL, name ="")) +
+  scale_x_continuous(breaks = c(min(GROWTH$year):max(GROWTH$year)),
+                     labels = c("", 
+                                "1960", rep("", 9),
+                                "1970", rep("", 9),
+                                "1980", rep("", 9),
+                                "1990", rep("", 9), 
+                                "2000", rep("", 9),
+                                "2010", rep("", 7)),                     
+                     limits = c(min(GROWTH$year), max(GROWTH$year)),
+                     expand = c(0, 0),
+                     sec.axis = dup_axis(labels = NULL, name ="")) +
+  ylab("ppm per year") +
+  xlab("") +
+  theme_base(base_size = 15) +
+  NOAATHEME
+```
+
+
+* Use the [`multiplot`](http://www.cookbook-r.com/Graphs/Multiple_graphs_on_one_page_(ggplot2)/) function from the `Rmisc` package to create a display for the 21st century that includes four stacked plots. Exclude the incomplete 2018 data.
+    + barplot of mean CO2 for each year with error bars showing uncertainty (using annual data)
+    + side-by-side boxplots of CO2 by year (using weekly data)
+    + side-by-side boxplots of adjusted CO2 by year (using monthly data)
+    + a time series plot showing the change in CO2 for one year, 10 years, and since 1800 (using weekly data)
+
+```{r}
+ANNUAL21ST <- ANNUAL %>% filter(year >= 2000 & year < 2018)
+
+MONTHLY21ST <- MONTHLY %>% filter(year >= 2000 & year < 2018)
+
+WEEKLY21ST <- WEEKLY %>% filter(year >= 2000 & year < 2018 & CO2ppm > 0 & oneyear > 0 & tenyear > 0 ) %>%
+                mutate(since1yr = CO2ppm - oneyear, since10yr = CO2ppm - tenyear)
+
+WEEKLY21STSERIES <- WEEKLY21ST %>%
+                      select(decimal, since1yr, since10yr, since1800) %>%
+                      melt(id = "decimal")
+
+WEEKLY21STSERIES$variable <- factor(WEEKLY21STSERIES$variable, 
+                                    levels = c("since1yr", "since10yr", "since1800"),
+                                    labels = c("one year ago", "ten years ago", "the year 1800"))
+
+A <- ggplot(ANNUAL21ST, aes(x = year, y = mean)) +
+       geom_bar(stat = "identity", col = "lightgreen", fill = "lightgreen", width = .5) +
+       geom_errorbar(aes(x = year, ymin = mean - unc, ymax = mean + unc), width=0.2, size=.5) +
+       labs(title = expression("Mean CO"[2]*" Concentrations by Year"), 
+            subtitle = "error bars show the standard error of the mean",
+            y = "parts per million",
+            x = "year")
+
+B <- ggplot(WEEKLY21ST, aes(x = as.factor(year), y = CO2ppm)) +
+       geom_boxplot() +
+       labs(title = expression("Distribution of CO"[2]*" Concentrations"), 
+            subtitle = "weekly aggregate data from Mauna Loa*",
+            y = "parts per million",
+            x = "year")  +
+     scale_x_discrete(breaks = seq(2000, 2015, 5))
+
+C <- ggplot(MONTHLY21ST, aes(x = as.factor(year), y = trend)) +
+       geom_boxplot() +
+       labs(title = expression("CO"[2]*" Data Adjusted for Seasons"), 
+            subtitle = "monthly aggregate data from Mauna Loa",
+            y = "parts per million",
+            x = "year") +
+     scale_x_discrete(breaks = seq(2000, 2015, 5))
+
+D <- ggplot(WEEKLY21STSERIES, aes(x = decimal, y = value, col = variable)) +
+       geom_line() +
+       labs(title = expression("Change in CO"[2]*" Concentrations*"), 
+            subtitle = "weekly aggregate data from Mauna Loa",
+            y = "parts per million",
+            x = "year",
+            caption  = "*raw CO2 values",
+            col = "change since")
+
+# Show individual plots before multiplotting
+
+A
+B
+C
+D
+
+# Multiplot!
+
+multiplot(B, C, A, D,  cols = 2)
+```
+
+#### QUESTIONS
+
+1) Discuss briefly how these data were collected.
+
+ANSWER: Answers here will vary, but the information is on the NOAA/Mauna Loa web site.
+
+2) What trend(s) or patterns over time do you observe in the CO<sub>2</sub> graphs?
+
+ANSWER: Discussion should include observations about mean CO2 with some mention of variation.
+
+3) In what way could these analyses be used to support the theory of anthropogenic (man-made) climate change? Why are data and graphs such as these *evidence* rather than *proof*?
+
+ANSWER: This is observational data of a single variable; such data is always subject to confounding. Proof in a scientific context rarely exists, since the protocols of science are more directed at disproving.
+
+```{r}
+sessionInfo()
+```
+
+
+<hr>
+
+DONE!!!
+
