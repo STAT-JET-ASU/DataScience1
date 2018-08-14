@@ -4,17 +4,13 @@ title: "Welcome!"
 
 * * *
 
-* The course syllabus can be found in the [`Syllabus`](./Syllabus/SyllabusS2018.html) directory of the Data Science 1 repository.
+* The course syllabus can be found in the [`Syllabus`](./Syllabus/SyllabusF2018.html) directory of the Data Science 1 repository.
 
-* The weekly course schedule can be found in the [` Schedule`](./Schedule/ScheduleS2018.html) directory of the Data Science 1 repository.
+* The course schedule can be found in the [` Schedule`](./Schedule/ScheduleF2018.html) directory of the Data Science 1 repository.
 
-* Your course grades and all [DataCamp](https://www.datacamp.com/home) assignments should be accessed via [AsULearn](https://asulearn.appstate.edu/).
+* Your grades and additional course information/resources can be found on [AsULearn](https://asulearn.appstate.edu/).
 
 * [ASU RStudio Server](https://mathr.math.appstate.edu) (you must be registered in the course to access the server)
-
-* [Flow Control](../STT3851ClassRepo/Rmarkdown/FlowControl.html) (via [Alan Arnholt](https://alanarnholt.github.io/))
-
-* [The Bootstrap](../STT3851ClassRepo/Rmarkdown/TheBootstrap.html) (via [Alan Arnholt](https://alanarnholt.github.io/))
 
 <br>
 
