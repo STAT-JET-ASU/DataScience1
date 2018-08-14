@@ -45,15 +45,15 @@ Garrett Grolemund & Hadley Wickham, _[R for Data Science](http://r4ds.had.co.nz/
 
 The only way to learn statistics is to **DO** statistics, which includes statistical software. Reading the textbook, learning the language, and practicing exercises using real data are critical to your learning and success. Class activities and assessments have been structured with these principles in mind. It will be easier to participate if you acquire some familiarity with the vocabulary and methods before we start to discuss and use them. You must "speak the language" (statistics, R, and Git) to effectively demonstrate your knowledge.  
 
-* 60% of your course grade will come from the fourteen DataCamp assignments
-* 10% of your course grade will coem from creation of your web page 
+* 60% of your course grade will come from DataCamp assignments
+* 10% of your course grade will come from your personal web page 
 * 10% of your course grade will come from Project 1
 * 10% of your course grade will come from Project 2
 * 10% of your course grade will come from Project 3
 
 This course uses the standard 10-point +/- grading scale (93--100 = A, 90--92 = A--, 87--89 = B+, etc.). All grades will be kept on [AsULearn](https://asulearn.appstate.edu/). You should monitor your grades throughout the term to make sure they appear to be correct and complete. Feel free to inquire about your grades at any time.      
 
-The [Course Schedule](../Schedule/ScheduleF2018.html) contains all assignments and due dates.
+The [Course Schedule](../Schedule/ScheduleF2018.html) and AsULearn contain additional information about assignments and due dates.
 
 
 **Computers and Software**
