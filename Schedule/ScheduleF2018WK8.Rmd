@@ -17,6 +17,7 @@ output:
 * All of the required software for this course is provided.
 * Be prepared to actively participate and collaborate.
 * Refer to the [Course Syllabus](../Syllabus/SyllabusF2018.html) for additional details.
+* __This schedule is a work in progress. Check often for updates!__
 ```
 
 ## Week 01 (AUG 21, 23)
