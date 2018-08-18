@@ -1,5 +1,5 @@
 ---
-title: "STT 3530 Data Science I --- Syllabus"
+title: "STT 3530 Data Science I<br>Course Syllabus for Fall 2018"
 author: ''
 date: "Fall 2018"
 output: 
