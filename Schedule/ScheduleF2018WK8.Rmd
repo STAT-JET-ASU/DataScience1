@@ -1,5 +1,5 @@
 ---
-title: "STT 3530 Data Science I --- Course Schedule"
+title: "STT 3530 Data Science I<br>Course Schedule for Fall 2018"
 author: "Instructor: Jill E. Thomley (thomleyje@appstate.edu)"
 date: 'Updated: `r format(Sys.time(), "%A, %B %d, %Y @ %X")`'
 output: 
@@ -29,14 +29,15 @@ IN CLASS
 
 ASSIGNMENTS
 
-* Watch the video ["The History of S and R"](https://youtu.be/jk9S3RTAl38) (~10 minutes)
-* Watch the video ["Introduction to the R Language"](https://youtu.be/APm4SxJx0eg) (~30 minutes)
+* Read [_Getting used to R, RStudio, and R Markdown_](https://ismayc.github.io/rbasics-book/)
 * Read _Modern Dive_, [Chapter 1. Introduction](https://moderndive.com/index.html)
 * Read _R for Data Science_, [Section 1. Introduction](http://r4ds.had.co.nz/introduction.html)
 * Read _R for Data Science_, [Section 4. Workflow: Basics](http://r4ds.had.co.nz/workflow-basics.html)
 * Read _R for Data Science_, [Section 6. Workflow: Scripts](http://r4ds.had.co.nz/workflow-scripts.html)
 * Read _R for Data Science_, [Section 20. Vectors](http://r4ds.had.co.nz/vectors.html)
 * Read Stat545 ["The many flavors of R objects"](http://stat545.com/block004_basic-r-objects.html)
+* Watch ["The History of S and R"](https://youtu.be/jk9S3RTAl38) (~10 minutes)
+* Watch ["Introduction to the R Language"](https://youtu.be/APm4SxJx0eg) (~30 minutes)
 * Complete _Introduction to R_ on [DataCamp](https://datacamp.com)
 * Sign up for a free account on [GitHub](https://github.com)
      * When you register for a free individual GitHub account, request a [student discount](https://education.github.com) to obtain a few private repositories as well as unlimited public repositories.  Please use something similar to __FirstnameLastname__ as your username when you register; you will want to appear professional. For example, my username on GitHub is __jillthomley__. If you have a popular name such as John Smith, you willl probably need to add some other distinguishing character to your username.
