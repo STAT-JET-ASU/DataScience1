@@ -36,8 +36,9 @@ Data science is an exciting discipline that allows you to turn raw data into ins
 8.	Students will learn to display their work on the web.
 
 
-**Required Course Text**
+**Required Course Texts**
 
+Chester Ismay and Albert Y. Kim, _[Modern Dive](https://moderndive.com/index.html)_<br>
 Garrett Grolemund & Hadley Wickham, _[R for Data Science](http://r4ds.had.co.nz/)_
 
 
@@ -50,6 +51,8 @@ The only way to learn statistics is to **DO** statistics, which includes statist
 * 10% of your course grade will come from Project 1
 * 10% of your course grade will come from Project 2
 * 10% of your course grade will come from Project 3
+
+To receive credit for a DataCamp assignment, you must complete it and earn 80% or more of the possible points. Other assignments will be scored using rubrics. More information will be provided in the individual assignnment descriptions.
 
 This course uses the standard 10-point +/- grading scale (93--100 = A, 90--92 = A--, 87--89 = B+, etc.). All grades will be kept on [AsULearn](https://asulearn.appstate.edu/). You should monitor your grades throughout the term to make sure they appear to be correct and complete. Feel free to inquire about your grades at any time.      
 
