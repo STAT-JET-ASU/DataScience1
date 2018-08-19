@@ -12,12 +12,11 @@ output:
 <hr>
 
 ```{block, introtext, type='rmdnote'}
-* We will be using a free digital _R for Data Science_, for this course.
-* Please bring a notebook and pencil/pen to every class. 
+* We will be using a free digital textbook for this course.
 * All of the required software for this course is provided.
+* Please bring a notebook and pencil/pen to every class. 
 * Be prepared to actively participate and collaborate.
 * Refer to the [Course Syllabus](../Syllabus/SyllabusF2018.html) for additional details.
-* __This schedule is a work in progress. Check often for updates!__
 ```
 
 ## Week 01 (AUG 21, 23)
@@ -30,15 +29,13 @@ IN CLASS
 
 ASSIGNMENTS
 
-* Read [_Getting used to R, RStudio, and R Markdown_](https://ismayc.github.io/rbasics-book/)
-* Read _Modern Dive_, [Chapter 1. Introduction](https://moderndive.com/index.html)
-* Read _R for Data Science_, [Section 1. Introduction](http://r4ds.had.co.nz/introduction.html)
-* Read _R for Data Science_, [Section 4. Workflow: Basics](http://r4ds.had.co.nz/workflow-basics.html)
-* Read _R for Data Science_, [Section 6. Workflow: Scripts](http://r4ds.had.co.nz/workflow-scripts.html)
-* Read _R for Data Science_, [Section 20. Vectors](http://r4ds.had.co.nz/vectors.html)
+* Watch the video ["The History of S and R"](https://youtu.be/jk9S3RTAl38) (~10 minutes)
+* Watch the video ["Introduction to the R Language"](https://youtu.be/APm4SxJx0eg) (~30 minutes)
+* Read textbook [Section 1. Introduction](http://r4ds.had.co.nz/introduction.html)
+* Read textbook [Section 4. Workflow: Basics](http://r4ds.had.co.nz/workflow-basics.html)
+* Read textbook [Section 6. Workflow: Scripts](http://r4ds.had.co.nz/workflow-scripts.html)
+* Read textbook [Section 20. Vectors](http://r4ds.had.co.nz/vectors.html)
 * Read Stat545 ["The many flavors of R objects"](http://stat545.com/block004_basic-r-objects.html)
-* Watch ["The History of S and R"](https://youtu.be/jk9S3RTAl38) (~10 minutes)
-* Watch ["Introduction to the R Language"](https://youtu.be/APm4SxJx0eg) (~30 minutes)
 * Complete _Introduction to R_ on [DataCamp](https://datacamp.com)
 * Sign up for a free account on [GitHub](https://github.com)
      * When you register for a free individual GitHub account, request a [student discount](https://education.github.com) to obtain a few private repositories as well as unlimited public repositories.  Please use something similar to __FirstnameLastname__ as your username when you register; you will want to appear professional. For example, my username on GitHub is __jillthomley__. If you have a popular name such as John Smith, you willl probably need to add some other distinguishing character to your username.
@@ -72,12 +69,11 @@ IN CLASS
 
 ASSIGNMENTS
 
-* Read _Modern Dive_, [Chapter 2. Getting Started with Data in R](https://moderndive.com/2-getting-started.html)
-* Read _R for Data Science_, [Section 27. R Markdown](http://r4ds.had.co.nz/r-markdown.html)
-* Read _R for Data Science_, [Section 29. R Markdown Formats](http://r4ds.had.co.nz/r-markdown-formats.html)
+* Read textbook [Section 27. R Markdown](http://r4ds.had.co.nz/r-markdown.html)
+* Read textbook [Section 29. R Markdown Formats](http://r4ds.had.co.nz/r-markdown-formats.html)
 * Complete _Working with the Rstudio IDE (Part 1)_ on [DataCamp](https://datacamp.com)
 * Complete _Reporting with R Markdown_ on [DataCamp](https://datacamp.com)
-* Become familiar with using the web-accessible ASU [RStudio server](https://mathr.math.appstate.edu/). Use your Appstate user name and password to log in.  You must be registered in the class to access the server.
+* Become familiar with using the ASU [RStudio server](https://mathr.math.appstate.edu/). Use your Appstate user name and password to log in.  You must be registered in the class to access the server.
 
 ```{block, week02note, type='rmdnote'}
 * Additional information on R Markdown can be found at [`R Markdown` from ![](https://www.rstudio.com/wp-content/uploads/2016/09/RStudio-Logo-Blue-Gray-125.png)](http://rmarkdown.rstudio.com)
@@ -104,7 +100,7 @@ IN CLASS
 
 ASSIGNMENTS
 
-* Read _R for Data Science_, [Section 8. Workflow: Projects](http://r4ds.had.co.nz/workflow-projects.html)
+* Read textbook [Section 8. Workflow: Projects](http://r4ds.had.co.nz/workflow-projects.html)
 * Read Stat545 ["The unreasonable effectiveness of GitHub browsability"](http://stat545.com/bit006_github-browsability-wins.html)
 * Read Chapters 1, 8, and 10-13 of Jenny Bryan's _[Happy Git and GitHub for the useR](http://happygitwithr.com/)_
 * Read the "[Git and GitHub](http://r-pkgs.had.co.nz/git.html)" chapter from Hadley Wickham's book _[R Packages](http://r-pkgs.had.co.nz/)_
@@ -141,7 +137,7 @@ IN CLASS
 
 ASSIGNMENTS
 
-* Complete Personal Web Page (assignment description TBA)
+* Complete [Personal Web Page]()
 
 ```{block, week04optional, type='rmdoptional'}
 Optional: Keep your skills fresh by spending a few minutes a day doing Daily Practice modules on [DataCamp](https://datacamp.com)!
@@ -158,19 +154,17 @@ IN CLASS
 
 ASSIGNMENTS
 
-* Read _Modern Dive_, [Chapter 3. Data Visualization via ggplot2](https://moderndive.com/2-getting-started.html)
-* Read _Modern Dive_, [Chapter 4. Tidy Data via tidyr](https://moderndive.com/4-tidy.html)
-* Read _R for Data Science_, [Section 3. Data Visualization](http://r4ds.had.co.nz/data-visualisation.html)
-* Read _R for Data Science_, [Section 5. Data Transformation](http://r4ds.had.co.nz/transform.html)
-* Read _R for Data Science_, [Section 7. Exploratory Data Analysis](http://r4ds.had.co.nz/exploratory-data-analysis.html)
-* Read _R for Data Science_, [Section 10. Tibbles](http://r4ds.had.co.nz/tibbles.html)
-* Read _R for Data Science_, [Section 18. Pipes](http://r4ds.had.co.nz/pipes.html)
+* Read textbook [Section 3. Data Visualization](http://r4ds.had.co.nz/data-visualisation.html)
+* Read textbook [Section 5. Data Transformation](http://r4ds.had.co.nz/transform.html)
+* Read textbook [Section 7. Exploratory Data Analysis](http://r4ds.had.co.nz/exploratory-data-analysis.html)
+* Read textbook [Section 10. Tibbles](http://r4ds.had.co.nz/tibbles.html)
+* Read textbook [Section 18. Pipes](http://r4ds.had.co.nz/pipes.html)
 * Read Stat545 ["Introduction to `dplyr`"](http://stat545.com/block009_dplyr-intro.html)
 * Complete _Introduction to the Tidyverse_ on [DataCamp](https://datacamp.com)
 * Complete _Communicating with Data in the Tidyverse_ on [DataCamp](https://datacamp.com)
 
 ```{block, week05note, type='rmdnote'}
-* The [`tidyverse`](https://www.tidyverse.org/) is "an opinionated collection of R packages designed for data science" that share a common philosophy for data manipulation, exploration and visualization."" It is the kernel of our course _R for Data Science_, _[_R for Data Science_,](http://r4ds.had.co.nz/)_.
+* The [`tidyverse`](https://www.tidyverse.org/) is "an opinionated collection of R packages designed for data science" that share a common philosophy for data manipulation, exploration and visualization."" It is the kernel of our course textbook _[R for Data Science](http://r4ds.had.co.nz/)_.
 * Remember the RStudio [Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)! You may want to check out _Data Transformation_ and _Data Visualization_.
 ```
 
@@ -180,9 +174,6 @@ Test yourself!
 * Can you create a version-controlled project using Git and GitHub to develop a portfolio of class notes and examples?
 ```
 
-```{block, week05optional, type='rmdoptional'}
-Optional: Explore _Working with Data in the Tidyverse_ on [DataCamp](https://datacamp.com)
-```
 
 ## Week 06 (SEP 25, 27)
 
@@ -193,8 +184,7 @@ IN CLASS
 
 ASSIGNMENTS
 
-* Read _Modern Dive_, [Chapter 5. Data Wrangling via dplyr](https://moderndive.com/5-wrangling.html)
-* Read _R for Data Science_, [Section 28. Graphics for Communication](http://r4ds.had.co.nz/graphics-for-communication.html)
+* Read textbook [Section 28. Graphics for Communication](http://r4ds.had.co.nz/graphics-for-communication.html)
 * Read Stat545 ["`dplyr` functions for a single dataset"](http://stat545.com/block010_dplyr-end-single-table.html)
 * Complete _Data Manipulation in R with dplyr_ on [DataCamp](https://datacamp.com)
 * Complete _Data Visualization with ggplot2 (Part 1)_ on [DataCamp](https://datacamp.com)
@@ -211,9 +201,6 @@ Test yourself!
 * How could you build on your personal web site to showcase your knowledge and skills as a data scientist?
 ```
 
-```{block, week06optional, type='rmdoptional'}
-Optional: Explore _Categorical Data in the Tidyverse_ on [DataCamp](https://datacamp.com)
-```
 
 ## Week 07 (OCT 02, 04)
 
@@ -223,7 +210,7 @@ IN CLASS
 
 ASSIGNMENTS
 
-* Complete Project 1 (assignment description TBA)
+* Complete [Project 1]()
 
 ```{block, week07optional, type='rmdoptional'}
 Optional: Keep your skills fresh by spending a few minutes a day doing Daily Practice modules on [DataCamp](https://datacamp.com)!
@@ -247,11 +234,117 @@ ASSIGNMENTS
 * If you're not already caught up on your work in this course, try to be on schedule by the time you get back!
 ```
 
-<hr>
+## Week 09 (OCT 16, 18)
 
-__This schedule will be updated as the semester progresses!__
+IN CLASS
 
-<hr>
+* DataCamp worktime
+
+ASSIGNMENTS
+
+* Read Stat545 ["When one tibble is not enough"](http://stat545.com/block033_working-with-two-tables.html)
+* Read Stat545 ["Cheatsheet for `dplyr` join functions"](http://stat545.com/bit001_dplyr-cheatsheet.html)
+* Complete _Intermediate R_ on [DataCamp](https://datacamp.com)
+* Complete _Joining Data in R with dplyr_ on [DataCamp](https://datacamp.com)
+
+```{block, week09test, type='rmdexercise'}
+Test yourself!
+
+* Can you load a dataset and create interesting, useful, and professional-quality visualizations?
+* Can you update your web page with a data visualization using your new data science skills?
+* Can you write a simple loop or function to perform a repeated task in R?
+```
+
+
+## Week 10 (OCT 23, 25)
+
+IN CLASS
+
+* TBA
+* DataCamp worktime
+
+ASSIGNMENTS
+
+* Read textbook [Section 11. Data Import](http://r4ds.had.co.nz/data-import.html)
+* Read textbook [Section 12. Tidy Data](http://r4ds.had.co.nz/tidy-data.html)
+* Read textbook [Section 13. Relational Data](http://r4ds.had.co.nz/relational-data.html)
+* Complete _Importing Data in R (Part 1)_ on [DataCamp](https://datacamp.com)
+* Complete _Importing Data in R (Part 2)_ on [DataCamp](https://datacamp.com)
+
+
+## Week 11 (OCT 30, NOV 01)
+
+IN CLASS
+
+* TBA
+* DataCamp worktime
+
+ASSIGNMENTS
+
+* Read textbook [Section 14. Strings](http://r4ds.had.co.nz/strings.html)
+* Read textbook [Section 15. Factors](http://r4ds.had.co.nz/factors.html)
+* Read textbook [Section 16. Dates and Times](http://r4ds.had.co.nz/dates-and-times.html)
+* Complete _Cleaning Data in R_ on [DataCamp](https://datacamp.com)
+* Complete _Importing & Cleaning Data in R: Case Studies_ on [DataCamp](https://datacamp.com)
+
+
+## Week 12 (NOV 06, 08)
+
+IN CLASS
+
+* Work on Project 2
+
+ASSIGNMENTS
+
+* Make progress on [Project 2]()
+
+
+## Week 13 (NOV 13, 15)
+
+IN CLASS
+
+* Work on Project 2
+
+ASSIGNMENTS
+
+* Complete [Project 2]()
+
+
+## Week 14 (NOV 20)
+
+IN CLASS
+
+* DataCamp worktime
+* NO CLASS THURSDAY (Thanksgiving)
+
+ASSIGNMENTS
+
+* Read textbook [Section 19. Functions](http://r4ds.had.co.nz/functions.html)
+* Read textbook [Section 21. Iteration](http://r4ds.had.co.nz/iteration.html)
+* Complete _Data Visualization with ggplot2 (Part 3)_ on [DataCamp](https://datacamp.com)
+
+
+## Week 15 (NOV 27, 29)
+
+IN CLASS
+
+* Work on Project 3
+
+ASSIGNMENTS
+
+* Make progress on [Project 3]()
+
+
+## Week 16 (DEC 04)
+
+IN CLASS
+
+* Work on Project 3
+* NO CLASS THURSDAY (Reading Day)
+
+ASSIGNMENTS
+
+* Complete [Project 3]()
 
 
 ### Final Exam {-}
