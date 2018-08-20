@@ -1,0 +1,50 @@
+---
+title: "Data Science Day 1"
+author: "Jill Thomley"
+date: "08/20/2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Multidisciplinary Data Science!
+
+<img src = "http://i.imgur.com/aoz1BJy.jpg" width = 775/>
+
+
+## What is My Background?
+
+* BA in Psychology
+* MS in Industrial/Organizational Psychology
+* PhD in Decision Sciences and Engineering Systems
+* Health care research (high school and professional)
+* Statistical consulting in a variety of disciplines
+* Grant evaluation, primarily in STEM education
+* Basic, SPSS, SAS, Minitab, R and R Studio, Git
+* Also, I just completely &hearts; data!
+
+
+## What are we going to do?
+
+Information is organized on [AsULearn](http://asulearn.appstate.edu) and our [web page](https://stat-jet-asu.github.io/DataScience1/).
+
+* 60% of your course grade will come from DataCamp
+* 10% of your course grade will come from your web page
+* 10% of your course grade will come from Project 1
+* 10% of your course grade will come from Project 2
+* 10% of your course grade will come from Project 3
+* Receive credit for Human Subject Research Ethics
+
+Both the course web page and this presentation were created using R Markdown in RStudio and published via GitHub. You will create and publish your own web page in this class. Exciting!
+
+
+## How are we going to do it?
+
+There will be very little lecturing in this course. Instead, class time will be largely devoted to working on DataCamp modules, projects, and other hands-on assignments. That way, you can get timely help from your peers and the instructor. 
+
+I strongly encourage you to work your peers with and "crowd source" knowledge within the class. Everyone brings a different skill set to this course and those strengths complement each another. One of the best ways to learn concepts is to explain them to someone else!
+
+Jump in, give it a try, don't be afraid to make mistakes.
+
