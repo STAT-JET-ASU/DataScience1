@@ -247,6 +247,7 @@ ASSIGNMENTS
 * If you're not already caught up on your work in this course, try to be on schedule by the time you get back!
 ```
 
+
 <hr>
 
 __This schedule will be updated as the semester progresses!__
@@ -257,5 +258,5 @@ __This schedule will be updated as the semester progresses!__
 ### Final Exam {-}
 
 ```{block, FINAL, type='rmdnote'}
-*  Our [final exam time](https://registrar.appstate.edu/sites/registrar.appstate.edu/files/asu_spring_2018_exam_schedule.pdf) is Thursday, December 13 @ 2pm. You will present project results to your peers at that time.
+*  Our [final exam time](https://registrar.appstate.edu/sites/registrar.appstate.edu/files/asu_fall_2018_exam_schedule_final.pdf) is Thursday, December 13 @ 2pm. You will present project results to your peers at that time.
 ```

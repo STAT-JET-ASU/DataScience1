@@ -51,8 +51,10 @@ The only way to learn statistics is to **DO** statistics, which includes statist
 * 10% of your course grade will come from Project 1
 * 10% of your course grade will come from Project 2
 * 10% of your course grade will come from Project 3
+* Receive credit for Human Subject Research Ethics
 
-To receive credit for a DataCamp assignment, you must complete it and earn 80% or more of the possible points. Other assignments will be scored using rubrics. More information will be provided in the individual assignnment descriptions.
+To receive credit for a DataCamp assignment, you must complete it and earn 80% or more of the possible points. Other assignments will be scored using rubrics. More information will be provided in the individual assignnment descriptions. You must pass the Human Subjects Resesarch Ethics assignment to pass the course, regardless of your other grades.
+
 
 This course uses the standard 10-point +/- grading scale (93--100 = A, 90--92 = A--, 87--89 = B+, etc.). All grades will be kept on [AsULearn](https://asulearn.appstate.edu/). You should monitor your grades throughout the term to make sure they appear to be correct and complete. Feel free to inquire about your grades at any time.      
 
