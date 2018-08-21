@@ -39,7 +39,7 @@ Data science is an exciting discipline that allows you to turn raw data into ins
 **Required Course Texts**
 
 Garrett Grolemund & Hadley Wickham (2017). [_R for Data Science_](http://r4ds.had.co.nz/).<br>
-Chester Ismay and Albert Y. Kim (2018). [_An Introduction to Statistical and Data Sciences via R_](https://moderndive.com/index.html).
+Chester Ismay and Albert Y. Kim (2018). [_Modern Dive: An Introduction to Statistical and Data Sciences via R_](https://moderndive.com/index.html).
 
 
 **Course Assessment & Grading**
