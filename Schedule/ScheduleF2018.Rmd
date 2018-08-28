@@ -175,13 +175,13 @@ ASSIGNMENTS
 
 ```{block, week05note, type='rmdnote'}
 * The [`tidyverse`](https://www.tidyverse.org/) is "an opinionated collection of R packages designed for data science" that share a common philosophy for data manipulation, exploration and visualization."" It is the kernel of our course _R for Data Science_, _[_R for Data Science_,](http://r4ds.had.co.nz/)_.
-* Remember the RStudio [Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)! You may want to check out _Data Transformation_ and _Data Visualization_.
+* Remember the RStudio [Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)! You may want to check out _Data Transformation_ and _Data Visualization_ as we progress toward Project 1.
 ```
 
 ```{block, week05test, type='rmdexercise'}
 Test yourself! 
 
-* Can you create a version-controlled project using Git and GitHub to develop a portfolio of class notes and examples?
+* Can you create a version-controlled project using GitHub to develop a portfolio of examples?
 ```
 
 ```{block, week05optional, type='rmdoptional'}
