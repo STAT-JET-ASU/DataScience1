@@ -4,6 +4,9 @@ author: "Instructor: Jill E. Thomley (thomleyje@appstate.edu)"
 date: 'Updated: `r format(Sys.time(), "%A, %B %d, %Y @ %X")`'
 output: 
   html_document: 
+    toc: true
+    toc_depth: 3
+    toc_float: true
     highlight: textmate
     theme: cosmo
     css: "../css/style.css"
@@ -46,13 +49,14 @@ ASSIGNMENTS
 
 ```{block, week01note, type='rmdnote'}
 * Take notes as you work though the DataCamp modules. The goal is to learn, not just finish!
-* A great way to get familiar with the RStudio server is to use it to take notes and create examples.
-* RStudio has helpful [Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)! You may want to start with _Base R_ and _R Markdown_ cheat sheets.
-* R scripts can contain only code and comments. R Markdown files can contain customizable text and code.
+* RStudio has helpful [Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)! Start with _Base R_ and _R Markdown_ cheat sheets.
+* A great way to get familiar with the RStudio server is to use it to take notes.
+* R Markdown files can contain customizable text and code.
+* R scripts can contain only code and comments. 
 ```
 
 ```{block, week01optional, type='rmdoptional'}
-Optionally, you may wish to install [Git](http://git-scm.com/downloads), [R](http://cran.r-project.org), [RStudio](http://www.rstudio.com/products/rstudio/download/), [zotero](https://www.zotero.org), and  [$LaTeX$](http://www.ctan.org/starter) on your personal computer. If you do, you will want to follow Jenny Bryan's excellent advice for [installing R and RStudio](http://stat545-ubc.github.io/block000_r-rstudio-install.html) and [installing Git](http://stat545-ubc.github.io/git01_git-install.html).  Jenny's advice is also in chapters 6 and 7 of _[Happy Git and GitHub for the useR](http://happygitwithr.com/)_.  Note that [Git](http://git-scm.com/downloads), [R](http://cran.r-project.org), [RStudio](http://www.rstudio.com/products/rstudio/download/), and [$LaTeX$](http://www.ctan.org/starter) are all installed on the [Appstate RStudio](https://mathr.math.appstate.edu/) server and you can access these resources using any web browser.
+Optionally, you may wish to install [Git](http://git-scm.com/downloads), [R](http://cran.r-project.org), [RStudio](http://www.rstudio.com/products/rstudio/download/), [zotero](https://www.zotero.org), and  [$LaTeX$](http://www.ctan.org/starter) on your personal computer. If you do, follow Jenny Bryan's excellent advice for [installing R and RStudio](http://stat545-ubc.github.io/block000_r-rstudio-install.html) and [installing Git](http://stat545-ubc.github.io/git01_git-install.html).  Jenny's advice is also in chapters 6 and 7 of _[Happy Git and GitHub for the useR](http://happygitwithr.com/)_.  Note that [Git](http://git-scm.com/downloads), [R](http://cran.r-project.org), [RStudio](http://www.rstudio.com/products/rstudio/download/), and [$LaTeX$](http://www.ctan.org/starter) are all installed on the [Appstate RStudio](https://mathr.math.appstate.edu/) server and you can access these resources using any web browser.
 
 Watch the following videos as appropriate:
 
@@ -80,7 +84,7 @@ ASSIGNMENTS
 * Become familiar with using the web-accessible ASU [RStudio server](https://mathr.math.appstate.edu/). Use your Appstate user name and password to log in.  You must be registered in the class to access the server.
 
 ```{block, week02note, type='rmdnote'}
-* Additional information on R Markdown can be found at [`R Markdown` from ![](https://www.rstudio.com/wp-content/uploads/2016/09/RStudio-Logo-Blue-Gray-125.png)](http://rmarkdown.rstudio.com)
+* More information on R Markdown can be found at [`R Markdown` from ![](https://www.rstudio.com/wp-content/uploads/2016/09/RStudio-Logo-Blue-Gray-125.png)](http://rmarkdown.rstudio.com)
 ```
 
 ```{block, week02test, type='rmdexercise'}
@@ -111,8 +115,8 @@ ASSIGNMENTS
 * Complete _Introduction to Git for Data Science_ on [DataCamp](https://datacamp.com)
 
 ```{block, week03note, type='rmdnote'}
-* Git and GitHub can be frustrating at first. _Push_ yourself to _commit_ to learning and using version control.
-* You may want to create a folder (e.g., git_repositories) in which to organize version-controlled projects.
+* Git and GitHub can be frustrating at first. _Push_ yourself to _commit_ to using version control.
+* You may want to create a folder in which to organize version-controlled projects.
 ```
 
 
@@ -124,7 +128,7 @@ Test yourself!
 * Can you use inline code to make your documents dynamic for reproducible results?
 * Can you configure code chunks to show only the results of code and not the code itself?
 * Can you modify the document header to use different themes or create a table of contents?
-* Think ahead: what else would would be useful to know how to do inside a Markdown document?
+* What else would would be useful to know how to do inside a Markdown document?
 ```
 
 ```{block, week03optional, type='rmdoptional'}
@@ -144,7 +148,7 @@ ASSIGNMENTS
 * Complete Personal Web Page (assignment description TBA)
 
 ```{block, week04optional, type='rmdoptional'}
-Optional: Keep your skills fresh by spending a few minutes a day doing Daily Practice modules on [DataCamp](https://datacamp.com)!
+Optional: Keep your skills fresh by doing Daily Practice modules on [DataCamp](https://datacamp.com)!
 ```
  
  
@@ -200,15 +204,15 @@ ASSIGNMENTS
 * Complete _Data Visualization with ggplot2 (Part 1)_ on [DataCamp](https://datacamp.com)
 
 ```{block, week06note, type='rmdnote'}
-* Winston Chang's _[R Graphics Cookbook](http://proquest.safaribooksonline.com.proxy006.nclive.org/9781449363086?uicode=appstate)_ contains instructions for many types of data visualizations using `ggplot2`.
+* Winston Chang's _[R Graphics Cookbook](http://proquest.safaribooksonline.com.proxy006.nclive.org/9781449363086?uicode=appstate)_ contains instructions for many different types of data visualizations and customizations using `ggplot2`.
 ```
 
 ```{block, week06test, type='rmdexercise'}
 Test yourself!
 
-* How often are you referring back to your own notes versus googling information or relying on outside resources?
-* Are you taking advantage of working with your classmates to build your own knowledge and explanatory skills?
-* How could you build on your personal web site to showcase your knowledge and skills as a data scientist?
+* How often are you referring back to your own notes versus relying on outside resources?
+* Are you taking advantage of working with classmates to build your explanatory skills?
+* How could you build on your personal web site to showcase your data science skills?
 ```
 
 ```{block, week06optional, type='rmdoptional'}
@@ -226,7 +230,7 @@ ASSIGNMENTS
 * Complete Project 1 (assignment description TBA)
 
 ```{block, week07optional, type='rmdoptional'}
-Optional: Keep your skills fresh by spending a few minutes a day doing Daily Practice modules on [DataCamp](https://datacamp.com)!
+Optional: Keep your skills fresh by doing Daily Practice modules on [DataCamp](https://datacamp.com)!
 ```
 
 
@@ -244,7 +248,7 @@ ASSIGNMENTS
 * Complete _Data Visualization with ggplot2 (Part 2)_ on [DataCamp](https://datacamp.com)
 
 ```{block, week08note, type='rmdnote'}
-* If you're not already caught up on your work in this course, try to be on schedule by the time you get back!
+* If you're not already caught up on your work, try to be on schedule by the time you get back!
 ```
 
 
