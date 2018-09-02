@@ -1,0 +1,126 @@
+---
+title: "Git and GitHub"
+author: "Jill Thomley"
+date: "8/30/2018"
+output: ioslides_presentation
+---
+
+## &nbsp;
+
+<p style="text-align: center;"><img src = "github-logo.jpg"></p>
+
+<p style="text-align: center;">Log into your GitHub account at https://github.com.<p style="text-align: center;">
+
+
+## Let's Begin!
+
+From the main GitHub page...
+
+* choose the “Start a project” (or green "New") button
+* create a new repository named __datascience1repo__
+* add a description like "this my practice repository"
+* choose "Public" or "Private" (if you have private access)
+* choose "Initialize this repository with a README"
+* click the green "Create repository" button (_drum roll..._)
+
+Adding a license is optional. If you want one, the [MIT license](https://opensource.org/licenses/MIT) is a good general purpose license.
+
+
+## Coming Out of Your Shell
+
+Chapter 10 and Appendix A of **[Happy Git and GitHub for the useR](http://happygitwithr.com/)** discusses how to use shell commands to clone, commit, push, etc. These are also covered in the DataCamp course. 
+
+We will discuss how to use the point and click Git interface in R Studio, which can be found in Chapter 13.
+
+You will create a new **project** in R Studio with version control enabled. That is where you will clone your Git repository. You will do any related work in this project. 
+
+You may want to create a subdirectory in your **Home** directory in R Studio for all your version controlled projects. For example, my directory **git_repositories**.
+
+There is a nice discussion about working with R projects **[here](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)**.
+
+
+## Commit Name and Email
+
+Okay, this part we need to do in a terminal in RStusio. You may also refer to Chapter 11 of **[Happy Git and GitHub for the useR](http://happygitwithr.com/)** or **[GitHub](https://help.github.com/) Help**. 
+
+In RStudio... 
+
+* choose Tools > Terminal > New Terminal
+
+* type the following in the terminal window
+
+&nbsp;&nbsp;&nbsp;&nbsp; `git config --global user.email "who@where"` [enter]
+
+&nbsp;&nbsp;&nbsp;&nbsp; `git config --global user.name "commitname"` [enter]
+
+These set an **[email](https://help.github.com/articles/setting-your-commit-email-address-in-git/)** and **[name](https://help.github.com/articles/setting-your-username-in-git/)** linked with any commit you make. They do not have to be the same as your primary GitHub email and username. You can change them later.
+
+
+## Let's Make a Project
+
+In RStudio... 
+
+* choose File > New Project > Version Control > Git
+
+In GitHub... 
+
+* choose the green “Clone or Download” button in your repo
+
+    * select "Use HTTPS"
+    * copy the HTTPS clone URL to your clipboard 
+
+Note: You can use SSH authentication if you want to. There's a GitHub page **[here](https://help.github.com/articles/which-remote-url-should-i-use/)** that discusses the differences.
+
+
+## &nbsp;
+
+Now let's head back over to R Studio...
+
+* paste in the repository URL from the the clipboard
+
+* choose your version control subdirectory, if you made one
+
+* create project!
+
+Soon we will create a new file and perform our first `commit` and `push`, but first you need to set the systems to store your login and password so you do not have to enter it for every commit.
+
+
+## Cache Those Credentials
+
+Would you prefer not to type in your username and password for each commit? Me too!
+
+In the terminal, type the following:
+
+`git config --global credential.helper 'cache --timeout=10000000'`
+
+Note: Should be a a single line with no space between `--` and `timeout` ! The timeout value is 10 million.
+
+This will store your password for ten million seconds, which is about 16 weeks, enough for a semester.
+
+
+## Create, Commit, Push, Pull
+
+I'm just going to talk here for now, so follow along...
+
+* Making changes in R Studio
+
+* Making changes in GitHub
+
+Changes made in R Studio are *pushed* to GitHub. Changes made in GitHub are *pulled* to R Studio. You must *commit* your changes before you push or pull.
+
+
+## References
+
+https://help.github.com/
+
+* https://help.github.com/articles/setting-your-username-in-git/
+* https://help.github.com/articles/setting-your-commit-email-address-in-git/
+* https://help.github.com/articles/caching-your-github-password-in-git/
+
+https://pages.github.com/
+
+http://happygitwithr.com/
+
+https://help.github.com/articles/which-remote-url-should-i-use/
+
+https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects
