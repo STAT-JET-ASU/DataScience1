@@ -20,13 +20,12 @@ Your web site should include all of the following.
     * A blurb about yourself or a list of interests
     * Contact information (at least an email address)
 * RESUME page—brief academic and professional resume 
-    * You do _not_ need to include address/phone number
-* OTHER page—for example, your research or a list of links
+    * You do _not_ need to include address / phone number
+* OTHER page—for example, your research or a list of links (at least 5)
 * Use a [theme](http://www.datadreaming.org/post/r-markdown-theme-gallery/) and a [highlight style](https://eranraviv.com/syntax-highlighting-style-in-rmarkdown/) to customize your pages
 * A link to the GitHub repository for your web page
 * At least one working link to an external site
 * An embedded image or video
-
 
 
 ### Examples from S18
