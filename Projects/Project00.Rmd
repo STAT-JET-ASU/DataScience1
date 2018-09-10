@@ -1,0 +1,51 @@
+---
+title: 'Data Science Web Page'
+date: 'Updated: `r format(Sys.time(), "%A, %B %d, %Y @ %X")`'
+output: html_document
+---
+
+<hr> 
+
+### Purpose and Goal
+
+You will create and publish a professional-quality [personal web page using R Markdown](https://rmarkdown.rstudio.com/rmarkdown_websites.htm) and [GitHub Pages](https://pages.github.com/).
+
+
+### Site Requirements
+
+Your web site should include all of the following.
+
+* Site YAML—controls the web site structure
+* INDEX page—the main (home) page for your site
+    * A blurb about yourself or a list of interests
+    * Contact information (at least an email address)
+* RESUME page—brief academic and professional resume 
+    * You do _not_ need to include address/phone number
+* OTHER page—for example, your research or a list of links
+* Use a [theme](http://www.datadreaming.org/post/r-markdown-theme-gallery/) and a [highlight style](https://eranraviv.com/syntax-highlighting-style-in-rmarkdown/) to customize your pages
+* A link to the GitHub repository for your web page
+* At least one working link to an external site
+* An embedded image or video
+
+
+
+### Examples from S18
+
+We will discuss the pros and cons of these pages.
+
+* https://mitchelleb.github.io/index.html
+* https://latowskyna.github.io/index.html
+* https://austindeans.github.io/index.html
+* https://connortreyball.github.io/index.html
+* https://yasminayalajohnson.github.io/index.html
+
+
+### Additional Resources
+
+View some examples and extensions; e.g., blogs.
+
+* [Creating websites in R by Emily C. Zabor](http://www.emilyzabor.com/tutorials/rmarkdown_websites_tutorial.html)
+* [Karl Broman's web site (custom URL)](http://kbroman.org/)
+* [Custom Domains with GitHub Pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
+* [How to set up your own R blog with Github pages and Jekyll Bootstrap](https://shiring.github.io/blogging/2016/12/04/diy_your_own_blog) 
+* [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/)

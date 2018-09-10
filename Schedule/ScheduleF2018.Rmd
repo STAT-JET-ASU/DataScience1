@@ -141,11 +141,10 @@ Optional: Explore _Working with the Rstudio IDE (Part 2)_ on [DataCamp](https://
 IN CLASS
 
 * Work on web pages
-* DataCamp worktime
 
 ASSIGNMENTS
 
-* Complete Personal Web Page (assignment description TBA)
+* Complete [Personal Web Page](../Projects/Project00.html) assignment.
 
 ```{block, week04optional, type='rmdoptional'}
 Optional: Keep your skills fresh by doing Daily Practice modules on [DataCamp](https://datacamp.com)!
