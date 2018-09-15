@@ -141,17 +141,34 @@ Optional: Explore _Working with the Rstudio IDE (Part 2)_ on [DataCamp](https://
 IN CLASS
 
 * Work on web pages
+* THURSDAY'S CLASS CANCELED DUE TO HURRICANE
 
 ASSIGNMENTS
 
-* Complete [Personal Web Page](../Projects/Project00.html) assignment.
+* Work on [Personal Web Page](../Projects/Project00.html) assignment.
 
 ```{block, week04optional, type='rmdoptional'}
 Optional: Keep your skills fresh by doing Daily Practice modules on [DataCamp](https://datacamp.com)!
 ```
  
  
-## Week 05 (SEP 18, 20)
+## Week 05 (SEP 20)
+
+IN CLASS
+
+* TUESDAY'S CLASS CANCELED DUE TO HURRICANE
+* Work on web pages
+
+ASSIGNMENTS
+
+* Complete [Personal Web Page](../Projects/Project00.html) assignment.
+
+```{block, week05optional, type='rmdoptional'}
+Optional: Keep your skills fresh by doing Daily Practice modules on [DataCamp](https://datacamp.com)!
+```
+
+
+## Week 06 (SEP 25, 27)
 
 IN CLASS
 
@@ -172,22 +189,23 @@ ASSIGNMENTS
 * Complete _Introduction to the Tidyverse_ on [DataCamp](https://datacamp.com)
 * Complete _Communicating with Data in the Tidyverse_ on [DataCamp](https://datacamp.com)
 
-```{block, week05note, type='rmdnote'}
+```{block, week06note, type='rmdnote'}
 * The [`tidyverse`](https://www.tidyverse.org/) is "an opinionated collection of R packages designed for data science" that share a common philosophy for data manipulation, exploration and visualization."" It is the kernel of our course _R for Data Science_, _[_R for Data Science_,](http://r4ds.had.co.nz/)_.
 * Remember the RStudio [Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)! You may want to check out _Data Transformation_ and _Data Visualization_ as we progress toward Project 1.
 ```
 
-```{block, week05test, type='rmdexercise'}
+```{block, week06test, type='rmdexercise'}
 Test yourself! 
 
 * Can you create a version-controlled project using GitHub to develop a portfolio of examples?
 ```
 
-```{block, week05optional, type='rmdoptional'}
+```{block, week06optional, type='rmdoptional'}
 Optional: Explore _Working with Data in the Tidyverse_ on [DataCamp](https://datacamp.com)
 ```
 
-## Week 06 (SEP 25, 27)
+
+## Week 07 (OCT 02, 04)
 
 IN CLASS
 
@@ -202,11 +220,11 @@ ASSIGNMENTS
 * Complete _Data Manipulation in R with dplyr_ on [DataCamp](https://datacamp.com)
 * Complete _Data Visualization with ggplot2 (Part 1)_ on [DataCamp](https://datacamp.com)
 
-```{block, week06note, type='rmdnote'}
+```{block, week07note, type='rmdnote'}
 * Winston Chang's _[R Graphics Cookbook](http://proquest.safaribooksonline.com.proxy006.nclive.org/9781449363086?uicode=appstate)_ contains instructions for many different types of data visualizations and customizations using `ggplot2`.
 ```
 
-```{block, week06test, type='rmdexercise'}
+```{block, week07test, type='rmdexercise'}
 Test yourself!
 
 * How often are you referring back to your own notes versus relying on outside resources?
@@ -214,22 +232,8 @@ Test yourself!
 * How could you build on your personal web site to showcase your data science skills?
 ```
 
-```{block, week06optional, type='rmdoptional'}
-Optional: Explore _Categorical Data in the Tidyverse_ on [DataCamp](https://datacamp.com)
-```
-
-## Week 07 (OCT 02, 04)
-
-IN CLASS
-
-* Work on Project 1
-
-ASSIGNMENTS
-
-* Complete Project 1 (assignment description TBA)
-
 ```{block, week07optional, type='rmdoptional'}
-Optional: Keep your skills fresh by doing Daily Practice modules on [DataCamp](https://datacamp.com)!
+Optional: Explore _Categorical Data in the Tidyverse_ on [DataCamp](https://datacamp.com)
 ```
 
 
@@ -249,6 +253,22 @@ ASSIGNMENTS
 ```{block, week08note, type='rmdnote'}
 * If you're not already caught up on your work, try to be on schedule by the time you get back!
 ```
+
+
+## Week 09
+
+IN CLASS
+
+* Work on Project 1
+
+ASSIGNMENTS
+
+* Complete Project 1 (assignment description TBA)
+
+```{block, week09optional, type='rmdoptional'}
+Optional: Keep your skills fresh by doing Daily Practice modules on [DataCamp](https://datacamp.com)!
+```
+
 
 
 <hr>
