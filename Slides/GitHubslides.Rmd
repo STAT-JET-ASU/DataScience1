@@ -7,7 +7,7 @@ output: ioslides_presentation
 
 ## &nbsp;
 
-<p style="text-align: center;"><img src = "github-logo.jpg"></p>
+<p style="text-align: center;"><img src = "images/github-logo.jpg"></p>
 
 <p style="text-align: center;">Log into your GitHub account at https://github.com.<p style="text-align: center;">
 

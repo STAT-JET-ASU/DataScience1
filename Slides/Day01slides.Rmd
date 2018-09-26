@@ -1,7 +1,7 @@
 ---
 title: "Data Science Day 1"
 author: "Jill Thomley"
-date: "08/20/2018"
+date: "`r Sys.Date()`"
 output: ioslides_presentation
 ---
 
@@ -16,14 +16,17 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## What is My Background?
 
-* BA in Psychology
-* MS in Industrial/Organizational Psychology
-* PhD in Decision Sciences and Engineering Systems
-* Health care research (high school and professional)
+* Medical research in high school
+* BA in Psychology from Harvard
+* MS in Industrial/Organizational Psychology from RPI
+* PhD in Decision Sciences and Engineering Systems RPI
+    * statistics and operations research
+    * information systems and databases
+* Health care research at Albany, NY VA hospital
 * Statistical consulting in a variety of disciplines
 * Grant evaluation, primarily in STEM education
-* Basic, SPSS, SAS, Minitab, R and R Studio, Git
-* Also, I just completely &hearts; data!
+* Basic, Excel, Fathom, StatCrunch, SPSS, SAS, Minitab, R, Git...
+* Also, I just completely &hearts; &hearts; &hearts; data!
 
 
 ## What are we going to do?
@@ -37,7 +40,31 @@ Information is organized on [AsULearn](http://asulearn.appstate.edu) and our [we
 * 10% of your course grade will come from Project 3
 * Receive credit for Human Subject Research Ethics
 
-Both the course web page and this presentation were created using R Markdown in RStudio and published via GitHub. You will create and publish your own web page in this class. Exciting!
+The course web page, this presentation, and other materials are created using R Markdown in RStudio and published via GitHub. You will create / publish your own web page in this class as one of your products. Exciting!
+
+
+## &nbsp;
+
+<p style="text-align: center;"><img src = "images/datacamp-logo.png" width=600;><br><br></p>
+
+<p>DataCamp is an "intuitive learning platform" for data science. Learn concepts and R code via short videos and hands-on-the-keyboard exercises, with feedback on each exercise.</p>
+
+## &nbsp;
+
+<p style="text-align: center;"><img src = "images/rstudio-logo.png" width=600;></p>
+<p style="text-align: center;">
+<img src = "images/rmarkdown.png" width=100;>
+<img src = "images/tidyverse.png" width=100;>
+<img src = "images/dplyr.png" width=100;>
+<img src = "images/ggplot2.png" width=100;>
+<img src = "images/tidyr.png" width=100;>
+<img src = "images/readxl.png" width=100;>
+</p>
+
+
+## &nbsp;
+
+<p style="text-align: center;"><img src = "images/github-logo.jpg"></p>
 
 
 ## How are we going to do it?
@@ -46,5 +73,9 @@ There will be very little lecturing in this course. Instead, class time will be 
 
 I strongly encourage you to work your peers with and "crowd source" knowledge within the class. Everyone brings a different skill set to this course and those strengths complement each another. One of the best ways to learn concepts is to explain them to someone else!
 
-Jump in, give it a try, don't be afraid to make mistakes.
+Jump right in, give it all a try, don't be afraid to make mistakes. Data Science is a rapidly-moving and quickly-evolving discipline, so we are all still learning.
 
+
+## &nbsp;
+
+<p style="text-align:center"><img src="https://stat-jet-asu.github.io/Moodlepics/swimmingindata.jpg"></p>

@@ -1,0 +1,1 @@
+aes(y = ..count.. / sum(..count..))

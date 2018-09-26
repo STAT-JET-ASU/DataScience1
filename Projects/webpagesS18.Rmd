@@ -1,5 +1,5 @@
 ---
-title: "Fall 2018 Student Web Pages"
+title: "Spring 2018 Student Web Pages"
 ---
 
 * * *
@@ -27,6 +27,5 @@ title: "Fall 2018 Student Web Pages"
 * [Sydney](https://sydneysingleton.github.io)
 * [Taylor](https://TaylorLedford.github.io)
 * [Yasmin](https://yasminayalajohnson.github.io/)
-
 
 * * *
