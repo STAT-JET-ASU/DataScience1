@@ -4,21 +4,21 @@ title: "Fall 2018 Student Web Pages"
 
 <hr>
 
-* [Elijah Bainbridge]
-* [Jacob Cathcart]
-* [Gayle Centino]
+* [Elijah Bainbridge](https://elijah-bainbridge.github.io/)
+* [Jacob Cathcart](https://jcathcart6.github.io)
+* [Gayle Centino](https://gaylecentino.github.io)
 * [Andrew Crumpler](https://andrewcrumpler.github.io/)
-* [Thorpe Daley]
-* [Madeline Faddoul]
+* [Thorpe Daley](https://thorpedaley.github.io/)
+* [Madeline Faddoul](https://madelinefaddoul.github.io)
 * [Hannah Godfrey](https://marshands.github.io/)
 * [David Grubb](https://davidgrubb.github.io/)
 * [Jared Hembree](jttps://hembreeja.github.io/)
 * [Martha Holloman](https://hollomanma.github.io/)
 * [Caity Johnson](https://caityjohnson.github.io/)
-* [Nicole Kadosh]
+* [Nicole Kadosh](https://kadoshn.github.io/)
 * [Joshua Kornmayer](https://joshuakornmayer.github.io/)
 * [Katelyn Lipe](https://lipekm.github.io/)
 * [Leah Newman](https://leah-newman.github.io/)
-* [Reilly Phillips]
+* [Reilly Phillips](https://reillyphillips.github.io)
 
 <hr>
