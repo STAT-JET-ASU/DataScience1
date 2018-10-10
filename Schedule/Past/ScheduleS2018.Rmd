@@ -9,12 +9,6 @@ output:
     css: "../css/style.css"
 ---
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  TeX: { equationNumbers: { autoNumber: "AMS" } }
-});
-</script>
-
 <hr>
 
 ```{block, note-text, type='rmdnote'}
