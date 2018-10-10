@@ -37,3 +37,4 @@ chisq.test(table(MM$marriage, MM$marijuana), correct = FALSE)
 table(MM$marriage, sample(MM$marijuana))
 
 # bbbbb
+# blah blah
