@@ -259,11 +259,11 @@ ASSIGNMENTS
 
 IN CLASS
 
-* Work on Project 1
+* Work on [Project 1](https://stat-jet-asu.github.io/DataScience1/Projects/Project01.html) -- see AsULearn
 
 ASSIGNMENTS
 
-* Make progress on [Project 1]()
+* Complete and submit Project 1
 
 ```{block, week09optional, type='rmdoptional'}
 Optional: Keep your skills fresh by doing Daily Practice modules on [DataCamp](https://datacamp.com)!
@@ -310,7 +310,6 @@ ASSIGNMENTS
 IN CLASS
 
 * TBA
-* DataCamp worktime
 
 ASSIGNMENTS
 
@@ -329,7 +328,7 @@ IN CLASS
 
 ASSIGNMENTS
 
-* Make progress on [Project 2]()
+* Make progress on Project 2
 
 
 ## Week 13 (NOV 13, 15)
@@ -340,13 +339,14 @@ IN CLASS
 
 ASSIGNMENTS
 
-* Complete [Project 2]()
+* Complete and submit Project 2
 
 
 ## Week 14 (NOV 20)
 
 IN CLASS
 
+* TBA
 * NO CLASS THURSDAY (Thanksgiving)
 
 ASSIGNMENTS
@@ -364,7 +364,7 @@ IN CLASS
 
 ASSIGNMENTS
 
-* Make progress on [Project 3]()
+* Make progress on Project 3
 
 
 ## Week 16 (DEC 04)
@@ -376,14 +376,7 @@ IN CLASS
 
 ASSIGNMENTS
 
-* Complete [Project 3]()
-
-
-<hr>
-
-__This schedule will be updated as the semester progresses!__
-
-<hr>
+* Complete and submit Project 3
 
 
 ### Final Exam {-}
