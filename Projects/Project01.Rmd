@@ -13,6 +13,7 @@ output: html_document
 * [Mauna Loa Weekly CO2 dataset](https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/CO2weeklyM.csv)
 * [Global Monthly CO2 dataset](https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/CO2monthlyG.csv)
 * [Global Daily CO2 dataset](https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/CO2dailyG.csv)
+* [Global Growth dataset](https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/CO2growthG.csv)
 
 Refer to the Mauna Loa data [source files](https://www.esrl.noaa.gov/gmd/ccgg/trends/data.html) and global data [source files](https://www.esrl.noaa.gov/gmd/ccgg/trends/gl_data.html) for more information on how the data were collected and descriptions of the variables included in each dataset.
 
@@ -53,6 +54,12 @@ Refer to the Mauna Loa data [source files](https://www.esrl.noaa.gov/gmd/ccgg/tr
 
 ```
 
+##### Global Growth
+
+```{r}
+
+```
+
 
 #### DATA VISUALIZATIONS
 
@@ -60,7 +67,7 @@ Refer to the Mauna Loa data [source files](https://www.esrl.noaa.gov/gmd/ccgg/tr
 
 * Create time series plots to show the "full record" and "last five years" for the global monthly CO~2~ data. Make your own choices with regard to axis formatting, line and point styles, colors, labels, etc. 
 
-* Use the weekly Mauna Loa data to create a plot showing the change in CO2 for one year, 10 years, and since 1800 for the years 2000 to present. You will need to create new variables for the 1-year and 10-year change in CO~2~.
+* Use the weekly Mauna Loa data to create a plot showing the change in CO2 for one year, 10 years, and since 1800 for the years 2000 to the most recent date. You will need to create new variables for the 1-year and 10-year change in CO~2~.
 
 * Use the `grid.arrange()` function from the `gridExtra` package to create a display that includes the following three plots stacked on top of one another. Exclude the incomplete 2018 data from all plots.
 

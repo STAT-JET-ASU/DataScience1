@@ -123,7 +123,7 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">Data Science Project 1</h1>
 <h4 class="author"><em>YOUR NAMES HERE</em></h4>
-<h4 class="date"><em>Updated: Thursday, October 18, 2018 @ 04:25:34 PM</em></h4>
+<h4 class="date"><em>Updated: Thursday, October 18, 2018 @ 04:37:33 PM</em></h4>
 
 </div>
 
@@ -136,6 +136,7 @@ $(document).ready(function () {
 <li><a href="https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/CO2weeklyM.csv">Mauna Loa Weekly CO2 dataset</a></li>
 <li><a href="https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/CO2monthlyG.csv">Global Monthly CO2 dataset</a></li>
 <li><a href="https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/CO2dailyG.csv">Global Daily CO2 dataset</a></li>
+<li><a href="https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/CO2growthG.csv">Global Growth dataset</a></li>
 </ul>
 <p>Refer to the Mauna Loa data <a href="https://www.esrl.noaa.gov/gmd/ccgg/trends/data.html">source files</a> and global data <a href="https://www.esrl.noaa.gov/gmd/ccgg/trends/gl_data.html">source files</a> for more information on how the data were collected and descriptions of the variables included in each dataset.</p>
 <pre class="r"><code># Read in the datasets and load any necessary packages here
@@ -159,13 +160,16 @@ $(document).ready(function () {
 <div id="global-daily" class="section level5">
 <h5>Global Daily</h5>
 </div>
+<div id="global-growth" class="section level5">
+<h5>Global Growth</h5>
+</div>
 </div>
 <div id="data-visualizations" class="section level4">
 <h4>DATA VISUALIZATIONS</h4>
 <ul>
 <li><p>Replicate the plots shown on <a href="https://www.esrl.noaa.gov/gmd/ccgg/trends/full.html">this web page</a> and <a href="https://www.esrl.noaa.gov/gmd/ccgg/trends/index.html">this web page</a>. You do not need to include the NOAA / Scripps logos or labels. Your results should look similar to Dr. Thomley’s replications <a href="https://stat-jet-asu.github.io/DataScience1/Projects/Project01ThomleyPlots.html">here</a>.</p></li>
 <li><p>Create time series plots to show the “full record” and “last five years” for the global monthly CO<sub>2</sub> data. Make your own choices with regard to axis formatting, line and point styles, colors, labels, etc.</p></li>
-<li><p>Use the weekly Mauna Loa data to create a plot showing the change in CO2 for one year, 10 years, and since 1800 for the years 2000 to present. You will need to create new variables for the 1-year and 10-year change in CO<sub>2</sub>.</p></li>
+<li><p>Use the weekly Mauna Loa data to create a plot showing the change in CO2 for one year, 10 years, and since 1800 for the years 2000 to the most recent date. You will need to create new variables for the 1-year and 10-year change in CO<sub>2</sub>.</p></li>
 <li><p>Use the <code>grid.arrange()</code> function from the <code>gridExtra</code> package to create a display that includes the following three plots stacked on top of one another. Exclude the incomplete 2018 data from all plots.</p>
 <ul>
 <li>Using daily global data, create side-by-side boxplots of CO<sub>2</sub> by year. Include a horizontal line at 400ppm, which is considered by many to be a symbolic threshold CO<sub>2</sub> value for global warming/climate change.</li>
