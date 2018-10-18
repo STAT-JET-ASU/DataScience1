@@ -10,9 +10,9 @@ output: html_document
 #### DATA FILES
 
 * [Mauna Loa Monthly CO2 dataset](https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/CO2monthlyM.csv)
+* [Mauna Loa Weekly CO2 dataset](https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/CO2weeklyM.csv)
 * [Global Monthly CO2 dataset](https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/CO2monthlyG.csv)
 * [Global Daily CO2 dataset](https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/CO2dailyG.csv)
-* [Global CO2 Growth dataset](https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/CO2growthG.csv)
 
 Refer to the Mauna Loa data [source files](https://www.esrl.noaa.gov/gmd/ccgg/trends/data.html) and global data [source files](https://www.esrl.noaa.gov/gmd/ccgg/trends/gl_data.html) for more information on how the data were collected and descriptions of the variables included in each dataset.
 
@@ -35,6 +35,12 @@ Refer to the Mauna Loa data [source files](https://www.esrl.noaa.gov/gmd/ccgg/tr
 
 ```
 
+##### Mauna Loa Weekly
+
+```{r}
+
+```
+
 ##### Global Monthly
 
 ```{r}
@@ -42,12 +48,6 @@ Refer to the Mauna Loa data [source files](https://www.esrl.noaa.gov/gmd/ccgg/tr
 ```
 
 ##### Global Daily
-
-```{r}
-
-```
-
-##### Global Growth
 
 ```{r}
 
