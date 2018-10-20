@@ -293,6 +293,8 @@ Test yourself!
 ```
 
 
+## Week 11 (OCT 30, NOV 01)
+
 IN CLASS
 
 * Group projects in GitHub
@@ -304,21 +306,6 @@ ASSIGNMENTS
 * Read textbook [Section 13. Relational Data](http://r4ds.had.co.nz/relational-data.html)
 * Complete _Importing Data in R (Part 1)_ on [DataCamp](https://datacamp.com)
 * Complete _Importing Data in R (Part 2)_ on [DataCamp](https://datacamp.com)
-
-
-## Week 11 (OCT 30, NOV 01)
-
-IN CLASS
-
-* TBA
-
-ASSIGNMENTS
-
-* Read textbook [Section 14. Strings](http://r4ds.had.co.nz/strings.html)
-* Read textbook [Section 15. Factors](http://r4ds.had.co.nz/factors.html)
-* Read textbook [Section 16. Dates and Times](http://r4ds.had.co.nz/dates-and-times.html)
-* Complete _Cleaning Data in R_ on [DataCamp](https://datacamp.com)
-* Complete _Importing & Cleaning Data in R: Case Studies_ on [DataCamp](https://datacamp.com)
 
 
 ## Week 12 (NOV 06, 08)
@@ -340,6 +327,11 @@ IN CLASS
 
 ASSIGNMENTS
 
+* Read textbook [Section 14. Strings](http://r4ds.had.co.nz/strings.html)
+* Read textbook [Section 15. Factors](http://r4ds.had.co.nz/factors.html)
+* Read textbook [Section 16. Dates and Times](http://r4ds.had.co.nz/dates-and-times.html)
+* Read textbook [Section 19. Functions](http://r4ds.had.co.nz/functions.html)
+* Read textbook [Section 21. Iteration](http://r4ds.had.co.nz/iteration.html)
 * Complete and submit Project 2
 
 
@@ -347,13 +339,12 @@ ASSIGNMENTS
 
 IN CLASS
 
-* TBA
+* Work on DataCamp
 * NO CLASS THURSDAY (Thanksgiving)
 
 ASSIGNMENTS
 
-* Read textbook [Section 19. Functions](http://r4ds.had.co.nz/functions.html)
-* Read textbook [Section 21. Iteration](http://r4ds.had.co.nz/iteration.html)
+* Complete _Cleaning Data in R_ on [DataCamp](https://datacamp.com)
 * Complete _Data Visualization with ggplot2 (Part 3)_ on [DataCamp](https://datacamp.com)
 
 
@@ -378,6 +369,7 @@ IN CLASS
 ASSIGNMENTS
 
 * Complete and submit Project 3
+* Human Subjects Research Ethics is due!
 
 
 ### Final Exam {-}
