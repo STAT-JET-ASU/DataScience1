@@ -263,7 +263,7 @@ IN CLASS
 
 ASSIGNMENTS
 
-* Complete and submit Project 1
+* Make progress on Project 1
 
 ```{block, week09optional, type='rmdoptional'}
 Optional: Keep your skills fresh by doing Daily Practice modules on [DataCamp](https://datacamp.com)!
@@ -274,7 +274,7 @@ Optional: Keep your skills fresh by doing Daily Practice modules on [DataCamp](h
 
 IN CLASS
 
-* TBA
+* Work on [Project 1](https://stat-jet-asu.github.io/DataScience1/Projects/Project01.html) -- see AsULearn
 
 ASSIGNMENTS
 
@@ -282,6 +282,7 @@ ASSIGNMENTS
 * Read Stat545 ["Cheatsheet for `dplyr` join functions"](http://stat545.com/bit001_dplyr-cheatsheet.html)
 * Complete _Intermediate R_ on [DataCamp](https://datacamp.com)
 * Complete _Joining Data in R with dplyr_ on [DataCamp](https://datacamp.com)
+* Complete Project 1
 
 ```{block, week10test, type='rmdexercise'}
 Test yourself!
@@ -294,7 +295,7 @@ Test yourself!
 
 IN CLASS
 
-* TBA
+* Group projects in GitHub
 
 ASSIGNMENTS
 
