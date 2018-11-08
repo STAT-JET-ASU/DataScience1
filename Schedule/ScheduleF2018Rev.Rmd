@@ -1,0 +1,113 @@
+---
+title: "STT 3530 Data Science I<br>Course Schedule for Fall 2018"
+author: "Instructor: Jill E. Thomley (thomleyje@appstate.edu)"
+date: 'Updated: `r format(Sys.time(), "%A, %B %d, %Y @ %X")`'
+output: 
+  html_document: 
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    highlight: textmate
+    theme: cosmo
+    css: "../css/style.css"
+---
+
+<hr>
+
+```{block, introtext, type='rmdnote'}
+* We will be using a free digital _R for Data Science_, for this course.
+* Please bring a notebook and pencil/pen to every class. 
+* All of the required software for this course is provided.
+* Be prepared to actively participate and collaborate.
+* Refer to the [Course Syllabus](../Syllabus/SyllabusF2018.html) for additional details.
+* __This schedule is a work in progress. Check often for updates!__
+```
+
+
+## Week 11 (OCT 30, NOV 01)
+
+IN CLASS
+
+* Group projects in GitHub
+
+ASSIGNMENTS
+
+* Read textbook [Section 11. Data Import](http://r4ds.had.co.nz/data-import.html)
+* Read textbook [Section 12. Tidy Data](http://r4ds.had.co.nz/tidy-data.html)
+* Read textbook [Section 13. Relational Data](http://r4ds.had.co.nz/relational-data.html)
+* Complete _Importing Data in R (Part 1)_ on [DataCamp](https://datacamp.com)
+* Complete _Importing Data in R (Part 2)_ on [DataCamp](https://datacamp.com)
+
+
+## Week 12 (NOV 06, 08)
+
+IN CLASS
+
+* Reading data into R
+* DataCamp work time
+
+ASSIGNMENTS
+
+* Read textbook [Section 14. Strings](http://r4ds.had.co.nz/strings.html)
+* Read textbook [Section 15. Factors](http://r4ds.had.co.nz/factors.html)
+* Read textbook [Section 16. Dates and Times](http://r4ds.had.co.nz/dates-and-times.html)
+* Read textbook [Section 19. Functions](http://r4ds.had.co.nz/functions.html)
+* Read textbook [Section 21. Iteration](http://r4ds.had.co.nz/iteration.html)
+* Complete _Importing Data in R (Part 1)_ on [DataCamp](https://datacamp.com) (if you didn't last week)
+* Complete _Importing Data in R (Part 2)_ on [DataCamp](https://datacamp.com) (if you didn't last week)
+
+
+## Week 13 (NOV 13, 15)
+
+IN CLASS
+
+* DataCamp worktime
+
+ASSIGNMENTS
+
+* Complete _Cleaning Data in R_ on [DataCamp](https://datacamp.com)
+* Complete _Data Visualization with ggplot2 (Part 3)_ on [DataCamp](https://datacamp.com)
+
+
+## Week 14 (NOV 20)
+
+IN CLASS
+
+* Start Project 2
+* NO CLASS THURSDAY (Thanksgiving)
+
+ASSIGNMENTS
+
+* Make progress on Project 2
+
+
+## Week 15 (NOV 27, 29)
+
+IN CLASS
+
+* Work on Project 2
+
+ASSIGNMENTS
+
+* Make progress on Project 2
+
+
+## Week 16 (DEC 04)
+
+IN CLASS
+
+* Work on Project 2
+* NO CLASS THURSDAY (Reading Day)
+
+ASSIGNMENTS
+
+* Complete and submit Project 2
+* Human Subjects Research Ethics is due!
+* Make sure presentation is ready for the final exam time!
+
+
+### Final Exam {-}
+
+```{block, FINAL, type='rmdnote'}
+*  Our [final exam time](https://registrar.appstate.edu/sites/registrar.appstate.edu/files/asu_fall_2018_exam_schedule_final.pdf) is Thursday, December 13 @ 2pm. You will present project results to your peers at that time.
+```
