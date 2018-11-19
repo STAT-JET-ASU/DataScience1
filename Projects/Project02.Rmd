@@ -1,0 +1,99 @@
+---
+title: 'Data Science Project 2'
+author: 'YOUR NAMES HERE'
+date: 'Updated: `r format(Sys.time(), "%A, %B %d, %Y @ %X")`'
+output: html_document
+---
+
+<hr> 
+
+1. Use dplyr functions and pipes when possible.
+2. All graphs must be created using ggplot2.
+3. Use additional packages as needed.
+4. Document any nonstandard code.
+
+If you include any numerical values from analyses in your answers, be sure to code them with embedded r code rather than typing in the values by hand. Include an R chunk at the top of your markdown where you load all packages used in your analyses, similar to the one shown below. 
+
+```{r, message = FALSE}
+# Load all packages you use here 
+# Suppress warnings and messages
+# Do not suppress the actual code
+```
+
+#### Problem 1
+
+The website [data.gov](https://www.data.gov/) provides access to data in a variety of formats. One such dataset is the [NCHS - Teen Birth Rates for Age Group 15-19 in the United States by County](https://catalog.data.gov/dataset/teen-birth-rates-for-age-group-15-19-in-the-united-states-by-county), which contains estimated teen birth rates for age group 15–19 (expressed per 1,000 females aged 15–19) by US county and year for the years 2003-2015. Mapping coordinates for mainland US counties are provided by the `map` package in R. Use the following code to create the `counties` dataset. You can read about making map graphics in R [here](http://eriqande.github.io/rep-res-web/lectures/making-maps-with-R.html) and [here](https://socviz.co/maps.html).
+
+```{r, eval = FALSE}
+counties <- map_data("county")
+```
+
+A) Go to the web site for the teen birth rate data and copy the link address to the `csv` file from the download button. Create a dataset called `teenrate` that contains the data for 2005 and 2015 by: (1) reading the data into R using the link; (2) filtering it for the appropriate cases; and (3) using the `mutate_if` and `tolower` functons to convert the contents of all factor variables to lower case. Perform all of the steps in one sequence of piped statements. Show the structure of the dataset using `glimpse`.
+
+B) Join the `counties` and `teenrate` datasets into a single dataset using both state and county names, then filter it so that it contains only data for eighteen [counties in western North Carolina](https://carolinapublicpress.org/296/the-counties-of-western-north-carolina/). Call the dataset `dataWNC`. Use `select` to choose, rename, and reorder variables so that `dataWNC` has the following contents: group, state, county, latitide, longitude, year, rate, LCL, UCL. Perform all of the steps in one sequence of piped statements. Show the structure of the dataset using `glimpse`.
+
+C) Use `ggplot` with `facet_grid` to create maps comparing the birth rates in western NC for 2005 and 2015. Use `scale_fill_gradient` or some other color scheme that makes the differences in rates clear and use the `ditch_the_axes` theme found on the first mapping web page linked above to get rid of the unnecessary x and y axes. Include a title, a subtitle that tells readers that the birthrate is per 1000 females aged 15 to 19, and a caption that says "Source: Centers for Disease Control (CDC)". Additional code is provided to add names to your plot.
+
+```{r, eval = FALSE}
+# use this code before the plot to make the set of names
+cnames <- aggregate(cbind(longitude, latitude) ~ county, 
+                    data = dataWNC, 
+                    FUN = function(x)median(range(x)))
+
+# include this code to put the county names on the plot 
+geom_text(data = cnames, aes(x = longitude, y = latitude, label = county), size = 2)
+```
+
+D) Use the code below to create the dataset `dataWNC2`. Show the structure of the dataset using `glimpse`. Then create a horizontal barplot for 2015 only showing the estimated birthrate in each county with error bars. Embed your filter statement in the ggplot code. Use the `reorder` function in your `aes` to sort the bars from smallest to largest. Format your plot to be aesthetically pleasing, including appropriate axis labels and a caption that says "Source: Centers for Disease Control (CDC)". 
+
+```{r, eval = FALSE}
+dataWNC2 <- dataWNC %>% 
+  group_by(county, year) %>% 
+  summarize(rate = mean(rate), LCL = mean(LCL), UCL = mean(UCL))
+```
+
+E) Use the `gather` function on the variables LCL, rate, and UCL in `dataWNC3` to create the dataset `dataWNC3` containing the columns county, year, statname (whether an observation is a LCL, rate, or UCL), and statvalue (the value of the stat). Show the structure of the dataset using `glimpse`. Create a [Cleveland dot plot](https://uc-r.github.io/cleveland-dot-plots) for 2015 that shows the rates with upper and lower confidence limits. As you did above, embed your filter statement in the ggplot code and use the `reorder` function in your `aes` to sort the counties from smallest to largest rate. Format your plot to be aesthetically pleasing, including appropriate axis labels and a caption that says "Source: Centers for Disease Control (CDC)". Hint: You will be connecting three points instead of two like the example, and your grouping variable will be county.
+
+
+#### Problem 2
+
+GitHub user [Justin Dorfman](https://github.com/jdorfman) maintains a curated repository with links to JSON datasets that don't require authentication. These include examples of [population data](https://github.com/jdorfman/awesome-json-datasets#population), which he seems to have sourced from the [World Population API](http://api.population.io/#!/population/retrievePopulationTableAllAges). 
+
+A) Read into R the datasets listed under "United States Population Table (Ages 0-100)" using the `fromJSON` function found in the `jsonlite` package. Then go to the World Population API and use the `GET /population/{year}/{country}/` interface to obtain a JSON URL for the United States in 2015. Combine these files into a single dataset named `usPOPages` that contains the following variables in order: year, age, females, males, total. Show the structure of the dataset using `glimpse`.
+
+B) It is common to group people into generations for marketing and other purposes (e.g., [this web article](http://www.marketingteacher.com/the-six-living-generations-in-america/)). Create a new ordered factor variable using these age categories. Label the categories by age ranges rather than generation names, since those names only apply for very recent years. The `case_when` function will be useful. Show the structure of agecats using `str`.
+
+* Generation Z, or iGeneration (under 18 years old)
+* Millennials, or Generation Y (18 – 34 years old)
+* Generation X (roughly 35 – 49 years old)
+* Baby Boomers (roughly 50 – 69 years old)
+* Silent Generation (roughly 70 – 89 years old)
+* GI Generation (roughly 90+)
+
+C) The dataset contains a variable called total, which in this binary classification scheme should be the sum of males and females. However, some values seem to be rounded. For what fraction of cases does total not match the sum of males and females? 
+
+D) Create two different types of plots of your choice using these data. You may further modify the dataset if you choose in order to make your plots (e.g., create new variables, filter the data, use summaries, gather/spread.)
+
+
+#### Problem 3
+
+The FBI's [Uniform Crime Reporting (UCR) Program](https://www.fbi.gov/services/cjis/ucr) collects data and dissminates statistics and other information about crime in the United States; for example, this [2017 table](https://ucr.fbi.gov/crime-in-the-u.s/2017/crime-in-the-u.s.-2017/topic-pages/tables/table-1) summarizes incidents in several categories for 1998 through 2017. 
+
+A) Go to the 2017 table and copy the link address to the `xls` file from Download Excel (Table 1). Use the `read_xl` function from the `readxl` package to create a dataset called ucr2017 that contains the contents of the table. The data is found in rows 5 through 24 and columns A through V. The column headers are found in Row 4, but you should create your own column names using the following: year, population, violent, violentrate, murder, murderrate, raperevised, raperevisedrate, rapelegacy, rapelegacyrate, robbery, robberyrate, assault, assaultrate, property, propertyrate, burglary, burglaryrate, larceny, larcenyrate, vehicle, vehiclerate. Show the structure of the dataset using `glimpse`.
+
+B) Some of the years had numerical superscripts for footnotes in the original table, which were improperly merged with the year itself when the data were read into R. For example, 2001 appears as 20015. Use the `stringr` function `substr` in a `mutate` to correct this problem. At the same time, convert the vector type of year from character to numeric.
+
+C) The definition of rape changed during the time period covered by this table ("revised" versus "legacy"). Therefore, some years have missing data. How many cases are complete? Which years are they? Print both the count of how many complete cases there are in the dataset and a vector containing the years that have complete data.
+
+D) Create two different types of plots of your choice using these data. You may further modify the dataset if you choose in order to make your plots (e.g., create new variables, filter the data, use summaries, gather/spread.)
+
+
+#### Final Exam Presentation
+
+Use R Markdown to ceate an ioslides presentation to show all of the plots you made for this project. You will peer review each other during these presentations and rate the quality of each group's plots.
+
+
+<hr>
+
+DONE!!!
+
