@@ -1,0 +1,105 @@
+---
+title: "STT 3530 Data Science I<br>Course Syllabus for Spring 2019"
+author: ''
+date: ''
+output: 
+  html_document: 
+    theme: cosmo
+    highlight: textmate
+    css: "../css/style.css"
+    keep_md: yes
+---
+
+**Instructor:**    Dr. Jill E. Thomley  
+**E-Mail:**        thomleyje@appstate.edu  
+**Office:**        Walker Hall 228  
+**Office Hours:**  see [My Schedule](https://jillthomley.github.io/schedule.html)
+
+I will use the Course Announcements forum on [AsULearn](https://asulearn.appstate.edu/) to send out announcements and course information. You are responsible for knowing the content of all postings, in addition to anything I say in class. Except for emergencies, all written communication should be handled through your Private Forum on [AsULearn](https://asulearn.appstate.edu/). I prefer this method because it stores all exchanges in a place where we can easily access them and it keeps my class communications separate from the rest of my email.
+
+You can [book me online](https://thomleyje.youcanbook.me/) for an appointment during office hours.
+
+
+**Course Description**  
+
+Data science is an exciting discipline that allows you to turn raw data into insight and knowledge. This course is an introduction to the basics of data management and visualization, including reproducible workflow. Topics include introductory concepts of programming and work flow, data manipulation, and data visualization using grammar of graphics. The course will also emphasize the practice of creating reproducible research using a version control system with dynamic document reporting, including tools such as R, R Studio, R Markdown, and Git. The overall goal of Data Science I is to help you learn some of the most important tools in R that will allow you to do data science.
+
+
+**Course Objectives**
+
+1.	Students will learn to use a reproducible research work flow.
+2.	Students will develop their data science technology expertise.
+3.	Students will develop skills in programming, iteration, and sequencing.
+4.	Students will learn how to read data in various formats and write to a file.
+5.	Students will learn to manipulate, clean, code, and store data in a `tidy` format.
+6.	Students will learn to visualize data and models using the grammar of graphics.
+7.	Students will gain experience working with larger data sets.
+8.	Students will learn to display their work on the web.
+
+
+**Required Course Texts**
+
+Chester Ismay and Albert Y. Kim (2018). [_Modern Dive: An Introduction to Statistical and Data Sciences via R_](https://moderndive.com/index.html).<br>
+Garrett Grolemund & Hadley Wickham (2017). [_R for Data Science_](http://r4ds.had.co.nz/).
+
+
+**Assessment & Grading**
+
+The only way to learn data science is to **DO** data science, which includes software such as RStudio and GitHub. Reading the textbook, learning the language, and practicing exercises using real data are critical to your learning and success. Class activities and formative/summative assessments have been structured with these principles in mind. It will be easier to participate if you acquire some familiarity with the vocabulary and methods before we start to discuss and use them. You must "speak the language" of data science (grammar of graphics, `tidy` data, R, RStudio, and Git) to effectively demonstrate your knowledge.  
+
+* DataCamp homework (24 points)
+* Textbook homework (14 points)
+* Weekly reflections (15 points)
+* Personal web page (5 points)
+* Project 1 (10 points)
+* Project 2 (25 points)
+* Presentation (5 points)
+* Attendance (2 points)
+
+Assignments will be scored using rubrics. The [Course Schedule](../Schedule/ScheduleS2019.html) and AsULearn contain additional information about assignments, scoring, and due dates. This course will use the standard 10-point +/- grading scale (93--100 = A, 90--92 = A--, 87--89 = B+, etc.) to determine final grades. Grades will be kept on [AsULearn](https://asulearn.appstate.edu/). You should monitor your grades throughout the term. Feel free to inquire about your grades at any time.      
+
+
+**Computers and Software**
+
+This course will use the RStudio server  (https://mathr.math.appstate.edu/) that has the programs listed below (and more) installed. Note that all technology used in the class is either open source (free) or will be accessible to students enrolled in the course for no cost.
+
+* [R](https://cran.r-project.org) 
+* [RStudio](https://www.rstudio.com/products/rstudio/download/)
+* [Git](https://git-scm.com/downloads) 
+* [GitHub](https://github.com)
+* [LaTeX](https://www.ctan.org/starter)
+* DataCamp (via [AsULearn](https://asulearn.appstate.edu/my/))
+
+You must have an active internet connection and be registered in the course to access the server. To access the server, point any web browser to <https://mathr.math.appstate.edu/>.  You will need to acknowledge the connection is unsecure and possibly add a security exception to your web browser. Use your Appstate Username and Password to access the server.  A screen shot of the RStudio server is shown below. If you have problems with your Appstate Username or Password visit [IT Support Services](http://support.appstate.edu/) or call 262-6266.
+
+<img src="RStudioLogIn.jpg" width="564" style="display: block; margin: auto;" />
+
+
+**Expectations**  
+
+Be proactive in your learning! If you have not read/watched assigned materials and attempted assigned problems before coming to class or office hours, you will likely be confused, feel lost, and have a terrible experience in this course. I DO NOT WANT THAT TO HAPPEN! Appalachian students are expected to make intensive engagement with courses their first priority. Practically speaking, this means students should spend about 2-3 hours on course work outside class for every hour they spend in class. If you are not comfortable or have not done well in quantitative courses in the past, you may need to spend more time completing work for this course. I realize that many students work during the school year to finance their educations; however, that does not change the requirements of this (or any) course. Budget your time accordingly and pace yourself so that you can keep up and complete all your work on time. I am here to help you with this material and I want to see you succeed. 
+
+
+**How To Get Unstuck**
+
+Well constructed questions will elicit answers more rapidly than poorly constructed questions.  This [video](https://www.youtube.com/watch?v=ZFaWxxzouCY&list=PLjTlxb-wKvXNSDfcKPFH2gzHGyjpeCZmJ&index=3) provides some background on asking questions.  This stackoverflow thread details how to create a [minimal R reproducible example](http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example/5963610#5963610). Please read [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html) by Eric Raymond and Rick Moen and heed their advice.
+
+
+**University Policies**
+
+This course conforms with all Appalachian State University policies with respect to academic integrity, disability services, and class attendance.  The details of the policies may be found at <http://academicaffairs.appstate.edu/resources/syllabi>.
+
+As stated in the ASU Undergraduate Bulletin, students are expected to attend all course meetings and are completely responsible for their own attendance. Any student who is absent for any reason is completely responsible for all material covered in class.
+
+Some additional rules for this class:
+
+* No food and drink in class. This is a rule for all computer labs in Walker Hall.
+* Be ready to participate when class starts (e.g., notebooks and materials out).
+* Do not pack up at the end of class until I am finished teaching and dismiss you.
+* Phones must be put away during class. If I see you using your phone, I may ask you to leave.
+* Do not check email, surf the web, or do other coursework during class. I may ask you to leave.
+* You are not allowed to use tobacco (including dip) or e-cigarettes in class. I _will_ ask you to leave.
+
+Any conduct that disrupts instruction is disrespectful and disruptive both to other students and the instructor. First offenses will be dealt with by the instructor. Subsequent behavior issues will be referred to the [Office of Student Conduct](https://studentconduct.appstate.edu/).
+
+
