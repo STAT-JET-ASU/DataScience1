@@ -4,12 +4,13 @@ author: "Instructor: Jill E. Thomley (thomleyje@appstate.edu)"
 date: 'Updated: `r format(Sys.time(), "%A, %B %d, %Y @ %X")`'
 output: 
   html_document: 
-    toc: false
+    toc: true
     toc_depth: 3
     toc_float: true
     highlight: textmate
     theme: cosmo
     css: "../css/style.css"
+    keep_md: yes
 ---
 
 ***
@@ -20,7 +21,7 @@ output:
     + [DataCamp](https://www.datacamp.com/)
     + [_Modern Dive_](https://moderndive.com/)
     + [_R for Data Science_](https://r4ds.had.co.nz/)
-    + Additional items as per schedule
+    + Additional items listed below
 * Please bring a notebook and pencil/pen to every class. 
 * All of the required software for this course is provided.
 * Be prepared to actively participate and collaborate.
@@ -38,6 +39,12 @@ Watch the following videos as appropriate:
 * [Install R and RStudio on Windows (5 min)](https://www.youtube.com/watch?v=eD07NznguA4)    
 ```
 
+```{block, duedates, type='rmdimportant'}
+* __All assignments are due Thursday @ 11pm of the week in which they appear.__ 
+* __Check AsULearn for project/homework assignment instructions and grades.__
+```
+
+
 ***
 #### Abbreviations
 
@@ -52,8 +59,9 @@ HW = homework
 
 #### Assignments Due
 
-* Create [Github](https://github.com/) account
-* Create [DataCamp](https://www.datacamp.com/) account
+* [Github](https://github.com/) account
+* [DataCamp](https://www.datacamp.com/) account
+* Practice R Markdown document 
 * Reflection #01
 
 #### In-Class Activities
@@ -71,6 +79,9 @@ HW = homework
 * MD [Chapter 1. Introduction](https://moderndive.com/index.html)
 * RDS [Section 1. Introduction](http://r4ds.had.co.nz/introduction.html)
 * Stat545 ["Test Drive R Markdown"](http://stat545.com/block007_first-use-rmarkdown.html)
+* ["ASA Statement on the Role of Statistics in Data Science"](http://magazine.amstat.org/blog/2015/10/01/asa-statement-on-the-role-of-statistics-in-data-science/)
+* ["Reproducible Research in JASA"](http://magazine.amstat.org/blog/2016/07/01/jasa-reproducible16/)
+* ["ASA Develops Reproducible Research Recommendations"](https://www.amstat.org/ASA/News/ASA-Develops-Reproducible-Research-Recommendations.aspx)
 
 #### Before Week 02
 
@@ -78,19 +89,21 @@ HW = homework
 * RDS [Section 2. Introduction](http://r4ds.had.co.nz/explore-intro.html)
 * [_Getting used to R, RStudio, and R Markdown_](https://ismayc.github.io/rbasics-book/)
 * [_Initial Steps Toward Reproducible Research_](https://kbroman.org/steps2rr/)
+* ["The Real Reason Reproducible Research is Important"](https://simplystatistics.org/2014/06/06/the-real-reason-reproducible-research-is-important/)
+* Make progress on Week 02 assignments
 
 ```{block, week01note, type='rmdnote'}
 * Start thinking now about a useful file/project structure to organize your RStudio space.
 * Work through the code and exercises in MD and RDS. Create your own library of examples.
-* Take notes as you work though the DC modules. The goal is to learn, not just finish!
-* RStudio has helpful [Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)! Start with the ones for _Base R_ and _R Markdown_.
+* RStudio has helpful [Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)! Start with the "Base R" and "R Markdown" sheets.
+* Take notes as you work though DC modules. The goal is to learn, not just finish!
 * A great way to get familiar with the RStudio server is to use it to take notes.
 * R Markdown files can contain customizable text and code.
 * R scripts can contain only code and comments. 
 ```
 
 ```{block, optionalinstall, type='rmdoptional'}
-You may also wish to explore DC [_Working with the Rstudio IDE (Part 1)_](https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1) beyond the videos you will be watching for the MD CH02 HW to become more familiar with RStudio's many functions.
+You may also wish to explore DC [_Working with the Rstudio IDE (Part 1)_](https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1), beyond the videos you will be watching for the MD CH02 HW, to become more familiar with RStudio's many functions.
 ```
 
 
@@ -120,8 +133,8 @@ You may also wish to explore DC [_Working with the Rstudio IDE (Part 1)_](https:
 
 
 ```{block, week02note, type='rmdnote'}
-* Refer to [_R Markdown: The Definitive Guide_](https://bookdown.org/yihui/rmarkdown/) for more information on formatting Markdown reports as well as creating web sites and slides, which you will do later in the course. 
-* More information about R Markdown can be found at [`R Markdown` from ![](https://www.rstudio.com/wp-content/uploads/2016/09/RStudio-Logo-Blue-Gray-125.png)](http://rmarkdown.rstudio.com) 
+* Refer to [_R Markdown: The Definitive Guide_](https://bookdown.org/yihui/rmarkdown/) for more information on formatting reports, web sites, presentations, and other Markdown customizations. 
+* Additional information can be found at [`R Markdown` from ![](https://www.rstudio.com/wp-content/uploads/2016/09/RStudio-Logo-Blue-Gray-125.png)](http://rmarkdown.rstudio.com) 
 ```
 
 ```{block, week02optional, type='rmdoptional'}
@@ -153,8 +166,8 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 * Chapter "[Git and GitHub](http://r-pkgs.had.co.nz/git.html)" of Hadley Wickham's [_R Packages_](http://r-pkgs.had.co.nz/)
 
 ```{block, week03note, type='rmdnote'}
-* The [`tidyverse`](https://www.tidyverse.org/) is "an opinionated collection of R packages designed for data science" that share a common philosophy for data manipulation, exploration and visualization."" It is the kernel of our course textbook [_R for Data Science_](http://r4ds.had.co.nz/).
-* Remember the RStudio [Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)! You may want to check out _Data Transformation_ and _Data Visualization_ as we progress toward Project 1.
+* The [`tidyverse`](https://www.tidyverse.org/) is "an opinionated collection of R packages designed for data science" that share a common philosophy for data manipulation, exploration and visualization."
+* Check out the "Data Transformation" and "Data Visualization" [Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/) for RStudio.
 * Git and GitHub can be frustrating at first. _Push_ yourself to _commit_ to using version control.
 * You may want to create a folder in your RStudio Home directory (e.g., `git_repositories`) where you can collect/organize your  version-controlled projects.
 ```
@@ -182,6 +195,10 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 * RDS [Section 8. Workflow: Projects](http://r4ds.had.co.nz/workflow-projects.html)
 * Stat 545 ["Do’s and Dont's for Effective Graphs"](http://stat545.com/block015_graph-dos-donts.html)
 
+```{block, week04note, type='rmdnote'}
+* TBA NOTE
+```
+
 
 ***
 ### Week 05 (FEB 12, 14)
@@ -189,7 +206,6 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 #### Assignments Due
 
 * DC [_Data Visualization with ggplot2 (Part 1)_](https://www.datacamp.com/courses/data-visualization-with-ggplot2-1) HW
-* RDS CH06-CH08 HW
 * Web Page Peer Review
 * Reflection #05
 
@@ -205,6 +221,10 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 * MD [Chapter 6. Basic Regression](https://moderndive.com/6-regression.html)
 * MD [Chapter 7. Multiple Regression](https://moderndive.com/7-multiple-regression.html)
 
+```{block, week05note, type='rmdnote'}
+* TBA NOTE
+```
+
 
 ***
 ### Week 06 (FEB 19, 21)
@@ -212,6 +232,7 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 #### Assignments Due
 
 * DC [_Modeling with Data in the Tidyverse_](https://www.datacamp.com/courses/modeling-with-data-in-the-tidyverse) HW
+* RDS CH06-CH08 HW
 * Reflection #06
 
 #### In-Class Activities
@@ -223,6 +244,10 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 #### Before Week 07
 
 * Make progress on Project 1
+
+```{block, week06note, type='rmdnote'}
+* TBA NOTE
+```
 
 
 ***
@@ -236,7 +261,6 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 #### In-Class Activities
 
 * Publishing in RPubs
-* Publishing in GitHub
 * Work on Project 1 
 
 #### Before Week 08
@@ -247,14 +271,17 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 * Stat545 ["Using Colors in R"](http://stat545.com/block018_colors.html)
 * Stat545 ["Multiple Plots on a Page"](http://stat545.com/block020_multiple-plots-on-a-page.html)
 
+```{block, week07note, type='rmdnote'}
+* TBA NOTE
+```
 
-***
-### Spring Break
-
-```{block, sprbrknote, type='rmdnote'}
+```{block, week07important, type='rmdimportant'}
 * If you're not already caught up on your work, try to be on schedule by the time you get back!
 ```
 
+
+***
+### Spring Break
 
 
 ***
@@ -284,6 +311,10 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 * Stat545 ["Getting Data from the Web, Part 2"](http://stat545.com/webdata03_activity.html) 
 * [Data Organization](https://kbroman.org/dataorg/) 
 
+```{block, week08note, type='rmdnote'}
+* Remember the "Data Visualization" [Cheat Sheet](https://www.rstudio.com/resources/cheatsheets/) for RStudio.
+```
+
 
 ***
 ### Week 09 (MAR 19, 21)
@@ -292,6 +323,7 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 
 * DC [_Importing Data in R (Part 1)_](https://www.datacamp.com/courses/importing-data-in-r-part-1) HW
 * DC [_Importing Data in R (Part 2)_](https://www.datacamp.com/courses/importing-data-in-r-part-2) HW
+* RDS CH027-CH28 HW
 * Reflection #09
 
 #### In-Class Activities
@@ -311,6 +343,10 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 * Stat545 ["Be the Boss of Your Factors"](http://stat545.com/block029_factors.html)
 * Stat545 ["Character Data"](http://stat545.com/block028_character-data.html) 
 
+```{block, week09note, type='rmdnote'}
+* Check out the "Data Import" [Cheat Sheet](https://www.rstudio.com/resources/cheatsheets/) for RStudio.
+```
+
 
 ***
 ### Week 10 (MAR 26, 28)
@@ -318,6 +354,7 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 #### Assignments Due
 
 * DC [_Joining Data in R with dplyr_](https://www.datacamp.com/courses/joining-data-in-r-with-dplyr) HW
+* RDS CH09-CH11 HW
 * Reflection #10
 
 #### In-Class Activities
@@ -337,6 +374,10 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 * Stat545 ["Writing your own R functions Part 1"](http://stat545.com/block011_write-your-own-function-01.html)
 * Stat545 ["Writing your own R functions Part 2"](http://stat545.com/block011_write-your-own-function-02.html) 
 
+```{block, week10note, type='rmdnote'}
+* Check out the "Dates and Times" and "Working with Strings" [Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/) for RStudio.
+```
+
 
 ***
 ### Week 11 (APR 02, 04)
@@ -344,6 +385,7 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 #### Assignments Due
 
 * DC [_Intermediate R_](https://www.datacamp.com/courses/intermediate-r) HW 
+* RDS CH13-CH16 HW
 * Reflection #11
 
 #### In-Class Activities
@@ -357,6 +399,10 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 * ["Dealing with dirty data: useful functions for data cleaning in R"](https://medium.com/grinding-gears/dealing-with-dirty-data-useful-functions-for-data-cleaning-in-r-bcead6fd6ee6)
 * ["Tricks for Cleaning Your Data in R"](https://github.com/underthecurve/r-data-cleaning-tricks/blob/master/R-datacleaning-tricks.md)
 
+```{block, week11note, type='rmdnote'}
+* Check out the "Apply Functions" [Cheat Sheet](https://www.rstudio.com/resources/cheatsheets/) for RStudio.
+```
+
 
 ***
 ### Week 12 (APR 09, 11)
@@ -364,6 +410,7 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 #### Assignments Due
 
 * DC [_Cleaning Data in R_](https://www.datacamp.com/courses/cleaning-data-in-r) HW
+* RDS CH17-CH21 HW
 * Reflection #12
 
 #### In-Class Activities
@@ -373,7 +420,11 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 
 #### Before Week 13
 
-* Make sure all prior work is wrapped up!
+* Make sure all prior work is wrapped up
+
+```{block, week12note, type='rmdnote'}
+* Now that you have assembled your data science toolbox, you will put your new skills to work on a project. This would be a good time to review the principles of reproducible research and some of your past course work. Organize your resources!
+```
 
 
 ***
@@ -386,6 +437,7 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 
 #### In-Class Activities
 
+* Publishing in GitHub
 * Slides in Markdown
 * Work on Project 2
 
@@ -421,6 +473,7 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 #### In-Class Activities
 
 * Work on Project 2
+* Work on presentation
 
 #### Before Final Exam
 
@@ -432,8 +485,14 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 
 * May 02
 
+```{block, readingday, type='rmdnote'}
+* TBA NOTE
+```
+
+
+***
 ### Final Exam
 
-```{block, FINAL, type='rmdnote'}
-*  Our [final exam time](https://registrar.appstate.edu/sites/registrar.appstate.edu/files/asu_spring_2019_exam_schedule.pdf) is Thursday May 09 @ 2:00pm in XXX. You will present XXX.
+```{block, final, type='rmdnote'}
+* Our [final exam time](https://registrar.appstate.edu/sites/registrar.appstate.edu/files/asu_spring_2019_exam_schedule.pdf) is Thursday May 09 @ 2:00pm in XXX. You will present XXX.
 ```
