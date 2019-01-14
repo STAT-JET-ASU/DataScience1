@@ -1,7 +1,7 @@
 ---
 title: "STT 3530 Data Science I<br>Course Schedule for Spring 2019"
 author: "Instructor: Jill E. Thomley (thomleyje@appstate.edu)"
-date: 'Updated: Sunday, January 13, 2019 @ 08:06:08 PM'
+date: 'Updated: Monday, January 14, 2019 @ 09:17:03 AM'
 output: 
   html_document: 
     toc: true
@@ -77,8 +77,9 @@ HW = homework
 #### Assignments Due
 
 * [Github](https://github.com/) account
-* [DataCamp](https://www.datacamp.com/) account
-* Practice R Markdown document 
+* [DataCamp](https://www.datacamp.com/) account 
+* RStudio server sign-in 
+* Private Forum message 
 * Reflection #01
 
 #### In-Class Activities

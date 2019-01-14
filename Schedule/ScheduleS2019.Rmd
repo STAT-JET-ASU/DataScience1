@@ -67,8 +67,9 @@ HW = homework
 #### Assignments Due
 
 * [Github](https://github.com/) account
-* [DataCamp](https://www.datacamp.com/) account
-* Practice R Markdown document 
+* [DataCamp](https://www.datacamp.com/) account 
+* RStudio server sign-in 
+* Private Forum message 
 * Reflection #01
 
 #### In-Class Activities
