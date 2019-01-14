@@ -57,7 +57,7 @@ The only way to learn data science is to **DO** data science, which includes sof
 
 Assignments will be scored using rubrics. There are 28 class days this semester. You will receive full credit for attendance if you miss up to three days (10% of class). You will receive half credit if you miss four to six days (20% of class). 
 
-The [Course Schedule](../Schedule/ScheduleS2019.html) and AsULearn contain additional information. This course will use the standard 10-point +/- grading scale (93--100 = A, 90--92 = A--, 87--89 = B+, etc.) to determine final grades. Grades will be kept on [AsULearn](https://asulearn.appstate.edu/). You should monitor your grades throughout the term to make sure they are complete and accurate. Feel free to inquire about your grades at any time.      
+The [Course Schedule](../Schedule/ScheduleS2019.html) and AsULearn contain additional information. This course will use the standard 10-point +/- grading scale (93--100 = A, 90--92 = A--, 87--89 = B+, etc.) to determine final grades. Grades will be kept on [AsULearn](https://asulearn.appstate.edu/). You should monitor your grades throughout the term to make sure they are complete and accurate. Feel free to inquire about your grades at any time.    
 
 
 **Computers and Software**
@@ -81,6 +81,11 @@ knitr::include_graphics("RStudioLogIn.jpg", dpi = 128)
 **Expectations**  
 
 Be proactive in your learning! If you have not read/watched assigned materials and attempted assigned problems before coming to class or office hours, you will likely be confused, feel lost, and have a terrible experience in this course. I DO NOT WANT THAT TO HAPPEN! Appalachian students are expected to make intensive engagement with courses their first priority. Practically speaking, this means students should spend about 2-3 hours on course work outside class for every hour they spend in class. If you are not comfortable or have not done well in quantitative courses in the past, you may need to spend more time completing work for this course. I realize that many students work during the school year to finance their educations; however, that does not change the requirements of this (or any) course. Budget your time accordingly and pace yourself so that you can keep up and complete all your work on time. I am here to help you with this material and I want to see you succeed. 
+
+
+**Inclement Weather**
+
+All due dates will remain in effect even if the university cancels classes or closes for inclement weather. You should check AsULearn for alternate assignments. Completion of the assignment will serve as your attendance for that class period. Course accommodations for power outages and other weather-related issues will be made as circumstances require, at the discretion of the instructor.
 
 
 **How To Get Unstuck**
