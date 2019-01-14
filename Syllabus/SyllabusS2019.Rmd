@@ -36,13 +36,7 @@ Data science is an exciting discipline that allows you to turn raw data into ins
 8.	Students will learn to display their work on the web.
 
 
-**Required Texts**
-
-1.  Chester Ismay and Albert Y. Kim (2018). [_Modern Dive: An Introduction to Statistical and Data Sciences via R_](https://moderndive.com/index.html).
-2.  Garrett Grolemund & Hadley Wickham (2017). [_R for Data Science_](http://r4ds.had.co.nz/).
-
-
-**Assessment & Grading**
+**Assessment and Grading**
 
 The only way to learn data science is to **DO** data science, which includes software such as RStudio and GitHub. Reading the textbook, learning the language, and practicing exercises using real data are critical to your learning and success. Class activities and formative/summative assessments have been structured with these principles in mind. It will be easier to participate if you acquire some familiarity with the vocabulary and methods before we start to discuss and use them. You must "speak the language" of data science (grammar of graphics, `tidy` data, R, RStudio, and Git) to effectively demonstrate your knowledge.  
 
@@ -58,6 +52,17 @@ The only way to learn data science is to **DO** data science, which includes sof
 Assignments will be scored using rubrics. There are 28 class days this semester. You will receive full credit for attendance if you miss up to three days (10% of class). You will receive half credit if you miss four to six days (20% of class). 
 
 The [Course Schedule](../Schedule/ScheduleS2019.html) and AsULearn contain additional information. This course will use the standard 10-point +/- grading scale (93--100 = A, 90--92 = A--, 87--89 = B+, etc.) to determine final grades. Grades will be kept on [AsULearn](https://asulearn.appstate.edu/). You should monitor your grades throughout the term to make sure they are complete and accurate. Feel free to inquire about your grades at any time.    
+
+
+**Inclement Weather**
+
+All due dates will remain in effect even if the university cancels classes or closes for inclement weather. You should check AsULearn for alternate assignments. Completion of the assignment will serve as your attendance for that class period. Course accommodations for power outages and other weather-related issues will be made as circumstances require, at the discretion of the instructor.
+
+
+**Required Textbooks**
+
+1.  Chester Ismay and Albert Y. Kim (2018). [_Modern Dive: An Introduction to Statistical and Data Sciences via R_](https://moderndive.com/index.html).
+2.  Garrett Grolemund & Hadley Wickham (2017). [_R for Data Science_](http://r4ds.had.co.nz/).
 
 
 **Computers and Software**
@@ -78,14 +83,9 @@ knitr::include_graphics("RStudioLogIn.jpg", dpi = 128)
 ```
 
 
-**Expectations**  
+**General Expectations**  
 
 Be proactive in your learning! If you have not read/watched assigned materials and attempted assigned problems before coming to class or office hours, you will likely be confused, feel lost, and have a terrible experience in this course. I DO NOT WANT THAT TO HAPPEN! Appalachian students are expected to make intensive engagement with courses their first priority. Practically speaking, this means students should spend about 2-3 hours on course work outside class for every hour they spend in class. If you are not comfortable or have not done well in quantitative courses in the past, you may need to spend more time completing work for this course. I realize that many students work during the school year to finance their educations; however, that does not change the requirements of this (or any) course. Budget your time accordingly and pace yourself so that you can keep up and complete all your work on time. I am here to help you with this material and I want to see you succeed. 
-
-
-**Inclement Weather**
-
-All due dates will remain in effect even if the university cancels classes or closes for inclement weather. You should check AsULearn for alternate assignments. Completion of the assignment will serve as your attendance for that class period. Course accommodations for power outages and other weather-related issues will be made as circumstances require, at the discretion of the instructor.
 
 
 **How To Get Unstuck**
@@ -109,5 +109,4 @@ Some additional rules for this class:
 * You are not allowed to use tobacco (including dip) or e-cigarettes in class. I _will_ ask you to leave.
 
 Any conduct that disrupts instruction is disrespectful and disruptive both to other students and the instructor. First offenses will be dealt with by the instructor. Subsequent behavior issues will be referred to the [Office of Student Conduct](https://studentconduct.appstate.edu/).
-
 
