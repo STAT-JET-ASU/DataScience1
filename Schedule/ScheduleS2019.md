@@ -1,7 +1,7 @@
 ---
 title: "STT 3530 Data Science I<br>Course Schedule for Spring 2019"
 author: "Instructor: Jill E. Thomley (thomleyje@appstate.edu)"
-date: 'Updated: Tuesday, January 08, 2019 @ 03:56:59 PM'
+date: 'Updated: Sunday, January 13, 2019 @ 08:06:08 PM'
 output: 
   html_document: 
     toc: true
@@ -14,6 +14,12 @@ output:
 ---
 
 ***
+
+<div class="rmdimportant">
+<ul>
+<li><strong>This schedule is a work in progress. Check often for updates!</strong></li>
+</ul>
+</div>
 
 <div class="rmdnote">
 <ul>
@@ -29,7 +35,6 @@ output:
 <li>All of the required software for this course is provided.</li>
 <li>Be prepared to actively participate and collaborate.</li>
 <li>Refer to the <a href="../Syllabus/SyllabusS2019.html">Course Syllabus</a> for additional details.</li>
-<li><strong>This schedule is a work in progress. Check often for updates!</strong></li>
 </ul>
 </div>
 
@@ -54,7 +59,11 @@ output:
 
 
 ***
-#### Abbreviations
+### Course Overview
+
+Class time in this course will be a mix of lecture and hands-on activities. Data science 1 is an introductory course with no statistics or programming prerequisites. Students come into the course with a broad mix of skills. This means that the most effective mode of instruction tends to be a semi-flipped classroom approach where some primary instruction occurs outside class, in this case largely in the form of Datacamp assignments. Students can work on DataCamp modules at their own pace in an iterative fashion. This frees up class time to spend on work where students can give and receive help from peers and the instructor. Do not treat this instructional mode as an invitation to skip class! Your classmates are one of your greatest resources.
+
+**Abbreviations**
 
 DC = _DataCamp_  
 MD = _Modern Dive_  
@@ -139,7 +148,6 @@ HW = homework
 * MD [Chapter 5. Data Wrangling via dplyr](https://moderndive.com/5-wrangling.html)
 * Stat545 ["Introduction to `dplyr`"](http://Stat545.com/block009_dplyr-intro.html)
 * Stat545 ["`dplyr` Functions for a Single Dataset"](http://stat545.com/block010_dplyr-end-single-table.html) 
-
 
 
 <div class="rmdnote">
@@ -281,7 +289,6 @@ HW = homework
 #### In-Class Activities
 
 * Publishing in RPubs
-* Publishing in GitHub
 * Work on Project 1 
 
 #### Before Week 08
@@ -472,6 +479,7 @@ HW = homework
 
 #### In-Class Activities
 
+* Publishing in GitHub
 * Slides in Markdown
 * Work on Project 2
 
@@ -531,6 +539,6 @@ HW = homework
 
 <div class="rmdnote">
 <ul>
-<li>Our <a href="https://registrar.appstate.edu/sites/registrar.appstate.edu/files/asu_spring_2019_exam_schedule.pdf">final exam time</a> is Thursday May 09 @ 2:00pm in XXX. You will present XXX.</li>
+<li>Our <a href="https://registrar.appstate.edu/sites/registrar.appstate.edu/files/asu_spring_2019_exam_schedule.pdf">final exam time</a> is Thursday May 09 @ 2:00pm in our usual classroom. You will give your final presentations to your peers at this time.</li>
 </ul>
 </div>

@@ -15,17 +15,18 @@ output:
 **Office:**        Walker Hall 228  
 **Office Hours:**  see [My Schedule](https://jillthomley.github.io/schedule.html)
 
-I will use the Course Announcements forum on [AsULearn](https://asulearn.appstate.edu/) to send out announcements and course information. You are responsible for knowing the content of all postings, in addition to anything I say in class. Except for emergencies, all written communication should be handled through your Private Forum on [AsULearn](https://asulearn.appstate.edu/). I prefer this method because it stores all exchanges in a place where we can easily access them and it keeps my class communications separate from the rest of my email.
 
-You can [book me online](https://thomleyje.youcanbook.me/) for an appointment during office hours.
+**Communication**  
 
-
-**Course Description**  
-
-Data science is an exciting discipline that allows you to turn raw data into insight and knowledge. This course is an introduction to the basics of data management and visualization, including reproducible workflow. Topics include introductory concepts of programming and work flow, data manipulation, and data visualization using grammar of graphics. The course will also emphasize the practice of creating reproducible research using a version control system with dynamic document reporting, including tools such as R, R Studio, R Markdown, and Git. The overall goal of Data Science I is to help you learn some of the most important tools in R that will allow you to do data science.
+I will use the Course Announcements forum on [AsULearn](https://asulearn.appstate.edu/) to send out announcements and course information. You are responsible for knowing the content of all postings, in addition to anything I say in class. Except for extreme emergencies, all written communication must be handled through your Private Forum on [AsULearn](https://asulearn.appstate.edu/). I prefer this method because it stores all exchanges in a place where we can easily access them and it keeps my class communications separate from the rest of my email. Monday through Friday, I will check forums for messages at least once per day between 10am and 6pm. I typically will check at least once on Saturdays. Do not expect replies on Sundays.
 
 
-**Course Objectives**
+**Description**  
+
+Data science is an exciting discipline that allows you to turn raw data into insight and knowledge. This course is an introduction to the basics of data management and visualization, including reproducible workflow. Topics include introductory concepts of programming and work flow, data manipulation, and data visualization using grammar of graphics. The course will also emphasize the practice of creating reproducible research using a version control system with dynamic document reporting, using technology such as R, RStudio, R Markdown, and Git. The overall goal of Data Science I is to introduce you to and give you experience with some important tools that will allow you to do data science.
+
+
+**Objectives**
 
 1.	Students will learn to use a reproducible research work flow.
 2.	Students will develop their data science technology expertise.
@@ -37,26 +38,28 @@ Data science is an exciting discipline that allows you to turn raw data into ins
 8.	Students will learn to display their work on the web.
 
 
-**Required Course Texts**
+**Required Texts**
 
-Chester Ismay and Albert Y. Kim (2018). [_Modern Dive: An Introduction to Statistical and Data Sciences via R_](https://moderndive.com/index.html).<br>
-Garrett Grolemund & Hadley Wickham (2017). [_R for Data Science_](http://r4ds.had.co.nz/).
+1.  Chester Ismay and Albert Y. Kim (2018). [_Modern Dive: An Introduction to Statistical and Data Sciences via R_](https://moderndive.com/index.html).
+2.  Garrett Grolemund & Hadley Wickham (2017). [_R for Data Science_](http://r4ds.had.co.nz/).
 
 
 **Assessment & Grading**
 
 The only way to learn data science is to **DO** data science, which includes software such as RStudio and GitHub. Reading the textbook, learning the language, and practicing exercises using real data are critical to your learning and success. Class activities and formative/summative assessments have been structured with these principles in mind. It will be easier to participate if you acquire some familiarity with the vocabulary and methods before we start to discuss and use them. You must "speak the language" of data science (grammar of graphics, `tidy` data, R, RStudio, and Git) to effectively demonstrate your knowledge.  
 
-* DataCamp homework (24 points)
-* Textbook homework (14 points)
-* Weekly reflections (15 points)
-* Personal web page (5 points)
-* Project 1 (10 points)
-* Project 2 (25 points)
-* Presentation (5 points)
-* Attendance (2 points)
+* DataCamp homework (24/100 points)
+* Textbook homework (14/100 points)
+* Weekly reflections (15/100 points)
+* Personal web page (5/100 points)
+* Project 1 (10/100 points)
+* Project 2 (25/100 points)
+* Presentation (5/100 points)
+* Attendance (2/100 points)
 
-Assignments will be scored using rubrics. The [Course Schedule](../Schedule/ScheduleS2019.html) and AsULearn contain additional information about assignments, scoring, and due dates. This course will use the standard 10-point +/- grading scale (93--100 = A, 90--92 = A--, 87--89 = B+, etc.) to determine final grades. Grades will be kept on [AsULearn](https://asulearn.appstate.edu/). You should monitor your grades throughout the term. Feel free to inquire about your grades at any time.      
+Assignments will be scored using rubrics. There are 28 class days this semester. You will receive full credit for attendance if you miss up to three days (10% of class). You will receive half credit if you miss four to six days (20% of class). 
+
+The [Course Schedule](../Schedule/ScheduleS2019.html) and AsULearn contain additional information. This course will use the standard 10-point +/- grading scale (93--100 = A, 90--92 = A--, 87--89 = B+, etc.) to determine final grades. Grades will be kept on [AsULearn](https://asulearn.appstate.edu/). You should monitor your grades throughout the term to make sure they are complete and accurate. Feel free to inquire about your grades at any time.      
 
 
 **Computers and Software**
@@ -70,7 +73,7 @@ This course will use the RStudio server  (https://mathr.math.appstate.edu/) that
 * [LaTeX](https://www.ctan.org/starter)
 * DataCamp (via [AsULearn](https://asulearn.appstate.edu/my/))
 
-You must have an active internet connection and be registered in the course to access the server. To access the server, point any web browser to <https://mathr.math.appstate.edu/>.  You will need to acknowledge the connection is unsecure and possibly add a security exception to your web browser. Use your Appstate Username and Password to access the server.  A screen shot of the RStudio server is shown below. If you have problems with your Appstate Username or Password visit [IT Support Services](http://support.appstate.edu/) or call 262-6266.
+You must have an active internet connection and be registered in the course to access the ASU RStudio server. To access the server, point any web browser to <https://mathr.math.appstate.edu/>. Use your Appstate Username and Password to log in. A screen shot of the RStudio server is shown below. If you have problems with your Appstate Username or Password visit [IT Support Services](http://support.appstate.edu/) or call 262-6266.
 
 <img src="RStudioLogIn.jpg" width="564" style="display: block; margin: auto;" />
 

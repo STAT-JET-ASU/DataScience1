@@ -15,6 +15,10 @@ output:
 
 ***
 
+```{block, WIP, type='rmdimportant'}
+* **This schedule is a work in progress. Check often for updates!**
+```
+
 ```{block, introtext, type='rmdnote'}
 * We will be using free digital textbooks/resources in this course.
     + [GitHub](https://github.com/)
@@ -26,7 +30,6 @@ output:
 * All of the required software for this course is provided.
 * Be prepared to actively participate and collaborate.
 * Refer to the [Course Syllabus](../Syllabus/SyllabusS2019.html) for additional details.
-* __This schedule is a work in progress. Check often for updates!__
 ```
 
 ```{block, introoptional, type='rmdoptional'}
@@ -40,13 +43,17 @@ Watch the following videos as appropriate:
 ```
 
 ```{block, duedates, type='rmdimportant'}
-* __All assignments are due Thursday @ 11pm of the week in which they appear.__ 
-* __Check AsULearn for project/homework assignment instructions and grades.__
+* **All assignments are due Thursday @ 11pm of the week in which they appear.** 
+* **Check AsULearn for project/homework assignment instructions and grades.**
 ```
 
 
 ***
-#### Abbreviations
+### Course Overview
+
+Class time in this course will be a mix of lecture and hands-on activities. Data science 1 is an introductory course with no statistics or programming prerequisites. Students come into the course with a broad mix of skills. This means that the most effective mode of instruction tends to be a semi-flipped classroom approach where some primary instruction occurs outside class, in this case largely in the form of Datacamp assignments. Students can work on DataCamp modules at their own pace in an iterative fashion. This frees up class time to spend on work where students can give and receive help from peers and the instructor. Do not treat this instructional mode as an invitation to skip class! Your classmates are one of your greatest resources.
+
+**Abbreviations**
 
 DC = _DataCamp_  
 MD = _Modern Dive_  
@@ -129,7 +136,6 @@ You may also wish to explore DC [_Working with the Rstudio IDE (Part 1)_](https:
 * MD [Chapter 5. Data Wrangling via dplyr](https://moderndive.com/5-wrangling.html)
 * Stat545 ["Introduction to `dplyr`"](http://Stat545.com/block009_dplyr-intro.html)
 * Stat545 ["`dplyr` Functions for a Single Dataset"](http://stat545.com/block010_dplyr-end-single-table.html) 
-
 
 
 ```{block, week02note, type='rmdnote'}
@@ -494,5 +500,5 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 ### Final Exam
 
 ```{block, final, type='rmdnote'}
-* Our [final exam time](https://registrar.appstate.edu/sites/registrar.appstate.edu/files/asu_spring_2019_exam_schedule.pdf) is Thursday May 09 @ 2:00pm in XXX. You will present XXX.
+* Our [final exam time](https://registrar.appstate.edu/sites/registrar.appstate.edu/files/asu_spring_2019_exam_schedule.pdf) is Thursday May 09 @ 2:00pm  in our usual classroom. You will give your final presentations to your peers at this time.
 ```

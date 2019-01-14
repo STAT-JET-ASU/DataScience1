@@ -5,7 +5,7 @@ navbar:
   title: "Data Science 1"
   left:
     - text: "Dr. Thomley's Schedule"
-      href: https://jillthomley.github.io/scheduleF18.html
+      href: https://jillthomley.github.io/schedule.html
     - text: "Dr. Arnholt's Computing Resources"
       href: https://alanarnholt.github.io/resources.html
     
