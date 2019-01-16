@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Git and GitHub</title>
+  <title>RStudio, Git, and GitHub</title>
 
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -10,6 +10,7 @@
 
 
 
+  <meta name="date" content="2019-01-16" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -20,7 +21,7 @@
     var SLIDE_CONFIG = {
       // Slide settings
       settings: {
-                title: 'Git and GitHub',
+                title: 'RStudio, Git, and GitHub',
                         useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
@@ -62,6 +63,10 @@
       font-style: italic;
     }
 
+    summary {
+      display: list-item;
+    }
+
     slides > slide {
       -webkit-transition: all 0.4s ease-in-out;
       -moz-transition: all 0.4s ease-in-out;
@@ -93,7 +98,7 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">8/30/2018</p>
+            <p style="margin-top: 6px; margin-left: -2px;">2019-01-16</p>
           </hgroup>
   </slide>
 
@@ -110,21 +115,6 @@
 Log into your GitHub account at <a href='https://github.com' title=''>https://github.com</a>.
 
 <p style="text-align: center;">
-
-</article></slide><slide class=""><hgroup><h2>Let&#39;s Begin!</h2></hgroup><article  id="lets-begin">
-
-<p>From the main GitHub page&#8230;</p>
-
-<ul>
-<li>choose the “Start a project” (or green &quot;New&quot;) button</li>
-<li>create a new repository named <strong>datascience1repo</strong></li>
-<li>add a description like &quot;this my practice repository&quot;</li>
-<li>choose &quot;Public&quot; or &quot;Private&quot; (if you have private access)</li>
-<li>choose &quot;Initialize this repository with a README&quot;</li>
-<li>click the green &quot;Create repository&quot; button (<em>drum roll&#8230;</em>)</li>
-</ul>
-
-<p>Adding a license is optional. If you want one, the <a href='https://opensource.org/licenses/MIT' title=''>MIT license</a> is a good general purpose license.</p>
 
 </article></slide><slide class=""><hgroup><h2>Coming Out of Your Shell</h2></hgroup><article  id="coming-out-of-your-shell">
 
@@ -154,6 +144,33 @@ Log into your GitHub account at <a href='https://github.com' title=''>https://gi
 <p>     <code>git config --global user.name &quot;commitname&quot;</code> [enter]</p>
 
 <p>These set an <strong><a href='https://help.github.com/articles/setting-your-commit-email-address-in-git/' title=''>email</a></strong> and <strong><a href='https://help.github.com/articles/setting-your-username-in-git/' title=''>name</a></strong> linked with any commit you make. They do not have to be the same as your primary GitHub email and username. You can change them later.</p>
+
+</article></slide><slide class=""><hgroup><h2>Cache Those Credentials</h2></hgroup><article  id="cache-those-credentials">
+
+<p>Would you prefer not to type in your username and password for each commit? Me too!</p>
+
+<p>In the terminal, type the following:</p>
+
+<p><code>git config --global credential.helper &#39;cache --timeout=10000000&#39;</code></p>
+
+<p>Note: Should be a a single line with no space between <code>--</code> and <code>timeout</code> ! The timeout value is 10 million.</p>
+
+<p>This will store your password for ten million seconds, which is about 16 weeks, enough for a semester.</p>
+
+</article></slide><slide class=""><hgroup><h2>Let&#39;s Begin!</h2></hgroup><article  id="lets-begin">
+
+<p>From the main GitHub page&#8230;</p>
+
+<ul>
+<li>choose the “Start a project” (or green &quot;New&quot;) button</li>
+<li>create a new repository named <strong>datascience1repo</strong></li>
+<li>add a description like &quot;this my practice repository&quot;</li>
+<li>choose &quot;Public&quot; or &quot;Private&quot; (if you have private access)</li>
+<li>choose &quot;Initialize this repository with a README&quot;</li>
+<li>click the green &quot;Create repository&quot; button (<em>drum roll&#8230;</em>)</li>
+</ul>
+
+<p>Adding a license is optional. If you want one, the <a href='https://opensource.org/licenses/MIT' title=''>MIT license</a> is a good general purpose license.</p>
 
 </article></slide><slide class=""><hgroup><h2>Let&#39;s Make a Project</h2></hgroup><article  id="lets-make-a-project">
 
@@ -187,18 +204,6 @@ Log into your GitHub account at <a href='https://github.com' title=''>https://gi
 </ul>
 
 <p>Soon we will create a new file and perform our first <code>commit</code> and <code>push</code>, but first you need to set the systems to store your login and password so you do not have to enter it for every commit.</p>
-
-</article></slide><slide class=""><hgroup><h2>Cache Those Credentials</h2></hgroup><article  id="cache-those-credentials">
-
-<p>Would you prefer not to type in your username and password for each commit? Me too!</p>
-
-<p>In the terminal, type the following:</p>
-
-<p><code>git config --global credential.helper &#39;cache --timeout=10000000&#39;</code></p>
-
-<p>Note: Should be a a single line with no space between <code>--</code> and <code>timeout</code> ! The timeout value is 10 million.</p>
-
-<p>This will store your password for ten million seconds, which is about 16 weeks, enough for a semester.</p>
 
 </article></slide><slide class=""><hgroup><h2>Create, Commit, Push, Pull</h2></hgroup><article  id="create-commit-push-pull">
 

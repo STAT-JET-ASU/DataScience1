@@ -1,7 +1,7 @@
 ---
-title: "Git and GitHub"
+title: "RStudio, Git, and GitHub"
 author: "Jill Thomley"
-date: "8/30/2018"
+date: "`r Sys.Date()`"
 output: ioslides_presentation
 ---
 
@@ -10,20 +10,6 @@ output: ioslides_presentation
 <p style="text-align: center;"><img src = "images/github-logo.jpg"></p>
 
 <p style="text-align: center;">Log into your GitHub account at https://github.com.<p style="text-align: center;">
-
-
-## Let's Begin!
-
-From the main GitHub page...
-
-* choose the “Start a project” (or green "New") button
-* create a new repository named __datascience1repo__
-* add a description like "this my practice repository"
-* choose "Public" or "Private" (if you have private access)
-* choose "Initialize this repository with a README"
-* click the green "Create repository" button (_drum roll..._)
-
-Adding a license is optional. If you want one, the [MIT license](https://opensource.org/licenses/MIT) is a good general purpose license.
 
 
 ## Coming Out of Your Shell
@@ -56,6 +42,33 @@ In RStudio...
 These set an **[email](https://help.github.com/articles/setting-your-commit-email-address-in-git/)** and **[name](https://help.github.com/articles/setting-your-username-in-git/)** linked with any commit you make. They do not have to be the same as your primary GitHub email and username. You can change them later.
 
 
+## Cache Those Credentials
+
+Would you prefer not to type in your username and password for each commit? Me too!
+
+In the terminal, type the following:
+
+`git config --global credential.helper 'cache --timeout=10000000'`
+
+Note: Should be a a single line with no space between `--` and `timeout` ! The timeout value is 10 million.
+
+This will store your password for ten million seconds, which is about 16 weeks, enough for a semester.
+
+
+## Let's Begin!
+
+From the main GitHub page...
+
+* choose the “Start a project” (or green "New") button
+* create a new repository named __datascience1repo__
+* add a description like "this my practice repository"
+* choose "Public" or "Private" (if you have private access)
+* choose "Initialize this repository with a README"
+* click the green "Create repository" button (_drum roll..._)
+
+Adding a license is optional. If you want one, the [MIT license](https://opensource.org/licenses/MIT) is a good general purpose license.
+
+
 ## Let's Make a Project
 
 In RStudio... 
@@ -85,17 +98,7 @@ Now let's head back over to R Studio...
 Soon we will create a new file and perform our first `commit` and `push`, but first you need to set the systems to store your login and password so you do not have to enter it for every commit.
 
 
-## Cache Those Credentials
 
-Would you prefer not to type in your username and password for each commit? Me too!
-
-In the terminal, type the following:
-
-`git config --global credential.helper 'cache --timeout=10000000'`
-
-Note: Should be a a single line with no space between `--` and `timeout` ! The timeout value is 10 million.
-
-This will store your password for ten million seconds, which is about 16 weeks, enough for a semester.
 
 
 ## Create, Commit, Push, Pull
