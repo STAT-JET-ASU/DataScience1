@@ -1,5 +1,5 @@
 ---
-title: "RStudio, Git, and GitHub"
+title: "Git, GitHub, and RStudio"
 author: "Jill Thomley"
 date: "`r Sys.Date()`"
 output: 
