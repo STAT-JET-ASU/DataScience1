@@ -88,7 +88,7 @@ Potential barrier: researchers may lack programming and “best practices” ski
 Use your ASU Username and Password to log in to the [RStudio server](https://mathr.math.appstate.edu/). Let me know if you have trouble!
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("RStudioLogIn.jpg", dpi = 150)
+knitr::include_graphics("images/RStudioLogIn.jpg", dpi = 150)
 ```
 
 
