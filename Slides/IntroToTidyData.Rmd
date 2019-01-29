@@ -121,7 +121,7 @@ We can access elements of vectors, matrices, and data frames using `[]` (indices
 
 ## A Word on Missing Values
 
-In some datasets, every variable had a value for every case. That is frequently *not* true in real-life data. 
+In some datasets, every variable has a value for every case. That is frequently *not* true in real-life data. 
 
 ```{r, eval = FALSE}
 sum(complete.cases(draft)) # this is two nested functions
@@ -163,5 +163,7 @@ Sometimes we need to `gather` or `spread` a dataset because the observational un
 
 
 ## TBA
+
+More on `dplyr` functions tba!
 
 [dplyr functions for a single dataset](http://stat545.com/block010_dplyr-end-single-table.html)
