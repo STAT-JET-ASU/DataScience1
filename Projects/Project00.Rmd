@@ -16,7 +16,7 @@ You will create and publish a professional-quality [personal web page using R Ma
 
 ### Initial Page Set-Up
 
-We will work through initial setup and configuration together in class using a prepared GitHub repo that you will fork and clone to your own GitHub and RStudio accounts. You will then customize and create documents for your own page.
+We will work through initial setup and configuration together in class using a template [GitHub repo](https://github.com/STAT-JET-ASU/basicwebpagetemplate) that you will fork and clone to your own GitHub and RStudio accounts. You will then customize and create documents for your own page.
 
 
 ### Site Requirements
@@ -51,6 +51,8 @@ Your web site should include all of the following pages and elements. Please not
 * A working link to an external site on at least one of the pages
 
 * An embedded image or video on at least one of the pages
+
+* An edited README.md file for your personal web page repo.
 
 
 ### Examples from S18 and F18
