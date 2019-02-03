@@ -1,0 +1,79 @@
+---
+title: 'Data Science Web Page'
+author: "Author: [Jill E. Thomley](https://jillthomley.github.io/)"
+date: 'Updated: `r format(Sys.time(), "%A, %B %d, %Y @ %X")`'
+output: 
+  html_document:
+    there: cosmo
+---
+
+***
+
+### Purpose and Goal
+
+You will create and publish a professional-quality [personal web page using R Markdown](https://rmarkdown.rstudio.com/rmarkdown_websites.htm) and [GitHub Pages](https://pages.github.com/).
+
+
+### Initial Page Set-Up
+
+We will work through initial setup and configuration together in class using a prepared GitHub repo that you will fork and clone to your own GitHub and RStudio accounts. You will then customize and create documents for your own page.
+
+
+### Site Requirements
+
+Your web site should include all of the following pages and elements. Please note that your site will be publicly accessible once it is published, so do not include any information you would not want to be broadly available on the internet.
+
+* Site YAML -- the file that controls the web site structure
+
+    * Choose a [theme](http://www.datadreaming.org/post/r-markdown-theme-gallery/) other than `default`
+    
+    * Choose a [highlight style](https://eranraviv.com/syntax-highlighting-style-in-rmarkdown/) other than `default`
+    
+    * Configure the text, links, and/or icons in your navigation bar 
+    
+    * Link to the GitHub repo for your web page in the navigation bar
+
+* INDEX page -- the main (home) page for your web site
+
+    * A blurb about yourself or a list of your interests
+    
+    * Contact information (at least an email address)
+
+* RESUME page -- a brief academic and professional resume 
+
+    * Length should be equivalent to about 1 or 2 pages
+
+    * You do _not_ need to include address / phone number
+
+
+* OTHER page -- for example, your research or list of links (at least 5)
+
+* A working link to an external site on at least one of the pages
+
+* An embedded image or video on at least one of the pages
+
+
+### Examples from S18 and F18
+
+We will discuss the pros and cons of these pages.
+
+* https://hollomanma.github.io/other.html
+* https://mitchelleb.github.io/index.html
+* https://latowskyna.github.io/index.html
+* https://austindeans.github.io/index.html
+* https://thorpedaley.github.io/resume.html
+* https://joshuakornmayer.github.io/index.html
+* https://yasminayalajohnson.github.io/index.html
+
+
+### Additional Resources
+
+View some examples and extensions; e.g., blogs.
+
+* [Creating websites in R by Emily C. Zabor](http://www.emilyzabor.com/tutorials/rmarkdown_websites_tutorial.html)
+* [Karl Broman's web site (custom URL)](http://kbroman.org/)
+* [Custom Domains with GitHub Pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
+* [How to set up your own R blog with Github pages and Jekyll Bootstrap](https://shiring.github.io/blogging/2016/12/04/diy_your_own_blog) 
+* [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/)
+
+***
