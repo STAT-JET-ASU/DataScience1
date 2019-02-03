@@ -1,0 +1,261 @@
+---
+title: 'Data Science Project 2'
+author: 'YOUR NAMES HERE'
+date: 'Updated: `r format(Sys.time(), "%A, %B %d, %Y @ %X")`'
+output: html_document
+---
+
+<hr> 
+
+1. Use dplyr functions and pipes when possible.
+2. All graphs must be created using ggplot2.
+3. Use additional packages as needed.
+4. Document any nonstandard code.
+
+If you include any numerical values from analyses in your answers, be sure to code them with embedded r code rather than typing in the values by hand. Include an R chunk at the top of your markdown where you load all packages used in your analyses, similar to the one shown below. 
+
+```{r, message = FALSE}
+# Load all packages you use here 
+# Suppress warnings and messages
+# Do not suppress the actual code
+library(tidyverse)
+library(maps)
+library(jsonlite)
+```
+
+#### Problem 1
+
+The website [data.gov](https://www.data.gov/) provides access to data in a variety of formats. One such dataset is the [NCHS - Teen Birth Rates for Age Group 15-19 in the United States by County](https://catalog.data.gov/dataset/teen-birth-rates-for-age-group-15-19-in-the-united-states-by-county), which contains estimated teen birth rates for age group 15–19 (expressed per 1,000 females aged 15–19) by US county and year for the years 2003-2015. Mapping coordinates for mainland US counties are provided by the `map` package in R. Use the following code to create the `counties` dataset. You can read about making map graphics in R [here](http://eriqande.github.io/rep-res-web/lectures/making-maps-with-R.html) and [here](https://socviz.co/maps.html).
+
+```{r}
+counties <- map_data("county")
+glimpse(counties)
+```
+
+A) Go to the web site for the teen birth rate data and copy the link address to the `csv` file from the download button. Create a dataset called `teenrate` that contains the data for 2005 and 2015 by: (1) reading the data into R using the link; (2) filtering it for the appropriate cases; and (3) using the `mutate_if` and `tolower` functons to convert the contents of all factor variables to lower case. Perform all of the steps in one sequence of piped statements. Show the structure of the dataset using `glimpse`.
+
+```{r}
+teenrate <- read.csv("https://data.cdc.gov/api/views/3h58-x6cd/rows.csv?accessType=DOWNLOAD") %>% 
+  filter(Year %in% c(2005, 2015)) %>% 
+  mutate_if(is.factor, tolower)
+glimpse(teenrate)
+```
+
+
+B) Join the `counties` and `teenrate` datasets into a single dataset using both state and county names, then filter it so that it contains only data for eighteen [counties in western North Carolina](https://carolinapublicpress.org/296/the-counties-of-western-north-carolina/). Call the dataset `dataWNC`. Use `select` to choose, rename, and reorder variables so that `dataWNC` has the following contents: group, state, county, latitide, longitude, year, rate, LCL, UCL. Perform all of the steps in one sequence of piped statements. Show the structure of the dataset using `glimpse`.
+
+```{r}
+dataWNC <- left_join(counties, teenrate, by = c("region" = "State", "subregion" = "County")) %>%  
+  filter(region == "north carolina", 
+         subregion %in% c("avery",
+                          "buncombe",
+                          "cherokee",
+                          "clay",
+                          "graham",
+                          "haywood",
+                          "henderson",
+                          "jackson",
+                          "macon",
+                          "madison",
+                          "mcdowell",
+                          "mitchell",
+                          "polk",
+                          "rutherford",
+                          "swain",
+                          "transylvania",
+                          "yancey",
+                          "watauga")) %>% 
+  select(group = group,
+         state = region, 
+         county = subregion, 
+         latitude = lat, 
+         longitude = long, 
+         year = Year,
+         rate = Birth.Rate, 
+         LCL = Lower.Confidence.Limit, 
+         UCL = Upper.Confidence.Limit)
+glimpse(dataWNC)
+```
+
+
+C) Use `ggplot` with `facet_grid` to create maps that compare teen birth rates in western NC for 2005 and 2015. Use `scale_fill_gradient` or some other color scheme that makes the differences in rates clear and use the `ditch_the_axes` theme found on the first mapping web page linked above to get rid of the unnecessary x and y axes. Include a title, a subtitle that notes that the birthrate is per 1000 females aged 15 to 19, and a caption that says "Source: Centers for Disease Control (CDC)". Additional code is provided to add names to your plot.
+
+```{r, eval = FALSE}
+# use this code before the plot to make the set of names
+cnames <- aggregate(cbind(longitude, latitude) ~ county, 
+                    data = dataWNC, 
+                    FUN = function(x)median(range(x)))
+
+# include this code to put the county names on the plot 
+geom_text(data = cnames, aes(x = longitude, y = latitude, label = county), size = 2)
+```
+
+```{r}
+cnames <- aggregate(cbind(longitude, latitude) ~ county, 
+                    data = dataWNC, 
+                    FUN = function(x)median(range(x)))
+
+ditch_the_axes <- theme(
+  axis.text = element_blank(),
+  axis.line = element_blank(),
+  axis.ticks = element_blank(),
+  panel.border = element_blank(),
+  panel.grid = element_blank(),
+  axis.title = element_blank())
+
+ggplot(data = dataWNC) + 
+  geom_polygon(aes(x = longitude, y = latitude, fill = rate, group = group), color = "white") + 
+  geom_text(data = cnames, aes(x = longitude, y = latitude, label = county), size = 2) +
+  coord_fixed() +
+  facet_grid(year ~ .) +
+  ditch_the_axes + 
+  scale_fill_gradient(low = "white", high = "purple") +
+  labs(title = "Teen Birth Rate in Western North Carolina",
+       subtitle = "expressed as births per 1,000 females aged 15–19",
+       caption = "Source: Centers for Disease Control (CDC)")
+```
+
+
+D) Use the code below to create the dataset `dataWNC2`. Show the structure of the dataset using `glimpse`. Then create a horizontal barplot for 2015 only showing the estimated birthrate in each county with error bars. Embed your filter statement in the ggplot code. Use the `reorder` function in your `aes` to sort the bars from smallest to largest. Format your plot to be aesthetically pleasing, including appropriate axis labels and a caption that says "Source: Centers for Disease Control (CDC)". 
+
+```{r, eval = FALSE}
+dataWNC2 <- dataWNC %>% 
+  group_by(county, year) %>% 
+  summarize(rate = mean(rate), LCL = mean(LCL), UCL = mean(UCL))
+```
+
+```{r}
+dataWNC2 <- dataWNC %>% 
+  group_by(county, year) %>% 
+  summarize(rate = mean(rate), LCL = mean(LCL), UCL = mean(UCL))
+ggplot(filter(dataWNC2, year == 2015), aes(x = reorder(county, -rate), y = rate)) +
+  geom_bar(stat = "identity") +
+  geom_errorbar(aes(y = rate, ymin = LCL, ymax = UCL)) +
+  coord_flip()
+```
+
+
+E) Use the `gather` function on the variables LCL, rate, and UCL in `dataWNC3` to create the dataset `dataWNC3` containing the columns county, year, statname (whether an observation is a LCL, rate, or UCL), and statvalue (the value of the stat). Show the structure of the dataset using `glimpse`. Create a [Cleveland dot plot](https://uc-r.github.io/cleveland-dot-plots) for 2015 that shows the rates with upper and lower confidence limits. As you did above, embed your filter statement in the ggplot code and use the `reorder` function in your `aes` to sort the counties from smallest to largest rate. Format your plot to be aesthetically pleasing, including appropriate axis labels and a caption that says "Source: Centers for Disease Control (CDC)". Hint: You will be connecting three points instead of two like the example, and your grouping variable will be county.
+
+```{r}
+dataWNC3 <- dataWNC2 %>% gather(c(LCL, rate, UCL), key = "statname", value = "statvalue")
+glimpse(dataWNC3)
+ggplot(filter(dataWNC3, year == 2015), aes(x = statvalue, y = reorder(county, -statvalue))) +
+  geom_line(aes(group = county)) +
+  geom_point(aes(color = statname)) +
+  scale_color_manual(values = c("red", "black", "red"))
+```
+
+
+#### Problem 2
+
+GitHub user [Justin Dorfman](https://github.com/jdorfman) maintains a curated repository with links to several JSON datasets that don't require authentication. These include a few examples of [population data](https://github.com/jdorfman/awesome-json-datasets#population), which he appears to have sourced from the [World Population API](http://api.population.io/#!/population/retrievePopulationTableAllAges). 
+
+A) Read in Dorfman's population datasets listed under "United States Population Table (Ages 0-100)" using the `fromJSON` function found in the `jsonlite` package. Then go to the World Population API and use the `GET /population/{year}/{country}/` interface to get a JSON URL for the United States in 2015. Combine these files into a single dataset named `usPOPages` that contains the following variables in order: year, age, females, males, total. Show the structure of the dataset using `glimpse`.
+
+```{r}
+usPOPages <- rbind(fromJSON("http://api.population.io/1.0/population/1950/United%20States/?format=json"), 
+                   fromJSON("http://api.population.io/1.0/population/1960/United%20States/?format=json"), 
+                   fromJSON("http://api.population.io/1.0/population/1970/United%20States/?format=json"), 
+                   fromJSON("http://api.population.io/1.0/population/1980/United%20States/?format=json"), 
+                   fromJSON("http://api.population.io/1.0/population/1990/United%20States/?format=json"), 
+                   fromJSON("http://api.population.io/1.0/population/2000/United%20States/?format=json"), 
+                   fromJSON("http://api.population.io/1.0/population/2010/United%20States/?format=json"), 
+                   fromJSON("http://api.population.io:80/1.0/population/2015/United%20States/")) %>% 
+  select(year, age, females, males, total)
+glimpse(usPOPages)
+```
+
+
+B) It is common to divide people into generations, particularly for marketing (e.g., [this web article](http://www.marketingteacher.com/the-six-living-generations-in-america/)). Create a new ordered factor variable using these age categories. Label them with the age ranges rather than the generation names, since those names only apply in very recent years. The `case_when` function will be useful. Show the structure of agecats using `str`.
+
+* Generation Z, or iGeneration (under 18 years old)
+* Millennials, or Generation Y (18 – 34 years old)
+* Generation X (roughly 35 – 49 years old)
+* Baby Boomers (roughly 50 – 69 years old)
+* Silent Generation (roughly 70 – 89 years old)
+* GI Generation (roughly 90+)
+
+```{r}
+usPOPages <- usPOPages %>% 
+  mutate(agecats = factor(case_when(age < 18 ~ "under 18",
+                             18 <= age & age <= 34 ~ "18-34",
+                             35 <= age & age <= 49 ~ "35-49",
+                             50 <= age & age <= 69 ~ "50-69",
+                             70 <= age & age <= 89 ~ "70-89",
+                             90 <= age  ~ "90+"),
+                          levels = c("under 18", 
+                                     "18-34", 
+                                     "35-49",
+                                     "50-69",
+                                     "70-89",
+                                     "90+")))
+str(usPOPages$agecats)
+```
+
+
+C) The dataset contains a variable called total, which should be the sum of males and females. However, some values to be rounded. For what fraction of cases does total not match the sum of males and females? 
+
+```{r}
+usPOPages %>% mutate(notequal = (females + males) != total) %>% summarize(fraction = mean(notequal))
+```
+
+
+
+#### Problem 3
+
+The FBI's [Uniform Crime Reporting (UCR) Program](https://www.fbi.gov/services/cjis/ucr) collects data and dissminates statistics and other information about crime in the United States; for example, this [2017 table](https://ucr.fbi.gov/crime-in-the-u.s/2017/crime-in-the-u.s.-2017/topic-pages/tables/table-1) summarizing incidents in several categories for 1998 through 2017. 
+
+A) Go to the 2017 table and copy the link address to the `xls` file from Download Excel (Table 1). Use the `read_xl` function from the `readxl` package to create a dataset called ucr2017 that contauins the contents of the table. The data is found in rows 5 through 24 and columns A through V. The column headers are found in Row 4, but you should create your own column names using the following: year, population, violent, violentrate, murder, murderrate, raperevised, raperevisedrate, rapelegacy, rapelegacyrate, robbery, robberyrate, assault, assaultrate, property, propertyrate, burglary, burglaryrate, larceny, larcenyrate, vehicle, vehiclerate. Show the structure of the dataset using `glimpse`.
+
+```{r}
+library(readxl)
+url <- "https://ucr.fbi.gov/crime-in-the-u.s/2017/crime-in-the-u.s.-2017/tables/table-1/table-1.xls/output.xls"
+download.file(url, "crimetable.xls")
+ucr2017 <- read_excel("crimetable.xls", 
+                          sheet = 1, 
+                          range = "A5:V24", 
+                          col_names = c("year",
+                                        "population",
+                                        "violent",
+                                        "violentrate",
+                                        "murder",
+                                        "murderrate",
+                                        "raperevised",
+                                        "raperevisedrate",
+                                        "rapelegacy",
+                                        "rapelegacyrate",
+                                        "robbery", 
+                                        "robberyrate",
+                                        "assault",
+                                        "assaultrate",
+                                        "property",
+                                        "propertyrate",
+                                        "burglary",
+                                        "burglaryrate",
+                                        "larceny",
+                                        "larcenyrate",
+                                        "vehicle",
+                                        "vehiclerate"))
+glimpse(ucr2017)
+```
+
+
+B) Some of the years had numerical superscripts for footnotes in the original table, which were improperly merged with the year itself when the data were read into R. For example, 2001 appears as 20015. Use the `stringr` function `substr` in a `mutate` to correct this problem. At the same time, convert the vector type of year from character to numeric.
+
+```{r}
+
+```
+
+
+C) The definition of rape changed during the time period covered by this table ("revised" versus "legacy"). Therefore, some years have missing data. How many cases are complete? Which years are they? Print both the count of how many complete cases there are in the dataset and a vector containing the years that have complete data.
+
+```{r}
+
+```
+
+
+<hr>
+
+DONE!!!
+
