@@ -4,7 +4,7 @@ author: "Author: [Jill E. Thomley](https://jillthomley.github.io/)"
 date: 'Updated: `r format(Sys.time(), "%A, %B %d, %Y @ %X")`'
 output: 
   html_document:
-    there: cosmo
+    theme: yeti
 ---
 
 ***
