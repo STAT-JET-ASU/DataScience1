@@ -1,0 +1,76 @@
+---
+title: 'Data Science Project 1'
+author: 'YOUR NAMES HERE'
+date: 'Updated: `r format(Sys.time(), "%A, %B %d, %Y @ %X")`'
+output: html_document
+---
+
+<hr> 
+
+#### DATA FILES
+
+* [Source and description of MLCO2annual dataset](ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_annmean_mlo.txt)
+
+* [MLC02annual dataset](https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/MLCO2annual.csv) (comma delimited text file)
+
+* [Source and description of MLCO2monthly dataset](ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_mm_mlo.txt)
+
+* [MLCO2monthly dataset](https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/MLCO2monthly.csv) (comma delimited text file)
+
+* [Source and description of MLCO2weekly dataset](ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_weekly_mlo.txt)
+
+* [MLCO2weekly dataset](https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/MLCO2weekly.csv) (comma delimited text file)
+
+* [Source and description of MLCO2growth dataset](https://www.esrl.noaa.gov/gmd/ccgg/trends/gr.html)
+
+* [MLCO2growth dataset](https://raw.githubusercontent.com/STAT-JET-ASU/DataScience1/master/Projects/MLCO2growth.csv) (comma delimited text file)
+
+
+```{r}
+# Read in the datasets and load any necessary packages here
+# Suppress the code and any messages / warnings it produces
+
+```
+
+#### DATA VISUALIZATIONS
+
+Use only the three datasets provided. In some cases, you will have to create new variables or perform your own calculations / transformations. When replicating graphs, you do not have to include the round NOAA and Scripps badges or the March 2018 date stamps.
+
+* Replicate the content of the graph shown on [this page](https://www.esrl.noaa.gov/gmd/ccgg/trends/index.html).
+
+* Replicate the content of the graph shown on [this page](https://www.esrl.noaa.gov/gmd/ccgg/trends/full.html).
+
+* Replicate the content of the graph shown on [this page](https://www.esrl.noaa.gov/gmd/ccgg/trends/gr.html).
+
+* Using the monthly data, create side-by-side boxplots of CO2 by decade. Exclude the 1950s (1959 and before) and 2010s (2010 and after) because the data for those decades is incomplete.
+
+* Use the [`multiplot`](http://www.cookbook-r.com/Graphs/Multiple_graphs_on_one_page_(ggplot2)/) function from the `Rmisc` package to create a display for the 21st century that includes four stacked plots. Exclude the incomplete 2018 data.
+    + barplot of mean CO2 for each year with error bars showing uncertainty (using annual data)
+    + side-by-side boxplots of CO2 by year (using weekly data)
+    + side-by-side boxplots of adjusted CO2 by year (using monthly data)
+    + a time series plot showing the change in CO2 for one year, 10 years, and since 1800 (using weekly data)
+
+```{r}
+# Put the code for each bullet in a separate code chunk
+# Do not suppress your code here when you knit to HTML
+
+```
+
+#### QUESTIONS
+
+1) Discuss briefly how these data were collected.
+
+ANSWER: 
+
+2) What trend(s) or patterns over time do you observe in the CO<sub>2</sub> graphs?
+
+ANSWER: 
+
+3) In what way could these analyses be used to support the theory of anthropogenic (man-made) climate change? Why are data and graphs such as these *evidence* rather than *proof*?
+
+ANSWER: 
+
+<hr>
+
+DONE!!!
+

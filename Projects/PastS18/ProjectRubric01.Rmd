@@ -1,0 +1,20 @@
+---
+title: 'Data Science Project 01 Rubric'
+date: 'Updated: `r format(Sys.time(), "%A, %B %d, %Y @ %X")`'
+output: html_document
+---
+
+<hr> 
+
+Field | Excellent (3) | Competent (2)  | Needs Work (1)
+------|---------------|----------------|---------------
+Statistical Understanding<br>(for each question) |  Answers to data analysis questions demonstrate clear statistical understanding, with correct computations and appropriate use of statistical terms and results. The scope of discussions and inferential conclusions are appropriate given the sampling methods.  |  Some statistical terms are used incorrectly or some results are not correctly interpreted. The scope of discussions or inferential conclusions is inappropriate for the sampling methods.  |  Answers are not computed correctly. Most statistical terms are used incorrectly or most results are not correctly interpreted.
+Graphical Representations<br>(for each graph)  |  Appropriate graphs for the types of data are used or specified types of graphs have been made. Graphs have appropriately labeled axes and titles. Multivariate graphs use legends and labels. Computer variable names are replaced with descriptive variable names. |  Appropriate graphs for the type of data are used. Some titles, axis labels, or legends are inappropriate. Graphs use computer variable names. Some elements of specified graphs have not been correctly replicated. |  Inappropriate graphs are used or most elements of assigned graphs have not been replicated. Axis labels and titles are absent, and computer variable names appear in the graphs.
+Reproducible Analyses<br>(overall document) |  All graphs, R code, and computed answers are created using text files (i.e., Markdown and .csv files). Computed answers are are inserted into text using inline R code. Document includes `sessionInfo()` at the end.  Markdown file knits correctly into HTML. |  Graphs, code, and answers are created from text files. Markdown knits correctly. Contains hardcoded answers. No `sessionInfo()` at the end of the document.  |  Document uses copy and paste with graphs or code. Answers are hardcoded.
+R Coding<br>(overall document)  |  Code produces correct answers. Non-standard or complex code is clearly commented. All code is formatted using a consistent standard.  |  Code produces correct answers. Commenting is not used with non-standard and complex code. Inconsistent code formatting is used.  |  Code does not produce correct answers. Code has no comments and is not consistently formatted.
+Clarity<br>(overall document)   |   Few errors of grammar and usage; any minor errors do not interfere with meaning. Language style and word choice are appropriate for the assignment, effective, and enhance meaning.  |  Some errors of grammar and usage; errors do not interfere with meaning. Language style and word choice are mostly effective and appropriate for the assignment.  |  Major errors of grammar and usage make meaning unclear. Language style and word choice are ineffective and/or inappropriate.
+
+<hr>
+
+*Adapted from Alan T. Arnholt's STT3850 Homework Rubric*
+
