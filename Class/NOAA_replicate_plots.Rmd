@@ -212,6 +212,8 @@ CO2_weekly_21st <-
   mutate(period = factor(period, 
                          levels = c("since1yr", "since10yr", "since1800"),
                          labels = c("one year ago", "ten years ago", "the year 1800")))
+str(CO2_weekly_21st)
+glimpse(CO2_weekly_21st)
 ```
 
 ```{r}
