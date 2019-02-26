@@ -21,6 +21,8 @@ If you are including a numerical result in your text, you should use [inline cod
 
 All plots should have informative titles and axis labels. You may also change colors.
 
+<p style="color: red;">THIS DOCUMENT WAS EDITED FOR SPELLING / GRAMMAR / CLARITY TUESDAY 02/26</p>
+
 
 ```{r setup_chunk, echo = FALSE}
 knitr::opts_chunk$set(message = FALSE, warning = FALSE, comment = "")
@@ -63,14 +65,14 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE, comment = "")
 
 #### The Question
 
-In 1966, the World Meteorological Organization (WMO) put forth the term “climatic change” to refer to climatic variability on time-scales longer than ten years, regardless of the cause for such change. During the next decade, scientists began to suspect that human activities had the potential to drastically alter the global climate in ways that would have negative impacts on our environment. The term evolved into “climate change” and is now used to describe both the process of change and the perceived problem. Sometimes the term “global warming” is used, though in many ways this fails to adequately describe the variability in impact, since climate change can cause both hot and cold extremes in weather. *Anthropogenic* climate change is change that is caused by human activity, as opposed to the Earth’s natural processes. However, in the context of environmental policy, the term “climate change”" is often used to mean anthropogenic climate change.
+In 1966, the World Meteorological Organization (WMO) put forth the term "climatic change" to refer to climatic variability on time-scales longer than ten years, regardless of the cause for such change. During the next decade, scientists began to suspect that human activities had the potential to drastically alter the global climate in ways that would have negative impacts on our environment. The term evolved into "climate change" and is now used to describe both the process of change and the perceived problem. Sometimes the term "global warming" is used, though in many ways this fails to adequately describe the variability in impact, since climate change can cause both hot and cold extremes in weather. *Anthropogenic* climate change is change that is caused by human activity, as opposed to the Earth’s natural processes. However, in the context of environmental policy, the term "climate change" is often used to mean anthropogenic climate change.
 
 Mauna Loa Observatory is a world-renowned atmospheric research facility. It has been continuously monitoring and collecting data since the 1950’s and its remote location makes it very well-suited for monitoring atmospheric components that can contribute to climate change, including the heat-trapping greenhouse gas carbon dioxide (CO~2~). Carbon overload from burning fossil fuels and deforestation is cited as the primary cause of anthropogenic climate change by proponents of such theories, while opponents assert that natural process (such as photosynthesis) contribute more to atmospheric CO~2~ than humans and observed changes are simply Earth’s cycle.
 
 
 #### Monthly Mean CO~2~: The Last Five Years
 
-Create your own version of the plot found [here](https://www.esrl.noaa.gov/gmd/ccgg/trends/index.html). Use one of the themes found in the `ggplot2` or `ggthemes` packages. You are encouraged to make stylistic adjustments to axes, labels, or any other feature to help you informatively display the data. 
+Create your own version of the plot found [here](https://www.esrl.noaa.gov/gmd/ccgg/trends/index.html). Do not replicate it, but rather design your own. Use one of the themes found in the `ggplot2` or `ggthemes` packages. You are encouraged to make style adjustments to help you informatively display the data. 
 
 ```{r}
 #
@@ -90,7 +92,7 @@ Adapt your plot above to include a red dashed line at 400 ppm and a large red do
 
 #### Trends Over Time in CO~2~ Growth
 
-Consider the full Mauna Loa CO~2~ record found [here](https://www.esrl.noaa.gov/gmd/ccgg/trends/full.html). The overall trend is not linear, but segments of it may be piecewise linear. Filter to remove the incomplete decades 1950s and 2010s and create a scatterplot that shows the interpolated CO~2~ values and a fitted linear model for each remaining decade. Do not include standard error bands.
+Consider the full Mauna Loa CO~2~ record found [here](https://www.esrl.noaa.gov/gmd/ccgg/trends/full.html). The overall trend is not linear, but segments of it may be piecewise linear. Filter to remove the incomplete decades 1950s and 2010s and create a scatterplot that shows the interpolated CO~2~ values with a fitted linear model for each remaining decade. Do not include standard error bands.
 
 ```{r}
 #
@@ -113,7 +115,7 @@ In what way could these visualizations be used to support the theory of anthropo
 **ANSWER:**
 
 
-Why are plots such as these considered *evidence* rather than *proof* of anthropogenic climate change?
+Why are data such as these considered *evidence* rather than *proof* of anthropogenic climate change?
 
 **ANSWER:**
 
@@ -162,7 +164,7 @@ Create a dataset containing heights at one-inch intervals from 60 to 80 for each
 
 #### Additional Visualization
 
-Create a plot that shows the same fitted lines for males and females as your scatterplot (but without points), as well as a labeled line indicating the relationship ideal height = measured height. Format it in some way other than the default.
+Create a plot that shows the same fitted lines for males and females as your scatterplot (but without points), as well as an annotated line indicating the relationship ideal height = measured height. Format this line in some way other than the default (e.g., color, style).
 
 ```{r}
 #
