@@ -128,12 +128,13 @@ Are people generally happy with their heights? If not, how tall do they want to 
 
 #### Exploratory Data Analysis
 
-Filter the dataset to include only students who self-identified as male or female (there are not enough data points in the other categories to create a model for them). Perform EDA to determine whether you need to perform any transformations or remove any data points before you fit your model. Create your modeling dataset and call it `anthro_mod`. 
+Filter the dataset to include only students who self-identified as male or female (there are not enough data points in the other categories to create a model for them). Perform EDA to determine whether you need to perform any transformations or remove any data points before you fit your model. Explain your rationale for any transformations or deletions you chose to make in the dataset. 
 
 ```{r}
 
 ```
 
+ANSWER:
 
 #### Fitting the Model
 

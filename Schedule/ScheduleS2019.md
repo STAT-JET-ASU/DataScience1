@@ -1,7 +1,7 @@
 ---
 title: "STT 3530 Data Science I<br>Course Schedule for Spring 2019"
 author: "Instructor: Jill E. Thomley (thomleyje@appstate.edu)"
-date: 'Updated: Monday, January 14, 2019 @ 09:17:03 AM'
+date: 'Updated: Sunday, March 17, 2019 @ 06:58:21 PM'
 output: 
   html_document: 
     toc: true
@@ -358,7 +358,7 @@ HW = homework
 
 * DC [_Importing Data in R (Part 1)_](https://www.datacamp.com/courses/importing-data-in-r-part-1) HW
 * DC [_Importing Data in R (Part 2)_](https://www.datacamp.com/courses/importing-data-in-r-part-2) HW
-* RDS CH027-CH28 HW
+* ~~RDS CH027-CH28 HW~~
 * Reflection #09
 
 #### In-Class Activities
@@ -391,6 +391,7 @@ HW = homework
 #### Assignments Due
 
 * DC [_Joining Data in R with dplyr_](https://www.datacamp.com/courses/joining-data-in-r-with-dplyr) HW
+* RDS CH027-CH28 HW
 * RDS CH09-CH11 HW
 * Reflection #10
 

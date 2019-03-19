@@ -330,7 +330,7 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 
 * DC [_Importing Data in R (Part 1)_](https://www.datacamp.com/courses/importing-data-in-r-part-1) HW
 * DC [_Importing Data in R (Part 2)_](https://www.datacamp.com/courses/importing-data-in-r-part-2) HW
-* RDS CH027-CH28 HW
+* ~~RDS CH027-CH28 HW~~
 * Reflection #09
 
 #### In-Class Activities
@@ -361,6 +361,7 @@ Optional: Explore DC [_Daily Practice: Introduction to R_](https://www.datacamp.
 #### Assignments Due
 
 * DC [_Joining Data in R with dplyr_](https://www.datacamp.com/courses/joining-data-in-r-with-dplyr) HW
+* RDS CH027-CH28 HW
 * RDS CH09-CH11 HW
 * Reflection #10
 

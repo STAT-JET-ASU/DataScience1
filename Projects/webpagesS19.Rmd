@@ -1,0 +1,25 @@
+---
+title: "Spring 2019 Student Web Pages"
+---
+
+<hr>
+
+* [Joshua Arford](https://arfordjs.github.io/)
+* [Rachel Bellflowers](https://rebellflowers.github.io/)
+* [Tyler Borden](https://bordentb.github.io/)
+* [Maria Christeson](https://mariachristeson.github.io)
+* [Toria Davenport](https://toriadavenport.github.io/)
+* [Luke Gant](https://gantwl.github.io/)
+* [Jordan Green](https://jdgreene.github.io/)
+* [Brittany Hall](https://brittanymsh.github.io/)
+* [Cameron Lyons](cameronlyons.github.io)
+* [Briquelle Martin](https://briquellemartin.github.io)
+* [Jonte McRae](https://mcraejm.github.io/)
+* [Jefferson Ong](https://ongjk.github.io/)
+* [Blake Shook](https://shookbc1.github.io)
+* [Joshua Sumner](https://joshuasumner.github.io)
+* [Lauren Treadway](https://laurentreadway.github.io)
+* [Julia Uhr](https://juliaurh.github.io/)
+* [Halley Winkler](https://winklerhr.github.io/)
+
+<hr>
