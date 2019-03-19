@@ -12,7 +12,7 @@ title: "Spring 2019 Student Web Pages"
 * [Luke Gant](https://gantwl.github.io/)
 * [Jordan Green](https://jdgreene.github.io/)
 * [Brittany Hall](https://brittanymsh.github.io/)
-* [Cameron Lyons](cameronlyons.github.io)
+* [Cameron Lyons](https://cameronlyons.github.io)
 * [Briquelle Martin](https://briquellemartin.github.io)
 * [Jonte McRae](https://mcraejm.github.io/)
 * [Jefferson Ong](https://ongjk.github.io/)
