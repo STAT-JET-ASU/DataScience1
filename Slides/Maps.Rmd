@@ -1,0 +1,234 @@
+---
+title: "Making Maps in R"
+author: "Jill Thomley"
+date: "`r Sys.Date()`"
+output: ioslides_presentation
+---
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(comment = "", message = FALSE, warning = FALSE)
+```
+
+## Mapping in R
+
+```{r}
+library(tidyverse)
+library(maps)
+```
+
+Let's go into the `maps` package and see what's available!
+
+# Some Mapping Basics
+
+## Dataset `usa`
+
+```{r}
+usa <- map_data("usa")
+head(usa, 10)
+```
+
+## Structure
+
+```{r}
+str(usa)
+table(usa$group)
+```
+
+## Mapping `usa`
+
+```{r, fig.height = 3.5, fig.width = 6, fig.align = "center"}
+ggplot(usa) + 
+  geom_polygon(aes(x = long, y = lat, group = group), 
+               color = "darkgray", fill = "lightgray")
+```
+
+## A Different Projection
+
+```{r, fig.height = 3.5, fig.width = 6, fig.align = "center"}
+ggplot(usa) + 
+  geom_polygon(aes(x = long, y = lat, group = group), 
+               color = "darkgray", fill = "lightgray") +
+  coord_map()
+```
+
+## Another Projection
+
+```{r, fig.height = 3.5, fig.width = 6, fig.align = "center"}
+ggplot(usa) + 
+  geom_polygon(aes(x = long, y = lat, group = group), 
+               color = "darkgray", fill = "lightgray") +
+  coord_map(projection = "mollweide")
+```
+
+## Dataset `state`
+
+```{r}
+state <- map_data("state")
+head(state, 10)
+```
+
+## Mapping `state`
+
+```{r, fig.height = 3.5, fig.align = "center"}
+ggplot(state) + 
+  geom_polygon(aes(x = long, y = lat, group = group), 
+               color = "darkgray", fill = "lightgray") +
+  coord_map()
+```
+
+## Dataset `county`
+
+```{r}
+county <- map_data("county")
+head(county, 10)
+```
+
+## Mapping `county`
+
+```{r, fig.height = 3.5, fig.align = "center"}
+ggplot(county) + 
+  geom_polygon(aes(x = long, y = lat, group = group), 
+               color = "darkgray", fill = "lightgray") +
+  coord_map()
+```
+
+## Subsetting `state` for NC
+
+```{r, fig.height = 3.5, fig.align = "center"}
+ggplot(filter(state, region == "north carolina")) + 
+  geom_polygon(aes(x = long, y = lat, group = group), 
+               color = "darkgray", fill = "lightgray") +
+  coord_map()
+```
+
+## Subsetting `county` for NC
+
+```{r, fig.height = 3.5, fig.align = "center"}
+ggplot(filter(county, region == "north carolina")) + 
+  geom_polygon(aes(x = long, y = lat, group = group), 
+               color = "darkgray", fill = "lightgray") +
+  coord_map()
+```
+
+## Subsetting `world` for US
+
+```{r}
+world <- map_data("world")
+str(world)
+world_usa <- subset(map_data("world"), region == "USA")
+```
+
+## Mapping `world_usa`
+
+```{r, fig.height = 3, fig.align = "center"}
+ggplot(world_usa) + 
+  geom_polygon(aes(x = long, y = lat, group = group), 
+               color = "darkgray", fill = "lightgray") +
+  coord_map()
+```
+
+## Adjusting Our X-Axis
+
+```{r, fig.height = 3, fig.align = "center"}
+ggplot(world_usa) + 
+  geom_polygon(aes(x = long, y = lat, group = group), 
+               color = "darkgray", fill = "lightgray")+
+  coord_map(orientation = c(90, 180, 0))
+```
+
+## A Different Adjustment 
+
+```{r, fig.height = 3, fig.align = "center"}
+world_usa <- world_usa %>% 
+  mutate(long_adj = ifelse(long > 0, long - 360, long))
+ggplot(world_usa) + 
+  geom_polygon(aes(x = long_adj, y = lat, group = group), 
+               color = "darkgray", fill = "lightgray") +
+  coord_map()
+```
+
+## The `mollweide` Projection
+
+```{r, fig.height = 3.25, fig.width = 6, fig.align = "center"}
+ggplot(world_usa) + 
+  geom_polygon(aes(x = long_adj, y = lat, group = group), 
+               color = "darkgray", fill = "lightgray") +
+  coord_map(projection = "mollweide")
+```
+
+## The `ortho` Projection
+
+```{r, fig.height = 3.25, fig.width = 6, fig.align = "center"}
+ggplot(world_usa) + 
+  geom_polygon(aes(x = long_adj, y = lat, group = group), 
+               color = "darkgray", fill = "lightgray") +
+  coord_map(projection = "ortho")
+```
+
+## Regions in `world_usa`
+
+```{r}
+str(world_usa)
+```
+
+***
+
+```{r}
+tail(world_usa %>%  count(subregion), 12)
+```
+
+## Mapping Hawaii
+
+```{r, fig.height = 3.5, fig.align = "center"}
+ggplot(filter(world_usa, subregion == "Hawaii")) + 
+  geom_polygon(aes(x = long, y = lat, group = group), 
+               color = "darkgray", fill = "lightgray") +
+  coord_map()
+```
+
+## Ditch the Axes!
+
+```{r}
+# Theme Credit: http://eriqande.github.io/rep-res-web/lectures/
+# making-maps-with-R.html
+
+ditch_the_axes <- theme(
+  axis.text = element_blank(),
+  axis.line = element_blank(),
+  axis.ticks = element_blank(),
+  panel.border = element_blank(),
+  panel.grid = element_blank(),
+  axis.title = element_blank())
+```
+
+## Voila, a plot with no axes!
+
+```{r, fig.height = 3, fig.align = "center"}
+ggplot(filter(county, region == "north carolina")) + 
+  geom_polygon(aes(x = long, y = lat, group = group), 
+               color = "darkgray", fill = "lightgray") +
+  coord_map() +
+  ditch_the_axes
+```
+
+
+## 
+```{r, fig.height = 3.5, , fig.width = 6, fig.align = "center", include = FALSE}
+ggplot(state) + 
+  geom_polygon(aes(x = long, y = lat, group = group), 
+               color = "darkgray", fill = "lightgray") +
+  theme(legend.position = "none")
+```
+
+## References
+
+* https://ggplot2.tidyverse.org/reference/coord_map.html
+* http://eriqande.github.io/rep-res-web/lectures/making-maps-with-R.html
+* https://socviz.co/maps.html
+* https://github.com/UrbanInstitute/urbnmapr
+
+* https://www.cdc.gov/nchs/data-visualization/county-teen-births/index.htm
+* https://data.cdc.gov/NCHS/NCHS-Teen-Birth-Rates-for-Age-Group-15-19-in-the-U/3h58-x6cd
+* https://data.cdc.gov/NCHS/NCHS-Teen-Birth-Rates-for-Age-Group-15-19-in-the-U/3h58-x6cd/data
+
+
