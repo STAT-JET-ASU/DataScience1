@@ -190,7 +190,8 @@ ggplot(filter(world_usa, subregion == "Hawaii")) +
 
 ```{r}
 # Theme Credit: http://eriqande.github.io/rep-res-web/lectures/
-# making-maps-with-R.html
+# making-maps-with-R.html (w/ the addition of panel.background)
+# See also: https://ggplot2.tidyverse.org/reference/theme.html
 
 ditch_the_axes <- theme(
   axis.text = element_blank(),
@@ -198,7 +199,8 @@ ditch_the_axes <- theme(
   axis.ticks = element_blank(),
   panel.border = element_blank(),
   panel.grid = element_blank(),
-  axis.title = element_blank())
+  axis.title = element_blank(),
+  panel.background = element_blank())
 ```
 
 ## Voila, a plot with no axes!
@@ -209,6 +211,23 @@ ggplot(filter(county, region == "north carolina")) +
                color = "darkgray", fill = "lightgray") +
   coord_map() +
   ditch_the_axes
+```
+
+## A More Elaborate Version
+
+```{r}
+no_axes_alt <- 
+  theme(panel.grid.major = element_line(colour = 'transparent'),
+  axis.title.x = element_blank(), 
+  axis.text.x = element_blank(),
+  axis.ticks.x = element_blank(),
+  axis.title.y = element_blank(), 
+  axis.text.y = element_blank(),
+  axis.ticks.y = element_blank(),
+  panel.background = element_blank(),
+  panel.border = element_blank(),
+  panel.grid.minor = element_blank(),
+  plot.background = element_blank())
 ```
 
 
