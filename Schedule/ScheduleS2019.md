@@ -1,7 +1,7 @@
 ---
 title: "STT 3530 Data Science I<br>Course Schedule for Spring 2019"
 author: "Instructor: Jill E. Thomley (thomleyje@appstate.edu)"
-date: 'Updated: Sunday, March 17, 2019 @ 06:58:21 PM'
+date: 'Updated: Monday, April 01, 2019 @ 04:05:37 PM'
 output: 
   html_document: 
     toc: true
@@ -393,7 +393,7 @@ HW = homework
 * DC [_Joining Data in R with dplyr_](https://www.datacamp.com/courses/joining-data-in-r-with-dplyr) HW
 * RDS CH027-CH28 HW
 * RDS CH09-CH11 HW
-* Reflection #10
+* ~~Reflection #10~~
 
 #### In-Class Activities
 
@@ -425,8 +425,8 @@ HW = homework
 #### Assignments Due
 
 * DC [_Intermediate R_](https://www.datacamp.com/courses/intermediate-r) HW 
-* RDS CH13-CH16 HW
-* Reflection #11
+* ~~RDS CH13-CH16 HW~~
+* Reflection #10
 
 #### In-Class Activities
 
@@ -452,8 +452,8 @@ HW = homework
 #### Assignments Due
 
 * DC [_Cleaning Data in R_](https://www.datacamp.com/courses/cleaning-data-in-r) HW
-* RDS CH17-CH21 HW
-* Reflection #12
+* ~~RDS CH17-CH21 HW~~
+* Reflection #11
 
 #### In-Class Activities
 
@@ -477,11 +477,10 @@ HW = homework
 #### Assignments Due
 
 * Project 2 plan
-* Reflection #13
+* Reflection #12
 
 #### In-Class Activities
 
-* Publishing in GitHub
 * Slides in Markdown
 * Work on Project 2
 
@@ -496,7 +495,8 @@ HW = homework
 #### Assignments Due
 
 * Project 2 progress report
-* Reflection #14
+* Reflection #13
+
 
 #### In-Class Activities
 
@@ -513,6 +513,7 @@ HW = homework
 #### Assignments Due
 
 * Project 2 writeup
+* Reflection #14
 
 #### In-Class Activities
 
@@ -541,6 +542,6 @@ HW = homework
 
 <div class="rmdnote">
 <ul>
-<li>Our <a href="https://registrar.appstate.edu/sites/registrar.appstate.edu/files/asu_spring_2019_exam_schedule.pdf">final exam time</a> is Thursday May 09 @ 2:00pm in our usual classroom. You will give your final presentations to your peers at this time.</li>
+<li>Our <a href="https://registrar.appstate.edu/sites/registrar.appstate.edu/files/asu_spring_2019_exam_schedule.pdf">final exam time</a> is Thursday May 09 @ 2:00pm in our usual classroom. You will give your final presentations to your peers at this time and complete Reflection #15.</li>
 </ul>
 </div>

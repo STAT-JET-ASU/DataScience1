@@ -1,0 +1,148 @@
+---
+title: "Data Science Project 2<br>Making the Data Juicy!"
+author: "Instructor: Jill E. Thomley"
+date: '`r format(Sys.time(), "%B %d, %Y @ %I:%M %p")`'
+output: 
+  html_document:
+    toc: true
+    depth: 3
+    theme: yeti
+    highlight: textmate
+---
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, comment = "")
+library(tidyverse)
+```
+
+<hr>
+
+## Purpose
+
+To quote the people at [information is beautiful](https://informationisbeautiful.net/data/), "...80% of the work involved in creating an infographic is data-gathering, shaping and checking. Making the data juicy." Working in teams, you will flex the data science skills you acquired this semester to read, assemble, clean, and code two datasets. Then you will create meaningful visualizations using those datasets. Your results will be presented in two formats: a written report in which you will share the code you used and the visualizations you produced, and an oral presentation in which you share your visualizations and discuss some of the choices you made in creating those visualizations (details on the presentations will be presented in another document).
+
+## Instructions
+
+01. Create a Markdown report that has a TOC and uses code folding.
+02. Format your Markdown report using a `theme` and `highlight`.
+03. Create sensible sections with informative headers.
+04. Use `dplyr` functions and `pipes` when possible.
+05. All graphs must be created using `ggplot2`.
+06. Use additional packages as needed.
+07. Document any nonstandard code.
+08. Add `sessionInfo()` at the end. 
+09. Conform to the [*R Style Guide*](http://adv-r.had.co.nz/Style.html).
+10. Reference outside sources.
+
+If you include any numerical values from analyses in your answers, be sure to code them with inline `R` code rather than typing in the values by hand. Include an R chunk at the top of your markdown where you load all packages used in your analyses, similar to the one shown below. You can refer to [*R Markdown: The Definitive Guide*](https://bookdown.org/yihui/rmarkdown/) as needed.
+
+## Powerball Jackpots
+
+[Powerball](https://www.powerball.com/games/powerball) is popular American lottery game offered by forty-four states, as well as the District of Columbia, Puerto Rico and the US Virgin Islands. It is coordinated by the non-profit [Multi-State Lottery Association (MUSL)](https://www.musl.com/). Below are the current instructions for how to play Powerball, as published on the lottery's website.
+
+* Powerball® costs $2 per play. 
+* Select five numbers from 1 to 69 for the white balls; then select one number from 1 to 26 for the red Powerball.
+* Choose your numbers on a play slip or let the lottery terminal randomly pick your numbers.
+* Jackpots start at $40 million and grow from there!
+* Players win a prize by matching one of the 9 Ways to Win.
+
+Drawings are supposed to be random and independent, with all white balls are equally likely to be chosen. The same is true of red balls. Players have always selected five white balls and one red ball. However, the Powerball lottery has had different rulesets over time with respect to how many white and red balls there are for players to choose from, which affects the chances of winning the various prizes. The Jackpot increases in value until someone wins and then it resets to its minimum value. This minimum has also changed over time. You can read about changes over time in the [Powerball](https://en.wikipedia.org/wiki/Powerball) Wikipedia article and on the `History` tab of the [About Powerball](https://www.powerball.com/about) page of the Powerball website.
+
+### Prepare Your Data
+
+* Go to the [Lottery Powerball Winning Numbers](https://catalog.data.gov/dataset/lottery-powerball-winning-numbers-beginning-2010) page of the Data Catalogue on the federal data repository website [data.gov](https://www.data.gov/). Right-click the <span style="font-size: 12px; color: #ffffff; background-color: #19657D; padding: 2px;"><i class="fa fa-download"></i> Download</span> button for the CSV file to get the web link and use that to import the dataset into RStudio. Notice that whomever formatted the data put all six lottery numbers into a single column, with the five white ball values listed in ascending order, followed by the red ball.
+
+* Use the code given below to scrape the values of the Powerball jackpots from the [Jackpot History](http://www.lottofactor.com/script/jackpot_history/draw_date/101) page of TinBu LLC's [Lotto Factor](http://www.lottofactor.com/) website. Note that by the site's [Terms of Service](http://www.lottofactor.com/script/showpage/1001030/m/terms.html) these data are copyrighted in this form. However, we may use them for personal academic purposes as long at they are not publicly displayed. I did a a small amount of pre-cleaning to remove a "noise" character and extraneous space.
+
+```{r, eval = FALSE}
+url <- "http://www.lottofactor.com/script/jackpot_history/draw_date/101"
+jackpot_vals <- readHTMLTable(url)[[18]] %>% 
+  mutate_all(funs(str_replace(., pattern = "Â", replacement = ""))) %>% 
+  mutate_all(funs(str_trim(., "left")))
+```
+
+* Use the code given below to create dataset that includes value inflation adjustments for US dollars in prior years based on the value of the 2019 dollar. It uses Consumer Price Index (CPI) information scraped from the [Bureau of Labor Statistics](https://www.bls.gov/). For example, one 2002 dollar is equivalent to 71 cents in 2019 with respect to its purchasing power. Another way to think about it is that we need $1 / 0.68 = $1.47 today to purchase the same item or amount we could have gotten for $1 in 2002. Thus, a windfall of $1 million would be relatively greater in 2002 than 2019, since back then what you could buy for $1 million would require $1,408,450.70 to buy now.
+
+```{r, eval = FALSE}
+# requires the package blscrapeR
+inflation_adj <- inflation_adjust(2019)
+```
+
+* Search the web and find the winning numbers for Powerball drawings in January 2010, which are missing from the winning numbers dataset. 
+
+* Create a single dataset called `powerball` for the timespan January 2010 to the present, with the following variable structure. Verify this using `glimpse()` on the dataset in your report.
+    * `drawdate` (date) -- date the drawing took place in yyyy-mm-dd format
+    * `drawday` (chr) -- day of the week the drawing took place
+    * `white1` (num) -- first white ball number
+    * `white2` (num) -- second white ball number
+    * `white3` (num) -- third white ball number
+    * `white4` (num) -- fourth white ball number
+    * `white5` (num) -- fifth white ball number
+    * `powerball` (num) -- powerball (red) ball number
+    * `jackpot_value` (num) -- dollar values of the jackpots (in millions)
+    * `jackpot_value_adj` (num) -- jackpot values adjusted to 2019 dollars
+
+The advertized dollar value of the Jackpot is the minimum guaranteed prize; the actual value may be more, depending on factors such as ticket sales. If more than one person wins, the jackpot is split between them.
+
+### Visualization 1: Jackpot Values Over Time
+
+Create one or more visualizations that show the values of Powerball jackpots for the time period covered by your dataset, in both unadjusted and adjusted dollars. Include some indication of when changes were made to the rules or the minimum jackpot value, as well as which jackpots were won.
+
+### Visualization 2: Fairness & Independence
+
+Create one or more visualizations to help assess whether or not the numbers on the white balls were (relatively) equally likely to be drawn in the time period covered by your dataset. Be sure to account for changes in the numbers of white balls available over time. You may research other variables of interest to add to your visualizations if you choose.
+
+
+## Population Ratios
+
+Many agencies and individuals (e.g., World Bank, Centers for Disease Control and Prevention, various politicians) are interested in population data, since population size and the relative numbers of people at various ages impact a wide variety of local to global concerns such as financial solvency, health care, and education. I gathered some population data files from [Gapminder](https://www.gapminder.org), which in turn sources primarily from the [United Nations Population Division](https://www.un.org/en/development/desa/population/index.asp). The  [gapminder_pop_data.xlsx](https://stat-jet-asu.github.io/DataScience1Private/datasets/gapminder_pop_data.xlxs) workbook contains worksheets for different age ranges, as well as total population, for countries all around the world.  
+
+### Prepare Your Data
+
+* Right-click on the Excel workbook name above to get the storage location for the data (Dr. Thomley's GitHub organization!) and use that web link to read the data into R.
+
+* Create a single dataset called `population`, with the following variable structure. Verify this using `glimpse()` on the dataset in your report.
+    * `country` (chr) -- country name
+    * `year` (num) -- year
+    * `pct0to14` (num) -- percentage of population age 0 to 14
+    * `pct15to59` (num) -- percentage of population age 15 to 59
+    * `pct60plus` (num) -- percentage of population age 60+
+    * `cdr` (num) -- child dependency ratio (age 0-14 / age 15-59)
+    * `odr` (num) -- old-age dependency ratio (age 60+ / age 15-59)
+    * `tdr` (num) -- total dependency ratio (age 0-19 + age 60+ / age 15-59)
+
+### Visualization 1: Age Ternary Plots
+
+Create a [ternary plot](http://datavizcatalogue.com/blog/ternary-graphs-triangular-plots/) (or plots) to show the proportions of the three age groups across time in the United States, including past and projected data. Indicate time in some way in your plot, and differentiate between past and projected values. Make a similar plot for one other country of your choice.
+
+### Visualization 2: Dependency Ratios
+
+Create one or more visualizations to display and compare the projected 2020 dependency ratios for all countries. Use annotations or some other appropriate method to highlight at least one feature in the data you think might be interesting or noteworthy to an audience concerned about these issues. You may research other variables of interest to add to your visualizations if you choose.
+
+
+## Assessing Your Work
+
+### Data Files
+
+* Data files are read, assembled, cleaned, and coded correctly
+* Data files are read, assembled, cleaned, and coded efficiently
+* Datasets `powerball` and `population` have the specified structure
+* Additions to the datasets are made appropriately and efficiently 
+* Other manipulations of the datasets are appropriate and efficient
+
+### Visualizations
+
+* Visualization(s) appropriately address the problem/question posed
+* Visualizations are relatively stand-alone (need little explanation)
+* Some plot elements have been customized (i.e., not all defaults)
+* Visualizations have appropriate labeling (titles, axes, captions)
+* Color, font, and other plot element stylings enhance the meaning
+
+
+<hr>
+
+<span style="font-size: 36px; padding: 2px;"> HAVE FUN </span> <i class="fa fa-smile-o" style = "font-size: 36px;"></i>
+
+
