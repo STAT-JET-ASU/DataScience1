@@ -1,0 +1,42 @@
+---
+title: "Notes"
+author: "Jill Thomley"
+date: 'Updated: `r format(Sys.time(), "%A, %B %d, %Y @ %X")`'
+output: html_document
+---
+
+```{r setup_chunk, echo = FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, comment = "")
+```
+
+Aspects of graphs to lecture on
+
+* scale_x_continuous
+* scale_x_discrete
+* labs
+* expressions in labs
+* theme elements
+* more than one dataset in a plot
+* filtering inside ggplot
+* legends
+* annotate
+* coord_fixed
+* fonts
+* geom_vline, geom_hline, geom_abline
+
+Data types to lecture on
+
+* text and .csv
+* excel
+* json
+
+Other
+
+* making vectors with rep, seq, etc.
+* table of contents
+* code folding
+
+DataCamp courses
+
+* Introduction to R
+* Intermediate R

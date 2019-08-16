@@ -45,9 +45,9 @@ output:
 
 Okay, this part we need to do in a terminal in RStusio. You may also refer to Chapter 11 of **[Happy Git and GitHub for the useR](http://happygitwithr.com/)** or **[GitHub](https://help.github.com/) Help**. 
 
-In RStudio, choose Tools > Terminal > New Terminal
+In RStudio, choose `Tools > Terminal > New Terminal`
 
-In the terminal, type the following at the prompt and hit [Enter] after each. 
+In the terminal, type the following lines at the prompt one at a time and hit `[Enter]` after each. 
 
 ```{r, eval=FALSE}
 git config --global user.email "who@where"
@@ -62,15 +62,13 @@ These set an **[email](https://help.github.com/articles/setting-your-commit-emai
 
 Would you prefer not to repeatedly type in your username and password? Me too!
 
-In the terminal, type the following at the promptand hit [Enter].
+In the terminal, type the following code at the prompt and hit `[Enter]`. The timeout value is 10 million.
 
 ```{r, eval=FALSE}
 git config --global credential.helper 'cache --timeout=10000000'
 ```
 
-The timeout value is 10 million.
-
-This will store your password for ten million seconds, which is about 16 weeks, enough for a semester. 
+This will store your password for ten million seconds, which is about 16 weeks, enough for a semester. Once it runs out, or if you change your password, just run it again.
 
 The `global` option means the cache should apply to all of your `git` version-controlled projects. 
 

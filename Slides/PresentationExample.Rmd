@@ -1,0 +1,56 @@
+---
+title: "Data Science 1<br>Presentation Example"
+author: "Jill Thomley"
+date: '`r format(Sys.time(), "%B %d, %Y @ %I:%M %p")`'
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+```
+
+# Section 1: Dino Map!
+
+## The Paleobiology Database
+
+* non-government, non-profit, publicly-accessible resource for paleontological data
+
+* organized / operated by an international, multi-disciplinary group of paleobiological researchers
+
+* primary goal to provide global, collection-based occurrence and taxonomic data for organisms of all geological ages, as well data services for independent development of analytical tools, visualization software, and applications
+
+* broader goal is to encourage and enable collaborations that address large-scale paleobiological questions
+
+* You can filter and download records [HERE](https://paleobiodb.org/classic/displayDownloadGenerator) in many formats
+
+
+## Plot of Suborder Therpoda
+
+```{r, echo = FALSE, fig.width = 4}
+library(tidyverse)
+library(maps)
+library(ggthemes)
+
+dinosTheropodaUS <- read_csv("https://paleobiodb.org/data1.2/occs/list.csv?base_name=Theropoda&cc=US&state=!Hawaii,Alaska&show=class,coords,loc")
+
+usa <- map_data("usa")
+ggplot(usa) + 
+  geom_polygon(aes(x = long, y = lat, group = group), color = "darkgray", fill = "lightgray") +
+  coord_map(projection = "mollweide") +
+  geom_point(dinosTheropodaUS, mapping = aes(x = lng, y = lat, color = class)) +
+  scale_color_manual(values = c("magenta", "purple")) +
+  guides(color = guide_legend("")) +
+  labs(title = "Fossils of Dinosaurs in Suborder Therpoda Found in the US",
+       subtitle = "aves have more bird-like hips, while saurischia have more lizard-like hips") +
+  theme(
+    axis.text = element_blank(),
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    panel.border = element_blank(),
+    panel.grid = element_blank(),
+    axis.title = element_blank(),
+    legend.position = "bottom"
+  )
+```
+
+Some text here!

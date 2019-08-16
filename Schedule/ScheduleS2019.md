@@ -1,7 +1,7 @@
 ---
 title: "STT 3530 Data Science I<br>Course Schedule for Spring 2019"
 author: "Instructor: Jill E. Thomley (thomleyje@appstate.edu)"
-date: 'Updated: Monday, April 01, 2019 @ 04:05:37 PM'
+date: 'Updated: Thursday, May 16, 2019 @ 11:46:53 AM'
 output: 
   html_document: 
     toc: true
@@ -512,7 +512,7 @@ HW = homework
 
 #### Assignments Due
 
-* Project 2 writeup
+* Project 2 progress report
 * Reflection #14
 
 #### In-Class Activities
@@ -522,7 +522,7 @@ HW = homework
 
 #### Before Final Exam
 
-* Prepare presentation
+* Finish report, prepare presentation
 
 
 ***
@@ -532,7 +532,7 @@ HW = homework
 
 <div class="rmdnote">
 <ul>
-<li>TBA NOTE</li>
+<li>Pause, breathe!</li>
 </ul>
 </div>
 
@@ -542,6 +542,6 @@ HW = homework
 
 <div class="rmdnote">
 <ul>
-<li>Our <a href="https://registrar.appstate.edu/sites/registrar.appstate.edu/files/asu_spring_2019_exam_schedule.pdf">final exam time</a> is Thursday May 09 @ 2:00pm in our usual classroom. You will give your final presentations to your peers at this time and complete Reflection #15.</li>
+<li>Our <a href="https://registrar.appstate.edu/sites/registrar.appstate.edu/files/asu_spring_2019_exam_schedule.pdf">final exam time</a> is Thursday May 09 @ 2:00 pm in our usual classroom. Project groups will give their final presentations to peers at this time and complete Reflection #15. The final report for your project is due at 9:00 am on exam day.</li>
 </ul>
 </div>
